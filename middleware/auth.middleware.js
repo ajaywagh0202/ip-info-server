@@ -1,7 +1,7 @@
-const jwt = require("jsonwebtoken");
-const Admin = require("../models/Admin");
+import jwt from "jsonwebtoken";
+import Admin from "../models/Admin.js";
 
-const requireAdminAuth = async (req, res, next) => {
+export const requireAdminAuth = async (req, res, next) => {
   try {
     const authHeader = req.get("Authorization") || "";
     const [scheme, token] = authHeader.split(" ");
@@ -22,8 +22,4 @@ const requireAdminAuth = async (req, res, next) => {
   } catch (error) {
     return res.status(401).json({ error: "Invalid credentials." });
   }
-};
-
-module.exports = {
-  requireAdminAuth
 };

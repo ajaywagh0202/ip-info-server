@@ -1,9 +1,9 @@
-const path = require("path");
-const multer = require("multer");
+import path from "path";
+import multer from "multer";
+import { ensureUploadFolders } from "../utils/ensureUploadFolders.js";
 
 const MAX_FILE_SIZE = 25 * 1024 * 1024;
-const JSON_DIR = path.join(__dirname, "..", "IP_INFO_FILE", "JSON_FILE");
-const PDF_DIR = path.join(__dirname, "..", "IP_INFO_FILE", "PDF_FILE");
+const { jsonDir: JSON_DIR, pdfDir: PDF_DIR } = ensureUploadFolders();
 
 const cleanPart = (value) =>
   String(value || "upload")
@@ -54,7 +54,7 @@ const upload = multer({
   }
 });
 
-const registrationUpload = (req, res, next) => {
+export const registrationUpload = (req, res, next) => {
   upload.fields([
     { name: "pdf_file", maxCount: 1 },
     { name: "json_file", maxCount: 1 }
@@ -67,8 +67,4 @@ const registrationUpload = (req, res, next) => {
   });
 };
 
-module.exports = {
-  registrationUpload,
-  JSON_DIR,
-  PDF_DIR
-};
+export { JSON_DIR, PDF_DIR };

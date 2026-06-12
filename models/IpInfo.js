@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const ipInfoSchema = new mongoose.Schema(
   {
@@ -20,4 +20,4 @@ const ipInfoSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("IpInfo", ipInfoSchema);
+export default mongoose.model("IpInfo", ipInfoSchema);

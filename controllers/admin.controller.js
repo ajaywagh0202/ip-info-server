@@ -1,15 +1,15 @@
-const fs = require("fs");
-const path = require("path");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const mongoose = require("mongoose");
-const Admin = require("../models/Admin");
-const IpInfo = require("../models/IpInfo");
+import fs from "fs";
+import path from "path";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import mongoose from "mongoose";
+import Admin from "../models/Admin.js";
+import IpInfo from "../models/IpInfo.js";
+import { ensureUploadFolders } from "../utils/ensureUploadFolders.js";
 
-const PDF_DIR = path.join(__dirname, "..", "IP_INFO_FILE", "PDF_FILE");
-const JSON_DIR = path.join(__dirname, "..", "IP_INFO_FILE", "JSON_FILE");
+const { pdfDir: PDF_DIR, jsonDir: JSON_DIR } = ensureUploadFolders();
 
-const login = async (req, res) => {
+export const login = async (req, res) => {
   try {
     const username = String(req.body.username || "").trim();
     const password = String(req.body.password || "");
@@ -45,7 +45,7 @@ const login = async (req, res) => {
   }
 };
 
-const getRecords = async (req, res) => {
+export const getRecords = async (req, res) => {
   try {
     const filter = {};
 
@@ -60,7 +60,7 @@ const getRecords = async (req, res) => {
   }
 };
 
-const getRecord = async (req, res) => {
+export const getRecord = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
       return res.status(404).json({ error: "Record not found." });
@@ -110,14 +110,6 @@ const downloadRecordFile = async (req, res, type) => {
   }
 };
 
-const downloadRecordPdf = (req, res) => downloadRecordFile(req, res, "pdf");
+export const downloadRecordPdf = (req, res) => downloadRecordFile(req, res, "pdf");
 
-const downloadRecordJson = (req, res) => downloadRecordFile(req, res, "json");
-
-module.exports = {
-  login,
-  getRecords,
-  getRecord,
-  downloadRecordPdf,
-  downloadRecordJson
-};
+export const downloadRecordJson = (req, res) => downloadRecordFile(req, res, "json");
