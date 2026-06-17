@@ -7,9 +7,20 @@ const path = require("path");
 
 const connectDB = require("./config/db");
 const seedDefaultAdmin = require("./utils/seedAdmin");
+const seedDepartments = require("./utils/seedDepartments");
 const registerRoutes = require("./routes/register.routes");
 const downloadRoutes = require("./routes/download.routes");
-const adminRoutes = require("./routes/admin.routes");
+const adminAuthRoutes = require("./routes/adminAuth");
+const adminProfileRoutes = require("./routes/adminProfile");
+const adminUsersRoutes = require("./routes/adminUsers");
+const adminRecordsRoutes = require("./routes/adminRecords");
+const deviceDetailsRoutes = require("./routes/deviceDetails");
+const ipReportRoutes = require("./routes/ipReport");
+const dsrReportRoutes = require("./routes/dsrReport");
+const seriesReportRoutes = require("./routes/seriesReport");
+const departmentRoutes = require("./routes/departments");
+const exportRoutes = require("./routes/export");
+const analyticsRoutes = require("./routes/analytics");
 
 const app = express();
 
@@ -38,14 +49,14 @@ const corsOptions = {
 
     return callback(new Error("Not allowed by CORS"));
   },
-  methods: ["GET", "POST", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 };
 
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
-app.use(express.json({ limit: "1mb" }));
-app.use(express.urlencoded({ extended: true, limit: "1mb" }));
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
 const ensureFolders = () => {
   [
@@ -64,7 +75,17 @@ app.get("/health", (req, res) => {
 
 app.use("/api", registerRoutes);
 app.use("/api", downloadRoutes);
-app.use("/api/admin", adminRoutes);
+app.use("/api", departmentRoutes);
+app.use("/api/admin", adminAuthRoutes);
+app.use("/api/admin/profile", adminProfileRoutes);
+app.use("/api/admin", adminUsersRoutes);
+app.use("/api/admin", deviceDetailsRoutes);
+app.use("/api/admin", ipReportRoutes);
+app.use("/api/admin", dsrReportRoutes);
+app.use("/api/admin", seriesReportRoutes);
+app.use("/api/admin", adminRecordsRoutes);
+app.use("/api/admin", exportRoutes);
+app.use("/api/admin", analyticsRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ success: false, message: "Route not found" });
@@ -81,6 +102,7 @@ app.use((err, req, res, next) => {
 const startServer = async () => {
   ensureFolders();
   await connectDB();
+  await seedDepartments();
   await seedDefaultAdmin();
 
   app.listen(PORT, () => {

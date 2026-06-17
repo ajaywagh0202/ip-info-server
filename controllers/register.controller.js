@@ -1,7 +1,7 @@
 const fs = require("fs/promises");
 const IpInfo = require("../models/IpInfo");
 
-const requiredFields = ["name", "phone", "pf_no", "department", "designation"];
+const requiredFields = ["name", "phone", "pf_no", "designation"];
 
 const getUploadedFile = (files, fieldName) => {
   if (!files || !files[fieldName] || !files[fieldName][0]) {
@@ -40,59 +40,79 @@ const removeUploadedFiles = async (...files) => {
   );
 };
 
+const getBodyText = (body, field, fallback = "") => String(body[field] || fallback).trim();
+
+const getDepartmentFields = (body) => {
+  const department = getBodyText(body, "department");
+
+  return {
+    dept_code: getBodyText(body, "dept_code", department),
+    dept_name: getBodyText(body, "dept_name", department)
+  };
+};
+
 const registerDevice = async (req, res) => {
   const pdfFile = getUploadedFile(req.files, "pdf_file");
   const jsonFile = getUploadedFile(req.files, "json_file");
 
   try {
+    const departmentFields = getDepartmentFields(req.body);
     const missingFields = requiredFields.filter((field) => !String(req.body[field] || "").trim());
+
+    if (!departmentFields.dept_code || !departmentFields.dept_name) {
+      missingFields.push("department");
+    }
 
     if (missingFields.length) {
       await removeUploadedFiles(pdfFile, jsonFile);
       return res.status(400).json({ error: `Missing required field(s): ${missingFields.join(", ")}.` });
     }
 
-    if (!pdfFile || !jsonFile) {
+    if (!/^\d{10}$/.test(String(req.body.phone || "").trim())) {
       await removeUploadedFiles(pdfFile, jsonFile);
-      return res.status(400).json({ error: "Both pdf_file and json_file are required." });
+      return res.status(400).json({ error: "Phone number must be 10 digits." });
     }
 
-    let parsedJson;
+    let parsedJson = null;
 
-    try {
-      const jsonContents = await fs.readFile(jsonFile.path, "utf8");
-      parsedJson = JSON.parse(jsonContents);
-    } catch (error) {
-      await removeUploadedFiles(pdfFile, jsonFile);
-      return res.status(400).json({ error: "Uploaded JSON file is invalid." });
+    if (jsonFile) {
+      try {
+        const jsonContents = await fs.readFile(jsonFile.path, "utf8");
+        parsedJson = JSON.parse(jsonContents);
+      } catch (error) {
+        await removeUploadedFiles(pdfFile, jsonFile);
+        return res.status(400).json({ error: "Uploaded JSON file is invalid." });
+      }
     }
 
-    const targetIp = getFirstValueByKey(parsedJson, [
-      "target_ip",
-      "ip_address",
-      "ipAddress",
-      "IP_ADDRESS",
-      "ip"
-    ]);
-
-    if (!targetIp) {
-      await removeUploadedFiles(pdfFile, jsonFile);
-      return res.status(400).json({ error: "target_ip not found in uploaded JSON file." });
-    }
-
-    await IpInfo.create({
-      name: req.body.name.trim(),
-      phone: req.body.phone.trim(),
-      pf_no: req.body.pf_no.trim(),
-      department: req.body.department.trim(),
-      designation: req.body.designation.trim(),
-      target_ip: targetIp,
+    const record = new IpInfo({
+      name: getBodyText(req.body, "name"),
+      phone: getBodyText(req.body, "phone"),
+      pf_no: getBodyText(req.body, "pf_no"),
+      dept_code: departmentFields.dept_code,
+      dept_name: departmentFields.dept_name,
+      designation: getBodyText(req.body, "designation"),
+      target_ip: getFirstValueByKey(parsedJson, [
+        "target_ip",
+        "ip_address",
+        "ipAddress",
+        "IP_ADDRESS",
+        "ip"
+      ]) || getBodyText(req.body, "target_ip") || null,
+      device_type: getBodyText(req.body, "device_type", "Unknown"),
+      dsr_no: getBodyText(req.body, "dsr_no"),
+      serial_no:
+        req.body.Serial_no === undefined && req.body.serial_no === undefined
+          ? undefined
+          : String(req.body.Serial_no || req.body.serial_no).trim(),
       hostname: getFirstValueByKey(parsedJson, ["hostname", "host_name", "HostName", "HOSTNAME"]),
       os: getFirstValueByKey(parsedJson, ["os", "OS", "operating_system", "OperatingSystem"]),
       json_data: parsedJson,
-      pdf_filename: pdfFile.filename,
-      json_filename: jsonFile.filename
+      pdf_filename: pdfFile ? pdfFile.filename : null,
+      json_filename: jsonFile ? jsonFile.filename : null
     });
+
+    await record.save({ validateBeforeSave: false });
 
     return res.status(200).json({
       success: true,

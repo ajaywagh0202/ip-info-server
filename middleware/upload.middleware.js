@@ -27,7 +27,8 @@ const storage = multer.diskStorage({
   filename: (req, file, cb) => {
     const extension = path.extname(file.originalname).toLowerCase();
     const pfNo = cleanPart(req.body.pf_no);
-    cb(null, `${pfNo}_${Date.now()}${extension}`);
+    const dsrNo = cleanPart(req.body.dsr_no);
+    cb(null, `${pfNo}_${dsrNo}_${Date.now()}${extension}`);
   }
 });
 
@@ -42,7 +43,7 @@ const fileFilter = (req, file, cb) => {
     return cb(null, true);
   }
 
-  return cb(new Error("Both pdf_file (.pdf) and json_file (.json) uploads are required."));
+  return cb(new Error("Only pdf_file (.pdf) and json_file (.json) uploads are allowed."));
 };
 
 const upload = multer({

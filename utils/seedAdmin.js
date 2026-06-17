@@ -14,7 +14,10 @@ const seedDefaultAdmin = async () => {
     username: "admin",
     name: "System Administrator",
     pf_no: "ADMIN001",
+    dept_code: "ACCOUNT",
+    dept_name: "Account",
     designation: "IT Officer",
+    user_type: 0,
     password
   });
 };

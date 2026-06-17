@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const Admin = require("../models/Admin");
 
 const requireAdminAuth = async (req, res, next) => {
   try {
@@ -7,23 +6,26 @@ const requireAdminAuth = async (req, res, next) => {
     const [scheme, token] = authHeader.split(" ");
 
     if (scheme !== "Bearer" || !token) {
-      return res.status(401).json({ error: "Invalid credentials." });
+      return res.status(401).json({ error: "Unauthorized." });
     }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const admin = await Admin.findById(decoded.id).select("-password");
-
-    if (!admin) {
-      return res.status(401).json({ error: "Invalid credentials." });
-    }
-
-    req.admin = admin;
+    req.admin = decoded;
     next();
   } catch (error) {
-    return res.status(401).json({ error: "Invalid credentials." });
+    return res.status(401).json({ error: "Unauthorized." });
   }
 };
 
+const requireSuperAdmin = (req, res, next) => {
+  if (!req.admin || Number(req.admin.user_type) !== 0) {
+    return res.status(403).json({ error: "Access denied. Super user only." });
+  }
+
+  return next();
+};
+
 module.exports = {
-  requireAdminAuth
+  requireAdminAuth,
+  requireSuperAdmin
 };
