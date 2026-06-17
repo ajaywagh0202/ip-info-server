@@ -1,12 +1,12 @@
-const express = require("express");
-const {
+import express from "express";
+import {
   login,
   getRecords,
   getRecord,
   downloadRecordPdf,
   downloadRecordJson
-} = require("../controllers/admin.controller");
-const { requireAdminAuth } = require("../middleware/auth.middleware");
+} from "../controllers/admin.controller.js";
+import { requireAdminAuth } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
@@ -16,4 +16,4 @@ router.get("/records/:id", requireAdminAuth, getRecord);
 router.get("/records/:id/pdf", requireAdminAuth, downloadRecordPdf);
 router.get("/records/:id/json", requireAdminAuth, downloadRecordJson);
 
-module.exports = router;
+export default router;

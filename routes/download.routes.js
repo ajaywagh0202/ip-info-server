@@ -1,8 +1,8 @@
-const express = require("express");
-const { downloadScanner } = require("../controllers/download.controller");
+import express from "express";
+import { downloadScanner } from "../controllers/download.controller.js";
 
 const router = express.Router();
 
 router.get("/download/scanner", downloadScanner);
 
-module.exports = router;
+export default router;

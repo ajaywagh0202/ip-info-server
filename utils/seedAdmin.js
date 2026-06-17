@@ -1,5 +1,5 @@
-const bcrypt = require("bcrypt");
-const Admin = require("../models/Admin");
+import bcrypt from "bcrypt";
+import Admin from "../models/Admin.js";
 
 const seedDefaultAdmin = async () => {
   const count = await Admin.countDocuments();
@@ -22,4 +22,4 @@ const seedDefaultAdmin = async () => {
   });
 };
 
-module.exports = seedDefaultAdmin;
+export default seedDefaultAdmin;

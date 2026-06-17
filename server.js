@@ -1,9 +1,10 @@
-require("dotenv").config();
+import "dotenv/config";
 
-const express = require("express");
-const cors = require("cors");
-const fs = require("fs");
-const path = require("path");
+import express from "express";
+import cors from "cors";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const connectDB = require("./config/db");
 const seedDefaultAdmin = require("./utils/seedAdmin");
@@ -39,11 +40,30 @@ const isLocalDevOrigin = (origin) => {
   }
 };
 
+const isPrivateNetworkDevOrigin = (origin) => {
+  try {
+    const { hostname, port } = new URL(origin);
+    const isPrivateIp =
+      /^10\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(hostname) ||
+      /^192\.168\.\d{1,3}\.\d{1,3}$/.test(hostname) ||
+      /^172\.(1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3}$/.test(hostname);
+
+    return isPrivateIp && ["3000", "5173"].includes(port);
+  } catch (error) {
+    return false;
+  }
+};
+
 app.set("trust proxy", true);
 
 const corsOptions = {
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin) || isLocalDevOrigin(origin)) {
+    if (
+      !origin ||
+      allowedOrigins.includes(origin) ||
+      isLocalDevOrigin(origin) ||
+      isPrivateNetworkDevOrigin(origin)
+    ) {
       return callback(null, true);
     }
 
@@ -59,14 +79,8 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
 const ensureFolders = () => {
-  [
-    path.join(__dirname, "SCRIPT_FILE"),
-    path.join(__dirname, "IP_INFO_FILE"),
-    path.join(__dirname, "IP_INFO_FILE", "JSON_FILE"),
-    path.join(__dirname, "IP_INFO_FILE", "PDF_FILE")
-  ].forEach((folder) => {
-    fs.mkdirSync(folder, { recursive: true });
-  });
+  fs.mkdirSync(path.join(__dirname, "SCRIPT_FILE"), { recursive: true });
+  ensureUploadFolders();
 };
 
 app.get("/health", (req, res) => {

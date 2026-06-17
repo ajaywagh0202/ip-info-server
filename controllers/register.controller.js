@@ -1,5 +1,5 @@
-const fs = require("fs/promises");
-const IpInfo = require("../models/IpInfo");
+import fs from "fs/promises";
+import IpInfo from "../models/IpInfo.js";
 
 const requiredFields = ["name", "phone", "pf_no", "designation"];
 
@@ -122,8 +122,4 @@ const registerDevice = async (req, res) => {
     await removeUploadedFiles(pdfFile, jsonFile);
     return res.status(500).json({ error: "Internal server error." });
   }
-};
-
-module.exports = {
-  registerDevice
 };

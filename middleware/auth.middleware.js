@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const requireAdminAuth = async (req, res, next) => {
+export const requireAdminAuth = async (req, res, next) => {
   try {
     const authHeader = req.get("Authorization") || "";
     const [scheme, token] = authHeader.split(" ");
