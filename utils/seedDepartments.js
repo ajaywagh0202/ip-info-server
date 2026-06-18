@@ -1,4 +1,4 @@
-const Department = require("../models/Department");
+import Department from "../models/Department.js";
 
 const departments = [
   { deptname: "Account", dept_code: "ACCOUNT" },
@@ -19,4 +19,4 @@ const seedDepartments = async () => {
   await Department.insertMany(departments);
 };
 
-module.exports = seedDepartments;
+export default seedDepartments;

@@ -1,1 +1,1 @@
-module.exports = require("../utils/applyDeptFilter");
+export { applyDeptFilter } from "../utils/applyDeptFilter.js";

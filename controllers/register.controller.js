@@ -51,7 +51,7 @@ const getDepartmentFields = (body) => {
   };
 };
 
-const registerDevice = async (req, res) => {
+export const registerDevice = async (req, res) => {
   const pdfFile = getUploadedFile(req.files, "pdf_file");
   const jsonFile = getUploadedFile(req.files, "json_file");
 

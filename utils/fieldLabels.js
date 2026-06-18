@@ -23,6 +23,4 @@ const FIELD_LABELS = {
   remarks: "Remarks / Notes"
 };
 
-module.exports = {
-  FIELD_LABELS
-};
+export { FIELD_LABELS };

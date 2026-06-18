@@ -1,7 +1,7 @@
-const express = require("express");
-const IpInfo = require("../models/IpInfo");
-const { requireAdminAuth } = require("../middleware/auth.middleware");
-const { applyDeptFilter } = require("../utils/applyDeptFilter");
+import express from "express";
+import IpInfo from "../models/IpInfo.js";
+import { requireAdminAuth } from "../middleware/auth.middleware.js";
+import { applyDeptFilter } from "../utils/applyDeptFilter.js";
 
 const router = express.Router();
 
@@ -67,4 +67,4 @@ router.get("/ip-report/:target_ip/records", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

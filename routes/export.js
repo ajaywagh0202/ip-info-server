@@ -1,12 +1,12 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const IpInfo = require("../models/IpInfo");
-const { requireAdminAuth } = require("../middleware/auth.middleware");
-const {
+import express from "express";
+import mongoose from "mongoose";
+import IpInfo from "../models/IpInfo.js";
+import { requireAdminAuth } from "../middleware/auth.middleware.js";
+import {
   buildExportRow,
   generateExcel,
   generatePdf
-} = require("../utils/exportHelper");
+} from "../utils/exportHelper.js";
 
 const router = express.Router();
 
@@ -76,4 +76,4 @@ router.post("/export", requireAdminAuth, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

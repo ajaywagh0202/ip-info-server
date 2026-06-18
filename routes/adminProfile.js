@@ -1,7 +1,7 @@
-const express = require("express");
-const bcrypt = require("bcrypt");
-const Admin = require("../models/Admin");
-const { requireAdminAuth } = require("../middleware/auth.middleware");
+import express from "express";
+import bcrypt from "bcrypt";
+import Admin from "../models/Admin.js";
+import { requireAdminAuth } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
@@ -82,4 +82,4 @@ router.put("/change-password", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

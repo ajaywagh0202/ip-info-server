@@ -6,6 +6,4 @@ const applyDeptFilter = (req, query = {}) => {
   return query;
 };
 
-module.exports = {
-  applyDeptFilter
-};
+export { applyDeptFilter };

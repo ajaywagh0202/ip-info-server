@@ -1,5 +1,5 @@
-const ExcelJS = require("exceljs");
-const PDFDocument = require("pdfkit");
+import ExcelJS from "exceljs";
+import PDFDocument from "pdfkit";
 
 const EXPORT_COLUMNS = [
   { header: "Name", key: "Name" },
@@ -304,7 +304,7 @@ const generatePdf = (rows, reportType, deptLabel) => new Promise((resolve, rejec
   doc.end();
 });
 
-module.exports = {
+export {
   EXPORT_COLUMNS,
   FIELD_KEYS,
   buildExportRow,

@@ -1,12 +1,15 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
-const mongoose = require("mongoose");
-const IpInfo = require("../models/IpInfo");
-const { requireAdminAuth } = require("../middleware/auth.middleware");
-const { applyDeptFilter } = require("../utils/applyDeptFilter");
+import express from "express";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import mongoose from "mongoose";
+import IpInfo from "../models/IpInfo.js";
+import { requireAdminAuth } from "../middleware/auth.middleware.js";
+import { applyDeptFilter } from "../utils/applyDeptFilter.js";
 
 const router = express.Router();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PDF_DIR = path.join(__dirname, "..", "IP_INFO_FILE", "PDF_FILE");
 const JSON_DIR = path.join(__dirname, "..", "IP_INFO_FILE", "JSON_FILE");
@@ -203,4 +206,4 @@ const downloadRecordFile = async (req, res, type) => {
 router.get("/records/:id/pdf", (req, res) => downloadRecordFile(req, res, "pdf"));
 router.get("/records/:id/json", (req, res) => downloadRecordFile(req, res, "json"));
 
-module.exports = router;
+export default router;

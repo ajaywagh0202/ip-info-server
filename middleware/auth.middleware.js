@@ -1,4 +1,4 @@
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
 
 export const requireAdminAuth = async (req, res, next) => {
   try {
@@ -17,15 +17,10 @@ export const requireAdminAuth = async (req, res, next) => {
   }
 };
 
-const requireSuperAdmin = (req, res, next) => {
+export const requireSuperAdmin = (req, res, next) => {
   if (!req.admin || Number(req.admin.user_type) !== 0) {
     return res.status(403).json({ error: "Access denied. Super user only." });
   }
 
   return next();
-};
-
-module.exports = {
-  requireAdminAuth,
-  requireSuperAdmin
 };

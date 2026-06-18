@@ -1,9 +1,9 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const IpInfo = require("../models/IpInfo");
-const { requireAdminAuth } = require("../middleware/auth.middleware");
-const { applyDeptFilter } = require("../utils/applyDeptFilter");
-require("../utils/fieldLabels");
+import express from "express";
+import mongoose from "mongoose";
+import IpInfo from "../models/IpInfo.js";
+import { requireAdminAuth } from "../middleware/auth.middleware.js";
+import { applyDeptFilter } from "../utils/applyDeptFilter.js";
+import "../utils/fieldLabels.js";
 
 const router = express.Router();
 
@@ -296,4 +296,4 @@ router.put("/device-details/:id", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

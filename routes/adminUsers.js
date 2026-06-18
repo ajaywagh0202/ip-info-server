@@ -1,10 +1,10 @@
-const express = require("express");
-const bcrypt = require("bcrypt");
-const mongoose = require("mongoose");
-const Admin = require("../models/Admin");
-const Department = require("../models/Department");
-const { requireAdminAuth, requireSuperAdmin } = require("../middleware/auth.middleware");
-const { applyDeptFilter } = require("../utils/applyDeptFilter");
+import express from "express";
+import bcrypt from "bcrypt";
+import mongoose from "mongoose";
+import Admin from "../models/Admin.js";
+import Department from "../models/Department.js";
+import { requireAdminAuth, requireSuperAdmin } from "../middleware/auth.middleware.js";
+import { applyDeptFilter } from "../utils/applyDeptFilter.js";
 
 const router = express.Router();
 
@@ -304,4 +304,4 @@ router.delete("/users/:id", requireAdminAuth, requireSuperAdmin, async (req, res
   }
 });
 
-module.exports = router;
+export default router;

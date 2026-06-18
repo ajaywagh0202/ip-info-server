@@ -1,5 +1,5 @@
-const express = require("express");
-const Department = require("../models/Department");
+import express from "express";
+import Department from "../models/Department.js";
 
 const router = express.Router();
 
@@ -12,4 +12,4 @@ router.get("/departments", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

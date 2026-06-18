@@ -38,4 +38,4 @@ const ipInfoSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("IpInfo", ipInfoSchema);
+export default mongoose.model("IpInfo", ipInfoSchema);
