@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import IpInfo from "../models/IpInfo.js";
+import RegisterDevice from "../models/RegisterDevice.js";
 import { requireAdminAuth } from "../middleware/auth.middleware.js";
-import { applyDeptFilter } from "../utils/applyDeptFilter.js";
+import { applyDepartmentScope } from "../utils/departmentScope.js";
+import { includeRegistrationData } from "../utils/includeRegistrationData.js";
 import "../utils/fieldLabels.js";
 
 const router = express.Router();
@@ -35,6 +37,10 @@ const EDITABLE_FIELDS = [
   "date"
 ];
 
+const REGISTER_DEVICE_EDITABLE_FIELDS = new Set(
+  EDITABLE_FIELDS.filter((field) => !["name", "phone", "pf_no", "dept_code", "dept_name", "designation", "serial_no"].includes(field))
+);
+
 const escapeRegex = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const normalizeBodyFieldName = (field) => {
@@ -50,6 +56,38 @@ const normalizeBodyFieldName = (field) => {
 };
 
 const exactCaseInsensitiveRegex = (value) => new RegExp(`^${escapeRegex(String(value || "").trim())}$`, "i");
+
+const getSerialNoParam = (value) =>
+  String(value || "")
+    .trim()
+    // Supports the frontend's current `serial_no:<value>` URL while callers
+    // migrate to the clean `/device-details/<serial_no>` path.
+    .replace(/^serial_no\s*:/i, "")
+    .trim();
+
+const canAccessIpInfoRecord = async (req, record) => {
+  if (Number(req.admin.user_type) !== 1) {
+    return true;
+  }
+
+  const scopedQuery = await applyDepartmentScope(req, { _id: record._id });
+  return Boolean(await IpInfo.exists(scopedQuery));
+};
+
+const canAccessRegisterDevice = async (req, device, ipInfoRecord) => {
+  if (ipInfoRecord) {
+    return canAccessIpInfoRecord(req, ipInfoRecord);
+  }
+
+  if (Number(req.admin.user_type) !== 1) {
+    return true;
+  }
+
+  return (
+    String(device?.dept_code || "").trim().toLowerCase() ===
+    String(req.admin.dept_code || "").trim().toLowerCase()
+  );
+};
 
 const normalizeRecord = (record) => ({
   ...record,
@@ -105,16 +143,8 @@ const addDateFilter = (query, fromDate, toDate) => {
   return null;
 };
 
-const buildDeviceDetailsQuery = (req) => {
-  const query = applyDeptFilter(req, {});
-
-  if (Number(req.admin.user_type) === 1 && req.admin.dept_code) {
-    query.dept_code = exactCaseInsensitiveRegex(req.admin.dept_code);
-  }
-
-  if (Number(req.admin.user_type) === 0 && req.query.dept_code) {
-    query.dept_code = exactCaseInsensitiveRegex(req.query.dept_code);
-  }
+const buildDeviceDetailsQuery = async (req) => {
+  const query = {};
 
   if (req.query.dsr_no) {
     query.dsr_no = { $regex: escapeRegex(req.query.dsr_no), $options: "i" };
@@ -136,21 +166,27 @@ const buildDeviceDetailsQuery = (req) => {
     return { error: dateError };
   }
 
-  return query;
+  return applyDepartmentScope(req, query, {
+    deptCode:
+      Number(req.admin.user_type) === 0 && req.query.dept_code
+        ? String(req.query.dept_code).trim()
+        : ""
+  });
 };
 
 router.use(requireAdminAuth);
 
 router.get("/device-details", async (req, res) => {
   try {
-    const query = buildDeviceDetailsQuery(req);
+    const query = await buildDeviceDetailsQuery(req);
 
     if (query.error) {
       return res.status(400).json({ error: query.error });
     }
 
     const records = await IpInfo.find(query).select(LIST_FIELDS).sort({ submitted_at: -1 }).lean();
-    const data = records.map(normalizeRecord);
+    const enrichedRecords = await includeRegistrationData(records);
+    const data = enrichedRecords.map(normalizeRecord);
 
     return res.status(200).json({
       success: true,
@@ -162,54 +198,58 @@ router.get("/device-details", async (req, res) => {
   }
 });
 
-router.get("/device-details/:id", async (req, res) => {
+router.get("/device-details/:serial_no", async (req, res) => {
   try {
-    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
-      return res.status(404).json({ error: "Record not found." });
-    }
+    const serialNo = getSerialNoParam(req.params.serial_no);
+    let record = serialNo
+      ? await IpInfo.findOne({ serial_no: serialNo }).sort({ submitted_at: -1 }).lean()
+      : null;
 
-    const { id } = req.params;
-    const record = await IpInfo.findById(id).lean();
+    // Existing screens used the IpInfo _id. Keep that lookup temporarily so
+    // deployed frontend builds keep working while the API moves to serial_no.
+    if (!record && mongoose.Types.ObjectId.isValid(req.params.serial_no)) {
+      record = await IpInfo.findById(req.params.serial_no).lean();
+    }
 
     if (!record) {
       return res.status(404).json({ error: "Record not found." });
     }
 
-    const recordDeptCode = String(record.dept_code || "").trim().toLowerCase();
-    const adminDeptCode = String(req.admin.dept_code || "").trim().toLowerCase();
-
-    if (Number(req.admin.user_type) === 1 && recordDeptCode !== adminDeptCode) {
+    if (!(await canAccessIpInfoRecord(req, record))) {
       return res.status(403).json({
         error: "Access denied. This record belongs to another department."
       });
     }
 
+    const [enrichedRecord] = await includeRegistrationData([record]);
+
     return res.status(200).json({
       success: true,
-      data: normalizeRecord(record)
+      data: normalizeRecord(enrichedRecord)
     });
   } catch (error) {
     return res.status(500).json({ error: "Failed to load device details." });
   }
 });
 
-router.put("/device-details/:id", async (req, res) => {
+router.put("/device-details/:serial_no", async (req, res) => {
   try {
-    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
-      return res.status(404).json({ error: "Record not found." });
+    const serialNo = getSerialNoParam(req.params.serial_no);
+
+    if (!serialNo) {
+      return res.status(400).json({ error: "serial_no is required." });
     }
 
-    const { id } = req.params;
-    const record = await IpInfo.findById(id).lean();
+    const record = await RegisterDevice.findOne({ serial_no: serialNo }).lean();
 
     if (!record) {
       return res.status(404).json({ error: "Record not found." });
     }
 
-    const recordDeptCode = String(record.dept_code || "").trim().toLowerCase();
-    const adminDeptCode = String(req.admin.dept_code || "").trim().toLowerCase();
-
-    if (Number(req.admin.user_type) === 1 && recordDeptCode !== adminDeptCode) {
+    const ipInfoRecord = await IpInfo.findOne({ serial_no: serialNo })
+      .sort({ submitted_at: -1 })
+      .lean();
+    if (!(await canAccessRegisterDevice(req, record, ipInfoRecord))) {
       return res.status(403).json({
         error: "Access denied. You can only edit records in your own department."
       });
@@ -220,7 +260,7 @@ router.put("/device-details/:id", async (req, res) => {
     Object.keys(req.body || {}).forEach((bodyField) => {
       const field = normalizeBodyFieldName(bodyField);
 
-      if (EDITABLE_FIELDS.includes(field) && req.body[bodyField] !== undefined) {
+      if (REGISTER_DEVICE_EDITABLE_FIELDS.has(field) && req.body[bodyField] !== undefined) {
         updateFields[field] =
           req.body[bodyField] === null || req.body[bodyField] === undefined
             ? req.body[bodyField]
@@ -232,28 +272,8 @@ router.put("/device-details/:id", async (req, res) => {
       return res.status(400).json({ error: "Phone number must be 10 digits." });
     }
 
-    if (
-      Number(req.admin.user_type) === 1 &&
-      Object.prototype.hasOwnProperty.call(updateFields, "dept_code") &&
-      updateFields.dept_code !== req.admin.dept_code
-    ) {
-      return res.status(403).json({
-        error: "Access denied. You can only edit records in your own department."
-      });
-    }
-
-    if (
-      Number(req.admin.user_type) === 1 &&
-      Object.prototype.hasOwnProperty.call(updateFields, "dept_name") &&
-      updateFields.dept_name !== req.admin.dept_name
-    ) {
-      return res.status(403).json({
-        error: "Access denied. You can only edit records in your own department."
-      });
-    }
-
     if (!Object.keys(updateFields).length) {
-      return res.status(400).json({ error: "No editable fields provided." });
+      return res.status(400).json({ error: "No RegisterDevice fields provided." });
     }
 
     const changedFields = {};
@@ -267,29 +287,34 @@ router.put("/device-details/:id", async (req, res) => {
       }
     });
 
-    if (Object.prototype.hasOwnProperty.call(changedFields, "serial_no")) {
-      changedFields.Serial_no = changedFields.serial_no;
-    }
-
     if (Object.prototype.hasOwnProperty.call(changedFields, "quanity")) {
       changedFields.quantity = changedFields.quanity;
     }
 
-    const updatedRecord = await IpInfo.findByIdAndUpdate(
-      id,
+    const updatedRecord = await RegisterDevice.findOneAndUpdate(
+      { serial_no: serialNo },
       { $set: updateFields },
-      { new: true, runValidators: false }
+      { new: true, runValidators: true }
     ).lean();
 
     if (!updatedRecord) {
       return res.status(404).json({ error: "Record not found." });
     }
 
+    const responseSource = ipInfoRecord || {
+      serial_no: updatedRecord.serial_no,
+      dsr_no: updatedRecord.dsr_no,
+      target_ip: updatedRecord.target_ip,
+      pf_no: updatedRecord.pf_no,
+      device_type: updatedRecord.device_type
+    };
+    const [enrichedRecord] = await includeRegistrationData([responseSource]);
+
     return res.status(200).json({
       success: true,
-      message: "Device record updated successfully.",
+      message: "RegisterDevice record updated successfully.",
       changed_fields: changedFields,
-      data: normalizeRecord(updatedRecord)
+      data: normalizeRecord(enrichedRecord)
     });
   } catch (error) {
     return res.status(500).json({ error: "Failed to update record." });

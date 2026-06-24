@@ -1,9 +1,12 @@
 import express from "express";
-import { registerDevice } from "../controllers/register.controller.js";
-import { registrationUpload } from "../middleware/upload.middleware.js";
+import { saveDeviceScan } from "../controllers/register.controller.js";
+import { deviceScanUpload } from "../middleware/upload.middleware.js";
 
 const router = express.Router();
 
-router.post("/register", registrationUpload, registerDevice);
+// Official scan upload endpoint.
+router.post("/device-scan", deviceScanUpload, saveDeviceScan);
+// Retain the original production endpoint while consumers migrate.
+router.post("/register", deviceScanUpload, saveDeviceScan);
 
 export default router;

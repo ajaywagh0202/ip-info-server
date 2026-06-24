@@ -1,7 +1,8 @@
 import fs from "fs/promises";
 import IpInfo from "../models/IpInfo.js";
+import RegisterDevice from "../models/RegisterDevice.js";
 
-const requiredFields = ["name", "phone", "pf_no", "designation"];
+const REQUIRED_DEVICE_SCAN_FIELDS = ["dsr_no", "serial_no", "pf_no", "target_ip"];
 
 const getUploadedFile = (files, fieldName) => {
   if (!files || !files[fieldName] || !files[fieldName][0]) {
@@ -42,6 +43,16 @@ const removeUploadedFiles = async (...files) => {
 
 const getBodyText = (body, field, fallback = "") => String(body[field] || fallback).trim();
 
+const getFirstTextValue = (...values) => {
+  for (const value of values) {
+    if (value !== undefined && value !== null && String(value).trim()) {
+      return String(value).trim();
+    }
+  }
+
+  return "";
+};
+
 const getDepartmentFields = (body) => {
   const department = getBodyText(body, "department");
 
@@ -51,75 +62,99 @@ const getDepartmentFields = (body) => {
   };
 };
 
-export const registerDevice = async (req, res) => {
+export const saveDeviceScan = async (req, res) => {
   const pdfFile = getUploadedFile(req.files, "pdf_file");
   const jsonFile = getUploadedFile(req.files, "json_file");
 
   try {
-    const departmentFields = getDepartmentFields(req.body);
-    const missingFields = requiredFields.filter((field) => !String(req.body[field] || "").trim());
-
-    if (!departmentFields.dept_code || !departmentFields.dept_name) {
-      missingFields.push("department");
-    }
+    const missingFields = REQUIRED_DEVICE_SCAN_FIELDS.filter(
+      (field) => !String(req.body[field] || "").trim()
+    );
 
     if (missingFields.length) {
       await removeUploadedFiles(pdfFile, jsonFile);
       return res.status(400).json({ error: `Missing required field(s): ${missingFields.join(", ")}.` });
     }
 
-    if (!/^\d{10}$/.test(String(req.body.phone || "").trim())) {
+    if (!pdfFile || !jsonFile) {
       await removeUploadedFiles(pdfFile, jsonFile);
-      return res.status(400).json({ error: "Phone number must be 10 digits." });
+      return res.status(400).json({ error: "pdf_file and json_file are required." });
     }
 
-    let parsedJson = null;
+    let parsedJson;
 
-    if (jsonFile) {
-      try {
-        const jsonContents = await fs.readFile(jsonFile.path, "utf8");
-        parsedJson = JSON.parse(jsonContents);
-      } catch (error) {
-        await removeUploadedFiles(pdfFile, jsonFile);
-        return res.status(400).json({ error: "Uploaded JSON file is invalid." });
-      }
+    try {
+      const jsonContents = await fs.readFile(jsonFile.path, "utf8");
+      parsedJson = JSON.parse(jsonContents);
+    } catch (error) {
+      await removeUploadedFiles(pdfFile, jsonFile);
+      return res.status(400).json({ error: "Uploaded JSON file is invalid." });
     }
+
+    const systemInfo = parsedJson?.system_info;
+    const registrationFormData = parsedJson?.registration_form_data;
+    const targetIp = getBodyText(req.body, "target_ip");
+    const serialNo = getBodyText(req.body, "serial_no");
+    const dsrNo = getBodyText(req.body, "dsr_no");
+    const departmentFields = getDepartmentFields(req.body);
 
     const record = new IpInfo({
-      name: getBodyText(req.body, "name"),
-      phone: getBodyText(req.body, "phone"),
+      dsr_no: dsrNo,
+      target_ip: targetIp,
       pf_no: getBodyText(req.body, "pf_no"),
-      dept_code: departmentFields.dept_code,
-      dept_name: departmentFields.dept_name,
-      designation: getBodyText(req.body, "designation"),
-      target_ip: getFirstValueByKey(parsedJson, [
-        "target_ip",
-        "ip_address",
-        "ipAddress",
-        "IP_ADDRESS",
-        "ip"
-      ]) || getBodyText(req.body, "target_ip") || null,
-      device_type: getBodyText(req.body, "device_type", "Unknown"),
-      dsr_no: getBodyText(req.body, "dsr_no"),
-      serial_no:
-        req.body.Serial_no === undefined && req.body.serial_no === undefined
-          ? undefined
-          : String(req.body.Serial_no || req.body.serial_no).trim(),
-      hostname: getFirstValueByKey(parsedJson, ["hostname", "host_name", "HostName", "HOSTNAME"]),
-      os: getFirstValueByKey(parsedJson, ["os", "OS", "operating_system", "OperatingSystem"]),
+      serial_no: serialNo,
+      name: getBodyText(req.body, "name") || undefined,
+      phone: getBodyText(req.body, "phone") || undefined,
+      dept_code: departmentFields.dept_code || undefined,
+      dept_name: departmentFields.dept_name || undefined,
+      designation: getBodyText(req.body, "designation") || undefined,
+      device_type: getFirstTextValue(req.body.device_type, registrationFormData?.device_type) || undefined,
+      hostname: getFirstTextValue(
+        systemInfo?.hostname,
+        getFirstValueByKey(parsedJson, ["hostname", "host_name", "HostName", "HOSTNAME"])
+      ) || null,
+      os: getFirstTextValue(
+        systemInfo?.os,
+        getFirstValueByKey(parsedJson, ["os", "OS", "operating_system", "OperatingSystem"])
+      ) || null,
       json_data: parsedJson,
       pdf_filename: pdfFile ? pdfFile.filename : null,
       json_filename: jsonFile ? jsonFile.filename : null
     });
 
-    await record.save({ validateBeforeSave: false });
+    await record.save();
 
-    return res.status(200).json({
+    let registerDeviceUpdated = false;
+
+    try {
+      const updatedDevice = await RegisterDevice.findOneAndUpdate(
+        { serial_no: serialNo },
+        { $set: { target_ip: targetIp } },
+        { new: true, runValidators: true, upsert: false }
+      );
+      registerDeviceUpdated = Boolean(updatedDevice);
+
+      if (!updatedDevice) {
+        console.warn(`[api/device-scan] No RegisterDevice found for serial_no: ${serialNo}`);
+      }
+    } catch (updateError) {
+      // The scan has already been persisted. Do not delete its files or report a
+      // false failure merely because the optional linked-device sync could not run.
+      console.error(`[api/device-scan] Could not update RegisterDevice ${serialNo}`, updateError);
+    }
+
+    return res.status(201).json({
       success: true,
-      message: "Device registered successfully."
+      message: "Device scan saved successfully.",
+      data: record,
+      register_device_updated: registerDeviceUpdated
     });
   } catch (error) {
+    console.error("[api/device-scan]", error);
     await removeUploadedFiles(pdfFile, jsonFile);
     return res.status(500).json({ error: "Internal server error." });
   }
 };
+
+// Compatibility export for callers that used the former controller name.
+export const registerDevice = saveDeviceScan;
