@@ -55,7 +55,7 @@ const upload = multer({
   }
 });
 
-export const registrationUpload = (req, res, next) => {
+const handleDeviceScanUpload = (req, res, next) => {
   upload.fields([
     { name: "pdf_file", maxCount: 1 },
     { name: "json_file", maxCount: 1 }
@@ -64,8 +64,20 @@ export const registrationUpload = (req, res, next) => {
       return next();
     }
 
-    return res.status(400).json({ error: error.message });
+    // A client timeout, page navigation, or proxy disconnect destroys the response
+    // before Multer finishes reading the multipart stream. There is no response to
+    // send in that case, and attempting to send one can create a second error.
+    if (req.aborted || res.destroyed) {
+      return undefined;
+    }
+
+    const statusCode = error.code === "LIMIT_FILE_SIZE" ? 413 : 400;
+    return res.status(statusCode).json({ error: error.message });
   });
 };
+
+export const deviceScanUpload = handleDeviceScanUpload;
+// Existing clients may still import the previous middleware name.
+export const registrationUpload = handleDeviceScanUpload;
 
 export { JSON_DIR, PDF_DIR };

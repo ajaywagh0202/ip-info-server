@@ -7,7 +7,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import connectDB from "./config/db.js";
 import seedDefaultAdmin from "./utils/seedAdmin.js";
-import seedDepartments from "./utils/seedDepartments.js";
+import { seedDepartments , seedDevices} from "./utils/seedDepartments.js";
 import registerRoutes from "./routes/register.routes.js";
 import downloadRoutes from "./routes/download.routes.js";
 import adminAuthRoutes from "./routes/adminAuth.js";
@@ -21,6 +21,9 @@ import seriesReportRoutes from "./routes/seriesReport.js";
 import departmentRoutes from "./routes/departments.js";
 import exportRoutes from "./routes/export.js";
 import analyticsRoutes from "./routes/analytics.js";
+import ipServiceRouter from "./routes/ipServiceRoutes.js";
+import deviceRegistrationRoutes from "./routes/deviceRegistrationRoutes.js";
+import { getMyIp } from "./controllers/ipServiceController.js";
 import { ensureUploadFolders } from "./utils/ensureUploadFolders.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -28,7 +31,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 const allowedOrigins = (process.env.FRONTEND_URL || "")
   .split(",")
   .map((url) => url.trim())
@@ -93,6 +96,8 @@ app.get("/health", (req, res) => {
 app.use("/api", registerRoutes);
 app.use("/api", downloadRoutes);
 app.use("/api", departmentRoutes);
+app.use("/api", deviceRegistrationRoutes);
+app.get("/api/ip", getMyIp);
 app.use("/api/admin", adminAuthRoutes);
 app.use("/api/admin/profile", adminProfileRoutes);
 app.use("/api/admin", adminUsersRoutes);
@@ -103,6 +108,7 @@ app.use("/api/admin", seriesReportRoutes);
 app.use("/api/admin", adminRecordsRoutes);
 app.use("/api/admin", exportRoutes);
 app.use("/api/admin", analyticsRoutes);
+app.use("/api/ip-service", ipServiceRouter);
 
 app.use((req, res) => {
   res.status(404).json({ success: false, message: "Route not found" });
@@ -120,6 +126,7 @@ const startServer = async () => {
   ensureFolders();
   await connectDB();
   await seedDepartments();
+  await seedDevices();
   await seedDefaultAdmin();
 
   app.listen(PORT, () => {

@@ -1,7 +1,7 @@
 import express from "express";
 import IpInfo from "../models/IpInfo.js";
 import { requireAdminAuth } from "../middleware/auth.middleware.js";
-import { applyDeptFilter } from "../utils/applyDeptFilter.js";
+import { applyDepartmentScope } from "../utils/departmentScope.js";
 
 const router = express.Router();
 
@@ -88,7 +88,7 @@ const normalizeRamDistribution = (items) => {
 
 router.get("/analytics/summary", requireAdminAuth, async (req, res) => {
   try {
-    const match = applyDeptFilter(req, {});
+    const match = await applyDepartmentScope(req, {});
 
     const [
       cpuDistribution,

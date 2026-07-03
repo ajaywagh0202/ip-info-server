@@ -1,7 +1,8 @@
 import express from "express";
 import IpInfo from "../models/IpInfo.js";
 import { requireAdminAuth } from "../middleware/auth.middleware.js";
-import { applyDeptFilter } from "../utils/applyDeptFilter.js";
+import { applyDepartmentScope } from "../utils/departmentScope.js";
+import { includeRegistrationData } from "../utils/includeRegistrationData.js";
 
 const router = express.Router();
 
@@ -9,7 +10,7 @@ router.use(requireAdminAuth);
 
 router.get("/ip-report/list", async (req, res) => {
   try {
-    const match = applyDeptFilter(req, {});
+    const match = await applyDepartmentScope(req, {});
     const data = await IpInfo.aggregate([
       { $match: match },
       { $sort: { submitted_at: -1 } },
@@ -22,6 +23,9 @@ router.get("/ip-report/list", async (req, res) => {
           dept_code: { $first: "$dept_code" },
           os: { $first: "$os" },
           device_type: { $first: "$device_type" },
+          dsr_no: { $first: "$dsr_no" },
+          serial_no: { $first: "$serial_no" },
+          pf_no: { $first: "$pf_no" },
           submitted_at: { $first: "$submitted_at" }
         }
       },
@@ -34,13 +38,18 @@ router.get("/ip-report/list", async (req, res) => {
           dept_code: 1,
           os: 1,
           device_type: 1,
+          dsr_no: 1,
+          serial_no: 1,
+          pf_no: 1,
           submitted_at: 1
         }
       },
       { $sort: { target_ip: 1 } }
     ]);
 
-    return res.status(200).json({ success: true, data });
+    const enrichedData = await includeRegistrationData(data);
+
+    return res.status(200).json({ success: true, data: enrichedData });
   } catch (error) {
     return res.status(500).json({ error: "Internal server error." });
   }
@@ -54,14 +63,16 @@ router.get("/ip-report/:target_ip/records", async (req, res) => {
       return res.status(400).json({ error: "IP address is required." });
     }
 
-    const query = applyDeptFilter(req, { target_ip: targetIp });
-    const records = await IpInfo.find(query).sort({ submitted_at: -1 });
+    const query = await applyDepartmentScope(req, { target_ip: targetIp });
+    const records = await IpInfo.find(query).sort({ submitted_at: -1 }).lean();
 
     if (!records.length) {
       return res.status(404).json({ error: "No records found for this IP address." });
     }
 
-    return res.status(200).json({ success: true, data: records });
+    const enrichedRecords = await includeRegistrationData(records);
+
+    return res.status(200).json({ success: true, data: enrichedRecords });
   } catch (error) {
     return res.status(500).json({ error: "Internal server error." });
   }
