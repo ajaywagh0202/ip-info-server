@@ -4,10 +4,10 @@ import Department from "../models/Department.js";
 import RegisterDevice from "../models/RegisterDevice.js";
 import RegisterUser from "../models/RegisterUser.js";
 import UserDeviceAssign from "../models/UserDeviceSign.js";
+import DeviceList from "../models/DeviceList.js";
 
 const REQUIRED_REGISTRATION_FIELDS = [
   "serial_no",
-  "dsr_no",
   "device_type",
   "name",
   "pf_no",
@@ -221,6 +221,134 @@ export const listDepartments = async (req, res) => {
   }
 };
 
+export const createDepartment = async (req, res) => {
+  try {
+    const { deptname, dept_code } = req.body;
+
+    const formattedDeptName =
+      typeof deptname === "string" ? deptname.trim() : "";
+
+    const formattedDeptCode =
+      typeof dept_code === "string"
+        ? dept_code.trim().toUpperCase()
+        : "";
+
+    if (!formattedDeptName || !formattedDeptCode) {
+      return res.status(400).json({
+        success: false,
+        message: "Department name and department code are required.",
+      });
+    }
+
+    const existingDepartment = await Department.findOne({
+      $or: [
+        { deptname: formattedDeptName },
+        { dept_code: formattedDeptCode },
+      ],
+    });
+
+    if (existingDepartment) {
+      return res.status(409).json({
+        success: false,
+        message: "Department name or department code already exists.",
+      });
+    }
+
+    const department = await Department.create({
+      deptname: formattedDeptName,
+      dept_code: formattedDeptCode,
+    });
+
+    return res.status(201).json({
+      success: true,
+      message: "Department created successfully.",
+      data: {
+        id: department._id,
+        name: department.deptname,
+        dept_code: department.dept_code,
+      },
+    });
+  } catch (error) {
+    console.error("[createDepartment]", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Unable to create department.",
+    });
+  }
+};
+
+export const addDevice = async (req, res) => {
+  try {
+    const { device_name, device_code, view } = req.body;
+
+    const formattedDeviceName =
+      typeof device_name === "string" ? device_name.trim() : "";
+
+    const formattedDeviceCode =
+      typeof device_code === "string"
+        ? device_code.trim().toUpperCase()
+        : "";
+
+    if (!formattedDeviceName || !formattedDeviceCode) {
+      return res.status(400).json({
+        success: false,
+        message: "Device name and device code are required.",
+      });
+    }
+
+    const savedDevice = await DeviceList.create({
+      device_name: formattedDeviceName,
+      device_code: formattedDeviceCode,
+      view: view ?? 1,
+    });
+
+    return res.status(201).json({
+      success: true,
+      message: "Device added successfully.",
+      data: savedDevice,
+    });
+  } catch (error) {
+    console.error("Error while adding device:", error);
+
+    // MongoDB duplicate key error
+    if (error.code === 11000) {
+      return res.status(409).json({
+        success: false,
+        message: "A device with this device code already exists.",
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      message: "Unable to add the device.",
+    });
+  }
+};
+
+export const getDevices = async (req, res) => {
+  try {
+    const devices = await DeviceList.find({})
+      .sort({ device_name: 1 })
+      .lean();
+
+    return res.status(200).json({
+      success: true,
+      message: "Device list retrieved successfully.",
+      count: devices.length,
+      data: devices,
+    });
+  } catch (error) {
+    console.error("Error while retrieving devices:", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Unable to retrieve device list.",
+    });
+  }
+};
+
+
 const saveActiveAssignment = async (existingAssignment, payload, user, device, session) => {
   const assignmentData = buildAssignmentData(payload, user, device);
 
@@ -404,6 +532,12 @@ export const registerAndAssignDevice = async (req, res) => {
     if (missingFields.length) {
       return res.status(400).json({
         message: `Missing required fields: ${missingFields.join(", ")}`
+      });
+    }
+
+    if ( (payload['dsr_no'] === null || payload['dsr_no'] === undefined || payload['dsr_no'] === '') && payload['is_hiring'] === 0) {
+      return res.status(400).json({
+        message: `Missing required fields: DSR No.`
       });
     }
 

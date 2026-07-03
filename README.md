@@ -13,7 +13,7 @@ npm start
 Required environment variables:
 
 ```env
-PORT=5000
+PORT=8000
 MONGO_URI=mongodb://127.0.0.1:27017/itc_device_registration
 FRONTEND_URL=http://localhost:3000,http://localhost:5173
 JWT_SECRET=change_this_jwt_secret
@@ -38,7 +38,7 @@ SCRIPT_FILE/ITC_System_Scanner_V1.exe
 Download scanner:
 
 ```bash
-curl -L "http://localhost:5000/api/download/scanner" -o ITC_System_Scanner_V1.exe
+curl -L "http://localhost:8000/api/download/scanner" -o ITC_System_Scanner_V1.exe
 ```
 
 ### 1. Register and assign a device
@@ -47,7 +47,7 @@ curl -L "http://localhost:5000/api/download/scanner" -o ITC_System_Scanner_V1.ex
 `register_devices`, and their assignment in `user_device_assigns`.
 
 ```bash
-curl -X POST "http://localhost:5000/api/register-device" \
+curl -X POST "http://localhost:8000/api/register-device" \
   -H "Content-Type: application/json" \
   -d "{\"serial_no\":\"9875463215\",\"dsr_no\":\"69582471\",\"device_type\":\"Desktop\",\"name\":\"Ajay Wagh\",\"pf_no\":\"575445547\",\"phone\":\"9999999999\",\"designation\":\"JE\",\"department\":\"IT\",\"section_office\":\"Head Office\",\"target_ip\":\"10.31.3.114\",\"assigned_date\":\"2026-06-23\"}"
 ```
@@ -63,7 +63,7 @@ PDF/JSON file names in `ip_records`. The files themselves are stored in
 `IP_INFO_FILE/PDF_FILE` and `IP_INFO_FILE/JSON_FILE`.
 
 ```bash
-curl -X POST "http://localhost:5000/api/device-scan" \
+curl -X POST "http://localhost:8000/api/device-scan" \
   -F "dsr_no=69582471" \
   -F "serial_no=9875463215" \
   -F "pf_no=575445547" \
@@ -95,7 +95,7 @@ password: 123456
 Login:
 
 ```bash
-curl -X POST "http://localhost:5000/api/admin/login" \
+curl -X POST "http://localhost:8000/api/admin/login" \
   -H "Content-Type: application/json" \
   -d "{\"username\":\"admin\",\"password\":\"123456\"}"
 ```
@@ -103,19 +103,19 @@ curl -X POST "http://localhost:5000/api/admin/login" \
 Use the returned token:
 
 ```bash
-curl "http://localhost:5000/api/admin/records" \
+curl "http://localhost:8000/api/admin/records" \
   -H "Authorization: Bearer <token>"
 
-curl "http://localhost:5000/api/admin/records?department=IT" \
+curl "http://localhost:8000/api/admin/records?department=IT" \
   -H "Authorization: Bearer <token>"
 
-curl "http://localhost:5000/api/admin/records/<id>" \
+curl "http://localhost:8000/api/admin/records/<id>" \
   -H "Authorization: Bearer <token>"
 
-curl -L "http://localhost:5000/api/admin/records/<id>/pdf" \
+curl -L "http://localhost:8000/api/admin/records/<id>/pdf" \
   -H "Authorization: Bearer <token>" -o record.pdf
 
-curl -L "http://localhost:5000/api/admin/records/<id>/json" \
+curl -L "http://localhost:8000/api/admin/records/<id>/json" \
   -H "Authorization: Bearer <token>" -o record.json
 ```
 

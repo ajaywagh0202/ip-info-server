@@ -30,6 +30,12 @@ const RegisterDeviceSchema = new mongoose.Schema(
     ds_no : { type: String, required: false, trim: true  },
     date : { type: String, required: false, trim: true  },
     assigned_date: { type: String, required: false, trim: true },
+    // Hiring Device Related 
+    is_hiring : { type : Number , require: false , default: 0},
+    from_date : { type: String, required: false, trim: true },
+    to_date : { type: String, required: false, trim: true },
+    contract_no : { type: String, required: false, trim: true },
+    sr_no : { type: String, required: false, trim: true }
   },
   {
     collection: "register_devices",

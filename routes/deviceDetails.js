@@ -6,6 +6,7 @@ import { requireAdminAuth } from "../middleware/auth.middleware.js";
 import { applyDepartmentScope } from "../utils/departmentScope.js";
 import { includeRegistrationData } from "../utils/includeRegistrationData.js";
 import "../utils/fieldLabels.js";
+import UserDeviceSign from "../models/UserDeviceSign.js";
 
 const router = express.Router();
 
@@ -40,6 +41,7 @@ const EDITABLE_FIELDS = [
 const REGISTER_DEVICE_EDITABLE_FIELDS = new Set(
   EDITABLE_FIELDS.filter((field) => !["name", "phone", "pf_no", "dept_code", "dept_name", "designation", "serial_no"].includes(field))
 );
+const USER_DEVICE_SIGN_SYNC_FIELDS = ["target_ip", "dsr_no"];
 
 const escapeRegex = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -289,6 +291,43 @@ router.put("/device-details/:serial_no", async (req, res) => {
 
     if (Object.prototype.hasOwnProperty.call(changedFields, "quanity")) {
       changedFields.quantity = changedFields.quanity;
+    }
+
+    const fieldsToSync = USER_DEVICE_SIGN_SYNC_FIELDS.filter((field) =>
+      Object.prototype.hasOwnProperty.call(updateFields, field)
+    );
+
+    if (fieldsToSync.length) {
+      const userDeviceSign = await UserDeviceSign.findOne({
+        serial_no: serialNo
+      }).lean();
+
+      if (userDeviceSign) {
+        const userDeviceSignUpdates = {};
+
+        fieldsToSync.forEach((field) => {
+          const previousValue =
+            userDeviceSign[field] === null || userDeviceSign[field] === undefined
+              ? userDeviceSign[field]
+              : String(userDeviceSign[field]);
+          const nextValue =
+            updateFields[field] === null || updateFields[field] === undefined
+              ? updateFields[field]
+              : String(updateFields[field]);
+
+          if (previousValue !== nextValue) {
+            userDeviceSignUpdates[field] = updateFields[field];
+          }
+        });
+
+        if (Object.keys(userDeviceSignUpdates).length) {
+          await UserDeviceSign.findOneAndUpdate(
+            { serial_no: serialNo },
+            { $set: userDeviceSignUpdates },
+            { new: true, runValidators: true }
+          ).lean();
+        }
+      }
     }
 
     const updatedRecord = await RegisterDevice.findOneAndUpdate(

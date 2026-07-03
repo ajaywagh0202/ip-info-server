@@ -7,7 +7,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import connectDB from "./config/db.js";
 import seedDefaultAdmin from "./utils/seedAdmin.js";
-import seedDepartments from "./utils/seedDepartments.js";
+import { seedDepartments , seedDevices} from "./utils/seedDepartments.js";
 import registerRoutes from "./routes/register.routes.js";
 import downloadRoutes from "./routes/download.routes.js";
 import adminAuthRoutes from "./routes/adminAuth.js";
@@ -31,7 +31,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 const allowedOrigins = (process.env.FRONTEND_URL || "")
   .split(",")
   .map((url) => url.trim())
@@ -126,6 +126,7 @@ const startServer = async () => {
   ensureFolders();
   await connectDB();
   await seedDepartments();
+  await seedDevices();
   await seedDefaultAdmin();
 
   app.listen(PORT, () => {
