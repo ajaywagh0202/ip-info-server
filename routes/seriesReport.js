@@ -1,5 +1,6 @@
 import express from "express";
 import IpInfo from "../models/IpInfo.js";
+import UserDeviceSign from "../models/UserDeviceSign.js";
 import { requireAdminAuth } from "../middleware/auth.middleware.js";
 import { applyDepartmentScope } from "../utils/departmentScope.js";
 import { includeRegistrationData } from "../utils/includeRegistrationData.js";

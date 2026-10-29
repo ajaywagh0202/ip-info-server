@@ -22,6 +22,7 @@ import departmentRoutes from "./routes/departments.js";
 import exportRoutes from "./routes/export.js";
 import analyticsRoutes from "./routes/analytics.js";
 import ipServiceRouter from "./routes/ipServiceRoutes.js";
+import adminUserDeviceSignRoutes from "./routes/adminUserDeviceSign.routes.js";
 import deviceRegistrationRoutes from "./routes/deviceRegistrationRoutes.js";
 import { getMyIp } from "./controllers/ipServiceController.js";
 import { ensureUploadFolders } from "./utils/ensureUploadFolders.js";
@@ -75,7 +76,7 @@ const corsOptions = {
 
     return callback(new Error("Not allowed by CORS"));
   },
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 };
 
@@ -97,10 +98,12 @@ app.use("/api", registerRoutes);
 app.use("/api", downloadRoutes);
 app.use("/api", departmentRoutes);
 app.use("/api", deviceRegistrationRoutes);
+app.use("/api", adminUserDeviceSignRoutes);
 app.get("/api/ip", getMyIp);
 app.use("/api/admin", adminAuthRoutes);
 app.use("/api/admin/profile", adminProfileRoutes);
 app.use("/api/admin", adminUsersRoutes);
+app.use("/api/admin", adminUserDeviceSignRoutes);
 app.use("/api/admin", deviceDetailsRoutes);
 app.use("/api/admin", ipReportRoutes);
 app.use("/api/admin", dsrReportRoutes);
