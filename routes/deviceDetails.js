@@ -76,7 +76,7 @@ const canAccessIpInfoRecord = async (req, record) => {
   return Boolean(await IpInfo.exists(scopedQuery));
 };
 
-const canAccessRegisterDevice = async (req, device, ipInfoRecord) => {
+export const canAccessRegisterDevice = async (req, device, ipInfoRecord) => {
   if (ipInfoRecord) {
     return canAccessIpInfoRecord(req, ipInfoRecord);
   }
@@ -86,6 +86,7 @@ const canAccessRegisterDevice = async (req, device, ipInfoRecord) => {
   }
 
   return (
+    Boolean(String(req.admin.dept_code || "").trim()) &&
     String(device?.dept_code || "").trim().toLowerCase() ===
     String(req.admin.dept_code || "").trim().toLowerCase()
   );

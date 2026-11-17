@@ -61,6 +61,42 @@ const FIELD_KEYS = {
   infoFindings: ["cyber_security.summary.INFO", "info_findings", "INFO_Findings", "infoFindings"]
 };
 
+const PDF_COLUMN_CATEGORY = {
+  "Name": "Personnel",
+  "Phone": "Personnel",
+  "PF No.": "Personnel",
+  "Department": "Personnel",
+  "Designation": "Personnel",
+  "Target IP": "Device",
+  "Device Type": "Device",
+  "Date of Procurement": "Device",
+  "DSR No.": "Device",
+  "Series No.": "Device",
+  "Hostname": "System",
+  "OS": "System",
+  "OS Version": "System",
+  "OS Release": "System",
+  "Architecture": "System",
+  "Distro": "System",
+  "Scan Time": "System",
+  "Host Hypervisor": "System",
+  "CPU Count": "Health",
+  "CPU Model": "Health",
+  "CPU Usage %": "Health",
+  "RAM Total": "Health",
+  "RAM Used": "Health",
+  "RAM Free": "Health",
+  "RAM %": "Health",
+  "Uptime": "Health",
+  "Score": "Security",
+  "Grade": "Security",
+  "CRITICAL Findings": "Security",
+  "HIGH Findings": "Security",
+  "MEDIUM Findings": "Security",
+  "LOW Findings": "Security",
+  "INFO Findings": "Security"
+};
+
 const WORKSHEET_NAMES = {
   ip: "IP_Report",
   dsr: "DSR_Report",
@@ -204,7 +240,13 @@ const getPdfColumnGroups = () => {
   const groups = [];
 
   for (let index = 0; index < remainingColumns.length; index += 10) {
-    groups.push(anchorColumns.concat(remainingColumns.slice(index, index + 10)));
+    const chunk = remainingColumns.slice(index, index + 10);
+    const categories = [...new Set(chunk.map((column) => PDF_COLUMN_CATEGORY[column.key] || "Other"))];
+
+    groups.push({
+      columns: anchorColumns.concat(chunk),
+      label: categories.join(" & ")
+    });
   }
 
   return groups;
@@ -293,11 +335,14 @@ const generatePdf = (rows, reportType, deptLabel) => new Promise((resolve, rejec
   doc.on("end", () => resolve(Buffer.concat(chunks)));
 
   const groups = getPdfColumnGroups();
-  groups.forEach((columns, index) => {
+  groups.forEach((group, index) => {
     if (index > 0) {
       doc.addPage();
     }
-    drawPdfTable(doc, rows, columns, subtitle, deptLabel);
+    const sectionSubtitle = groups.length > 1
+      ? `${subtitle} | Section ${index + 1} of ${groups.length}: ${group.label} fields (same records continued)`
+      : subtitle;
+    drawPdfTable(doc, rows, group.columns, sectionSubtitle, deptLabel);
   });
 
   addPdfFooters(doc);

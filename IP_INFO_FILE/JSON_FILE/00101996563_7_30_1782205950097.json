@@ -1,0 +1,2192 @@
+{
+  "system_info": {
+    "target_ip": "10.31.13.79",
+    "hostname": "ITC-PSN",
+    "os": "Windows",
+    "os_version": "10.0.22631",
+    "os_release": "11",
+    "architecture": "AMD64",
+    "python_version": "3.14.5",
+    "scan_time": "2026-06-23T14:41:34.269736",
+    "distro": "Microsoft Windows 11 Pro",
+    "host_hypervisor": ""
+  },
+  "disk_info": {
+    "partitions": [
+      {
+        "filesystem": "C:",
+        "mount": "C:\\",
+        "size": "182.5 GiB",
+        "used": "147.7 GiB",
+        "free": "34.8 GiB",
+        "use_pct": "81%",
+        "size_b": 195924537344
+      },
+      {
+        "filesystem": "D:",
+        "mount": "D:\\",
+        "size": "195.3 GiB",
+        "used": "81.6 GiB",
+        "free": "113.7 GiB",
+        "use_pct": "42%",
+        "size_b": 209714147328
+      },
+      {
+        "filesystem": "E:",
+        "mount": "E:\\",
+        "size": "97.7 GiB",
+        "used": "14.0 GiB",
+        "free": "83.6 GiB",
+        "use_pct": "14%",
+        "size_b": 104856547328
+      },
+      {
+        "filesystem": "F:",
+        "mount": "F:\\",
+        "size": "0 B",
+        "used": "0 B",
+        "free": "0 B",
+        "use_pct": "-",
+        "size_b": 0
+      }
+    ],
+    "total_size": "475.4 GiB",
+    "total_used": "243.3 GiB",
+    "total_free": "232.1 GiB",
+    "total_use_pct": "51%"
+  },
+  "installed_packages": {
+    "Windows Installed Programs": [
+      {
+        "name": ".NET Android Templates (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": ".NET MAUI SDK (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": ".NET MAUI Templates (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "3uTools",
+        "version": "3.23.006"
+      },
+      {
+        "name": "Adobe Acrobat (64-bit)",
+        "version": "26.1.21662"
+      },
+      {
+        "name": "Adobe Refresh Manager",
+        "version": "1.8.0"
+      },
+      {
+        "name": "AnyDesk",
+        "version": "ad 9.0.10"
+      },
+      {
+        "name": "Apple Mobile Device Support",
+        "version": "16.5.0.12"
+      },
+      {
+        "name": "Application Verifier x64 External Package",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Aspire.Dashboard.Sdk.win-x64 (x64)",
+        "version": "8.1.0.0"
+      },
+      {
+        "name": "Aspire.Hosting (x64)",
+        "version": "8.1.0.0"
+      },
+      {
+        "name": "Aspire.Hosting.Orchestration.win-x64 (x64)",
+        "version": "8.1.0.0"
+      },
+      {
+        "name": "Aspire.Hosting.Sdk (x64)",
+        "version": "8.1.0.0"
+      },
+      {
+        "name": "Aspire.ProjectTemplates (x64)",
+        "version": "8.1.0.0"
+      },
+      {
+        "name": "BIG-IP Edge Client",
+        "version": "72.25.729.424"
+      },
+      {
+        "name": "BIG-IP Edge Client Components (All Users)",
+        "version": "72.2025.0729.0424"
+      },
+      {
+        "name": "Bonjour",
+        "version": "3.1.0.1"
+      },
+      {
+        "name": "Claude",
+        "version": "1.14271.0"
+      },
+      {
+        "name": "ClickOnce Bootstrapper Package for Microsoft .NET Framework",
+        "version": "4.8.9256"
+      },
+      {
+        "name": "Copilot",
+        "version": "149.0.4022.80"
+      },
+      {
+        "name": "DBeaver 25.3.2",
+        "version": "25.3.2"
+      },
+      {
+        "name": "DiagnosticsHub_CollectionService",
+        "version": "17.11.35317"
+      },
+      {
+        "name": "draw.io 14.6.13",
+        "version": "14.6.13"
+      },
+      {
+        "name": "Entity Framework 6.2.0 Tools  for Visual Studio 2022",
+        "version": "6.2.0.0"
+      },
+      {
+        "name": "EPSON M2170 Series Printer Uninstall\",",
+        "version": ""
+      },
+      {
+        "name": "Google Chrome",
+        "version": "149.0.7827.53"
+      },
+      {
+        "name": "Graphviz",
+        "version": "12.2.1"
+      },
+      {
+        "name": "HP LaserJet Professional P1100-P1560-P1600 Series\",",
+        "version": ""
+      },
+      {
+        "name": "icecap_collection_neutral",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "icecap_collection_x64",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "icecap_collectionresources",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "icecap_collectionresourcesx64",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "IIS 10.0 Express",
+        "version": "10.0.8608"
+      },
+      {
+        "name": "Intel Corporation Display Driver Update (31.0.101.2140)\",",
+        "version": ""
+      },
+      {
+        "name": "IntelliTraceProfilerProxy",
+        "version": "15.0.21225.1"
+      },
+      {
+        "name": "Java(TM) SE Development Kit 22 (64-bit)",
+        "version": "22.0.0.0"
+      },
+      {
+        "name": "Kits Configuration Installer",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Microsoft .NET 8.0 Templates 8.0.403 (x64)",
+        "version": "32.10.55893"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 8.0.10 (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 8.0.10 (x64_arm64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 8.0.10 (x64_x86)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Framework 4 Multi-Targeting Pack",
+        "version": "4.0.30319"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.7.2 Targeting Pack",
+        "version": "4.7.3062"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.7.2 Targeting Pack (ENU)",
+        "version": "4.7.3062"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8 SDK",
+        "version": "4.8.3928"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8 Targeting Pack",
+        "version": "4.8.3761"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8 Targeting Pack (ENU)",
+        "version": "4.8.3761"
+      },
+      {
+        "name": "Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU)",
+        "version": "4.8.9037"
+      },
+      {
+        "name": "Microsoft .NET Host - 8.0.10 (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Host - 8.0.10 (x86)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Host FX Resolver - 8.0.10 (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Host FX Resolver - 8.0.10 (x86)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Host FX Resolver - 8.0.8 (x64)",
+        "version": "64.32.18380"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 8.0.10 (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 8.0.10 (x86)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 8.0.8 (x64)",
+        "version": "64.32.18380"
+      },
+      {
+        "name": "Microsoft .NET SDK 8.0.403 (x64) from Visual Studio",
+        "version": "8.4.324.47413"
+      },
+      {
+        "name": "Microsoft .NET Standard Targeting Pack - 2.1.0 (x64)",
+        "version": "24.0.28113"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 8.0.10 (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 8.0.10 (x86)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft .NET Toolset 8.0.403 (x64)",
+        "version": "32.8.55893"
+      },
+      {
+        "name": "Microsoft Access 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.10 Shared Framework (x64)",
+        "version": "8.0.10.24468"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.10 Shared Framework (x86)",
+        "version": "8.0.10.24468"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.10 Targeting Pack (x64)",
+        "version": "8.0.10.24468"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.10 Targeting Pack (x86)",
+        "version": "8.0.10.24468"
+      },
+      {
+        "name": "Microsoft ASP.NET Core Module for IIS Express",
+        "version": "12.2.18292.0"
+      },
+      {
+        "name": "Microsoft ASP.NET Core Module V2 for IIS Express",
+        "version": "17.0.22116.0"
+      },
+      {
+        "name": "Microsoft ASP.NET Diagnostic Pack for Visual Studio",
+        "version": "17.11.231.19466"
+      },
+      {
+        "name": "Microsoft ASP.NET Web Tools Packages 17.0 - ENU",
+        "version": "17.0.40305.0"
+      },
+      {
+        "name": "Microsoft Bing Service",
+        "version": "2.0.0.11"
+      },
+      {
+        "name": "Microsoft Command Line Utilities 15 for SQL Server",
+        "version": "15.0.1300.359"
+      },
+      {
+        "name": "Microsoft Edge",
+        "version": "149.0.4022.80"
+      },
+      {
+        "name": "Microsoft Excel 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft GameInput",
+        "version": "3.3.221.0"
+      },
+      {
+        "name": "Microsoft NetStandard SDK",
+        "version": "15.0.51105"
+      },
+      {
+        "name": "Microsoft ODBC Driver 17 for SQL Server",
+        "version": "17.10.6.1"
+      },
+      {
+        "name": "Microsoft OneDrive",
+        "version": "26.098.0524.0004"
+      },
+      {
+        "name": "Microsoft OneNote 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft Outlook 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft PowerPoint 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft Publisher 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft System CLR Types for SQL Server 2019",
+        "version": "15.0.2000.5"
+      },
+      {
+        "name": "Microsoft TestPlatform SDK Local Feed",
+        "version": "17.10.0.9037153"
+      },
+      {
+        "name": "Microsoft Update Health Tools",
+        "version": "5.72.0.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34433",
+        "version": "14.42.34433.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34433",
+        "version": "14.42.34433.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34433",
+        "version": "14.42.34433"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X64 Debug Runtime - 14.40.33816",
+        "version": "14.40.33816"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34433",
+        "version": "14.42.34433"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34433",
+        "version": "14.42.34433"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X86 Debug Runtime - 14.40.33816",
+        "version": "14.40.33816"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34433",
+        "version": "14.42.34433"
+      },
+      {
+        "name": "Microsoft Visual Studio Code (User)",
+        "version": "1.125.1"
+      },
+      {
+        "name": "Microsoft Visual Studio Installer",
+        "version": "3.12.2149.20818"
+      },
+      {
+        "name": "Microsoft Visual Studio Setup Configuration",
+        "version": "3.11.2133.16870"
+      },
+      {
+        "name": "Microsoft Visual Studio Setup WMI Provider",
+        "version": "3.11.2133.16870"
+      },
+      {
+        "name": "Microsoft Web Deploy 4.0",
+        "version": "10.0.8305"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 8.0.10 (x64)",
+        "version": "64.40.21605"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 8.0.10 (x86)",
+        "version": "64.40.21605"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 8.0.8 (x64)",
+        "version": "64.32.18376"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 8.0.8 (x64)",
+        "version": "8.0.8.33916"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 8.0.10 (x64)",
+        "version": "64.40.21605"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 8.0.10 (x86)",
+        "version": "64.40.21605"
+      },
+      {
+        "name": "Microsoft Word 2021 - en-us",
+        "version": "16.0.14729.20194"
+      },
+      {
+        "name": "Microsoft.Android.Ref.34 (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": "Microsoft.Android.Runtime.34.android-arm (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": "Microsoft.Android.Runtime.34.android-arm64 (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": "Microsoft.Android.Runtime.34.android-x64 (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": "Microsoft.Android.Runtime.34.android-x86 (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": "Microsoft.Android.Sdk.Windows (x64)",
+        "version": "34.0.113.0"
+      },
+      {
+        "name": "Microsoft.AspNetCore.Components.WebView.Maui (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.iOS.Ref.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.iOS.Runtime.ios-arm64.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.iOS.Runtime.iossimulator-arm64.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.iOS.Runtime.iossimulator-x64.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.iOS.Sdk (x64)",
+        "version": "16.4.7142.0"
+      },
+      {
+        "name": "Microsoft.iOS.Sdk.net8.0_17.0 (x64)",
+        "version": "17.0.8523.0"
+      },
+      {
+        "name": "Microsoft.iOS.Sdk.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.iOS.Templates (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.iOS.Windows.Sdk (x64)",
+        "version": "16.4.7142.0"
+      },
+      {
+        "name": "Microsoft.iOS.Windows.Sdk.net8.0_17.0 (x64)",
+        "version": "17.0.8523.0"
+      },
+      {
+        "name": "Microsoft.iOS.Windows.Sdk.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Ref.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-arm64.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Sdk (x64)",
+        "version": "16.4.7142.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Sdk.net8.0_17.0 (x64)",
+        "version": "17.0.8523.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Sdk.net8.0_18.0 (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.MacCatalyst.Templates (x64)",
+        "version": "18.0.8303.0"
+      },
+      {
+        "name": "Microsoft.Maui.Controls (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Controls.Build.Tasks (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Controls.Compatibility (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Controls.Core (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Controls.Xaml (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Core (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Essentials (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Graphics (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Resizetizer (x64)",
+        "version": "8.0.82.0"
+      },
+      {
+        "name": "Microsoft.Maui.Resizetizer.Sdk (x64)",
+        "version": "7.0.101.0"
+      },
+      {
+        "name": "Microsoft.Maui.Sdk (x64)",
+        "version": "7.0.101.0"
+      },
+      {
+        "name": "Microsoft.NET.Runtime.MonoAOTCompiler.Task (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NET.Runtime.MonoTargets.Sdk (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Android.Manifest-8.0.100 (x64)",
+        "version": "34.0.113"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Aspire.Manifest-8.0.100 (x64)",
+        "version": "64.64.18482"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.iOS.Manifest-8.0.100 (x64)",
+        "version": "18.0.8303"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.MacCatalyst.Manifest-8.0.100 (x64)",
+        "version": "18.0.8303"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.macOS.Manifest-8.0.100 (x64)",
+        "version": "15.0.8303"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Maui.Manifest-8.0.100 (x64)",
+        "version": "8.0.82"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.tvOS.Manifest-8.0.100 (x64)",
+        "version": "18.0.8303"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.Current.Manifest (x64)",
+        "version": "64.40.21345"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.net6.Manifest (x64)",
+        "version": "64.40.21345"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.net7.Manifest (x64)",
+        "version": "64.40.21345"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest (x64)",
+        "version": "64.40.21578"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.AOT.win-x64.Cross.android-arm (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.AOT.win-x64.Cross.android-arm64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.AOT.win-x64.Cross.android-x64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.AOT.win-x64.Cross.android-x86 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.android-x64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.android-x86 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.ios-arm (x64)",
+        "version": "7.0.20.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.ios-arm64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.iossimulator-arm64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.iossimulator-x64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.iossimulator-x86 (x64)",
+        "version": "7.0.20.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.maccatalyst-arm64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "Microsoft.NETCore.App.Runtime.Mono.maccatalyst-x64 (x64)",
+        "version": "8.0.10.0"
+      },
+      {
+        "name": "MSI Development Tools",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "MySQL Documents",
+        "version": "8.0.40"
+      },
+      {
+        "name": "MySQL Examples and Samples",
+        "version": "8.0.40"
+      },
+      {
+        "name": "MySQL Installer",
+        "version": "1.6.12.0"
+      },
+      {
+        "name": "MySQL Router 8.0",
+        "version": "8.0.40"
+      },
+      {
+        "name": "MySQL Shell",
+        "version": "8.0.40"
+      },
+      {
+        "name": "Notepad++ (64-bit x64)",
+        "version": "8.6.4"
+      },
+      {
+        "name": "Office 16 Click-to-Run Extensibility Component",
+        "version": "16.0.14729.20108"
+      },
+      {
+        "name": "Office 16 Click-to-Run Licensing Component",
+        "version": "16.0.14729.20108"
+      },
+      {
+        "name": "PDFill FREE PDF Editor Basic",
+        "version": "15.0"
+      },
+      {
+        "name": "PuTTY release 0.83 (64-bit)",
+        "version": "0.83.0.0"
+      },
+      {
+        "name": "Python 3.13.0 (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Core Interpreter (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Development Libraries (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Documentation (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Executables (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 pip Bootstrap (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Standard Library (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Tcl/Tk Support (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.0 Test Suite (64-bit)",
+        "version": "3.13.150.0"
+      },
+      {
+        "name": "Python 3.13.1 Add to Path (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Core Interpreter (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Development Libraries (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Documentation (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Executables (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 pip Bootstrap (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Standard Library (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Tcl/Tk Support (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.13.1 Test Suite (64-bit)",
+        "version": "3.13.1150.0"
+      },
+      {
+        "name": "Python 3.14.5",
+        "version": "3.14-64"
+      },
+      {
+        "name": "Python 3.14.5 (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Add to Path (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Core Interpreter (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Development Libraries (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Documentation (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Executables (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 pip Bootstrap (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Standard Library (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Tcl/Tk Support (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python 3.14.5 Test Suite (64-bit)",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "Python Launcher",
+        "version": "3.14.5150.0"
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  Modem Driver Update (2.21.4.0)\",",
+        "version": ""
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  USB Driver Update (2.21.4.0)\",",
+        "version": ""
+      },
+      {
+        "name": "SDK ARM Additions",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "SDK ARM Redistributables",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.105.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.122.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.125.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.152.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.223.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.239.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.256.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.270.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.321.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.333.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.451.85.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.100.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.117.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.133.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.155.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.171.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.176.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.221.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.34.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.453.51.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "TeamViewer",
+        "version": "15.78.4"
+      },
+      {
+        "name": "TeraCopy",
+        "version": "3.17"
+      },
+      {
+        "name": "UltraViewer version 6.6.113",
+        "version": "6.6.113"
+      },
+      {
+        "name": "Universal CRT Extension SDK",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Universal CRT Headers Libraries and Sources",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Universal CRT Redistributable",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Universal CRT Tools x64",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Universal CRT Tools x86",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Universal General MIDI DLS Extension SDK",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Update for  (KB2504637)",
+        "version": "1"
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.26050.15) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Windows 10 for x64-based Systems (KB5001716)",
+        "version": "8.94.0.0"
+      },
+      {
+        "name": "vcpp_crt.redist.clickonce",
+        "version": "14.40.33816"
+      },
+      {
+        "name": "Visual C++ Library CRT Appx Package",
+        "version": "14.41.34120"
+      },
+      {
+        "name": "Visual C++ Library CRT Appx Resource Package",
+        "version": "14.41.34120"
+      },
+      {
+        "name": "Visual C++ Library CRT ARM64 Appx Package",
+        "version": "14.41.34120"
+      },
+      {
+        "name": "Visual C++ Library CRT Desktop Appx Package",
+        "version": "14.41.34120"
+      },
+      {
+        "name": "Visual Studio Build Tools 2019",
+        "version": "16.11.42"
+      },
+      {
+        "name": "Visual Studio Community 2022",
+        "version": "17.11.5"
+      },
+      {
+        "name": "VS Immersive Activate Helper",
+        "version": "17.0.157.0"
+      },
+      {
+        "name": "VS JIT Debugger",
+        "version": "17.0.157.0"
+      },
+      {
+        "name": "VS Script Debugging Common",
+        "version": "17.0.157.0"
+      },
+      {
+        "name": "vs_clickoncebootstrappermsi",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "vs_clickoncebootstrappermsires",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_clickoncesigntoolmsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_communitymsi",
+        "version": "16.11.34930"
+      },
+      {
+        "name": "vs_communitymsires",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "vs_communitysharedmsi",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "vs_communityx64msi",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "vs_CoreEditorFonts",
+        "version": "17.7.40001"
+      },
+      {
+        "name": "vs_devenvsharedmsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_devenx64vmsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_filehandler_amd64",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_filehandler_x86",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_FileTracker_Singleton",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_githubprotocolhandlermsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_Graphics_Singletonx64",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "vs_Graphics_Singletonx86",
+        "version": "17.11.35103"
+      },
+      {
+        "name": "vs_minshellinteropmsi",
+        "version": "16.10.31306"
+      },
+      {
+        "name": "vs_minshellinteropsharedmsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_minshellinteropx64msi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_minshellmsi",
+        "version": "16.11.34902"
+      },
+      {
+        "name": "vs_minshellmsires",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_minshellsharedmsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_minshellx64msi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_SQLClickOnceBootstrappermsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_tipsmsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "vs_vswebprotocolselectormsi",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "WinAppDeploy",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows 11 Installation Assistant",
+        "version": "1.4.19041.3630"
+      },
+      {
+        "name": "Windows App Certification Kit Native Components",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows App Certification Kit SupportedApiList x86",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows App Certification Kit x64",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows Desktop Extension SDK",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Desktop Extension SDK Contracts",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Driver Package - Apple, Inc. (USBAAPL) USB  (05/19/2017 6.0.9999.69)",
+        "version": "05/19/2017 6.0.9999.69"
+      },
+      {
+        "name": "Windows Driver Package - Apple, Inc. (USBAAPL64) USB  (05/19/2017 6.0.9999.69)",
+        "version": "05/19/2017 6.0.9999.69"
+      },
+      {
+        "name": "Windows IoT Extension SDK",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows IoT Extension SDK Contracts",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.142 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Mobile Extension SDK",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Mobile Extension SDK Contracts",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows PC Health Check",
+        "version": "3.9.2402.14001"
+      },
+      {
+        "name": "Windows SDK",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows SDK AddOn",
+        "version": "10.1.0.0"
+      },
+      {
+        "name": "Windows SDK ARM Desktop Tools",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Headers arm",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Headers arm64",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Headers x64",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Headers x86",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Libs arm",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Libs arm64",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Libs x64",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Libs x86",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Tools arm64",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Tools x64",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Desktop Tools x86",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK DirectX x64 Remote",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows SDK DirectX x86 Remote",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows SDK EULA",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Facade Windows WinMD Versioned",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps Contracts",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps DirectX x86 Remote",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps Headers",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps Libs",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps Metadata",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Apps Tools",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK for Windows Store Managed Apps Libs",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Modern Non-Versioned Developer Tools",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows SDK Modern Versioned Developer Tools",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows SDK Redistributables",
+        "version": "10.1.22621.3233"
+      },
+      {
+        "name": "Windows SDK Signing Tools",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Software Development Kit - Windows 10.0.19041.685",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Team Extension SDK",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "Windows Team Extension SDK Contracts",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "windows_toolscorepkg",
+        "version": "17.11.35102"
+      },
+      {
+        "name": "WinRAR 7.00 (64-bit)",
+        "version": "7.00.0"
+      },
+      {
+        "name": "WinRT Intellisense Desktop - en-us",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense Desktop - Other Languages",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense IoT - en-us",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense IoT - Other Languages",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense Mobile - en-us",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense PPI - en-us",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense PPI - Other Languages",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense UAP - en-us",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinRT Intellisense UAP - Other Languages",
+        "version": "10.1.19041.685"
+      },
+      {
+        "name": "WinSCP 6.5.1",
+        "version": "6.5.1"
+      },
+      {
+        "name": "Xamarin Remoted iOS Simulator",
+        "version": "17.6.0.524"
+      }
+    ],
+    "python_pip": []
+  },
+  "databases": [
+    {
+      "name": "MSSQL",
+      "binary": "sqlcmd",
+      "port": "1433",
+      "port_listening": false,
+      "version": "-"
+    }
+  ],
+  "web_applications": [
+    {
+      "name": "Uvicorn",
+      "binary": "uvicorn",
+      "port": "8000",
+      "port_listening": false,
+      "version": "-"
+    },
+    {
+      "name": "Flask",
+      "binary": "flask",
+      "port": "5051",
+      "port_listening": false,
+      "version": "-"
+    }
+  ],
+  "running_services": [
+    {
+      "service": "AdobeARMservice",
+      "description": "Adobe Acrobat Update Service",
+      "state": "running"
+    },
+    {
+      "service": "AnyDesk",
+      "description": "AnyDesk Service",
+      "state": "running"
+    },
+    {
+      "service": "Appinfo",
+      "description": "Application Information",
+      "state": "running"
+    },
+    {
+      "service": "Apple Mobile Device Service",
+      "description": "Apple Mobile Device Service",
+      "state": "running"
+    },
+    {
+      "service": "AppXSvc",
+      "description": "AppX Deployment Service (AppXSVC)",
+      "state": "running"
+    },
+    {
+      "service": "AudioEndpointBuilder",
+      "description": "Windows Audio Endpoint Builder",
+      "state": "running"
+    },
+    {
+      "service": "Audiosrv",
+      "description": "Windows Audio",
+      "state": "running"
+    },
+    {
+      "service": "BFE",
+      "description": "Base Filtering Engine",
+      "state": "running"
+    },
+    {
+      "service": "Bonjour Service",
+      "description": "Bonjour Service",
+      "state": "running"
+    },
+    {
+      "service": "BrokerInfrastructure",
+      "description": "Background Tasks Infrastructure Service",
+      "state": "running"
+    },
+    {
+      "service": "BTAGService",
+      "description": "Bluetooth Audio Gateway Service",
+      "state": "running"
+    },
+    {
+      "service": "BthAvctpSvc",
+      "description": "AVCTP service",
+      "state": "running"
+    },
+    {
+      "service": "bthserv",
+      "description": "Bluetooth Support Service",
+      "state": "running"
+    },
+    {
+      "service": "camsvc",
+      "description": "Capability Access Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "cbdhsvc_d9e6411",
+      "description": "Clipboard User Service_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "CDPSvc",
+      "description": "Connected Devices Platform Service",
+      "state": "running"
+    },
+    {
+      "service": "CDPUserSvc_d9e6411",
+      "description": "Connected Devices Platform User Service_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "ClickToRunSvc",
+      "description": "Microsoft Office Click-to-Run Service",
+      "state": "running"
+    },
+    {
+      "service": "CoreMessagingRegistrar",
+      "description": "CoreMessaging",
+      "state": "running"
+    },
+    {
+      "service": "cphs",
+      "description": "Intel(R) Content Protection HECI Service",
+      "state": "running"
+    },
+    {
+      "service": "cplspcon",
+      "description": "Intel(R) Content Protection HDCP Service",
+      "state": "running"
+    },
+    {
+      "service": "CryptSvc",
+      "description": "Cryptographic Services",
+      "state": "running"
+    },
+    {
+      "service": "DcomLaunch",
+      "description": "DCOM Server Process Launcher",
+      "state": "running"
+    },
+    {
+      "service": "DeviceAssociationService",
+      "description": "Device Association Service",
+      "state": "running"
+    },
+    {
+      "service": "DeviceInstall",
+      "description": "Device Install Service",
+      "state": "running"
+    },
+    {
+      "service": "DevicesFlowUserSvc_d9e6411",
+      "description": "DevicesFlow_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "DevQueryBroker",
+      "description": "DevQuery Background Discovery Broker",
+      "state": "running"
+    },
+    {
+      "service": "Dhcp",
+      "description": "DHCP Client",
+      "state": "running"
+    },
+    {
+      "service": "DiagTrack",
+      "description": "Connected User Experiences and Telemetry",
+      "state": "running"
+    },
+    {
+      "service": "DispBrokerDesktopSvc",
+      "description": "Display Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DisplayEnhancementService",
+      "description": "Display Enhancement Service",
+      "state": "running"
+    },
+    {
+      "service": "Dnscache",
+      "description": "DNS Client",
+      "state": "running"
+    },
+    {
+      "service": "DoSvc",
+      "description": "Delivery Optimization",
+      "state": "running"
+    },
+    {
+      "service": "DPS",
+      "description": "Diagnostic Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DsSvc",
+      "description": "Data Sharing Service",
+      "state": "running"
+    },
+    {
+      "service": "DusmSvc",
+      "description": "Data Usage",
+      "state": "running"
+    },
+    {
+      "service": "EventLog",
+      "description": "Windows Event Log",
+      "state": "running"
+    },
+    {
+      "service": "EventSystem",
+      "description": "COM+ Event System",
+      "state": "running"
+    },
+    {
+      "service": "F5 Networks Component Installer",
+      "description": "F5 Networks Component Installer",
+      "state": "running"
+    },
+    {
+      "service": "F5FltSrv",
+      "description": "F5 Networks DNS Relay Proxy Service",
+      "state": "running"
+    },
+    {
+      "service": "F5TrafficSrv",
+      "description": "F5 Networks Traffic Control Service",
+      "state": "running"
+    },
+    {
+      "service": "fdPHost",
+      "description": "Function Discovery Provider Host",
+      "state": "running"
+    },
+    {
+      "service": "FDResPub",
+      "description": "Function Discovery Resource Publication",
+      "state": "running"
+    },
+    {
+      "service": "FontCache",
+      "description": "Windows Font Cache Service",
+      "state": "running"
+    },
+    {
+      "service": "GameInputRedistService",
+      "description": "GameInput Redist Service",
+      "state": "running"
+    },
+    {
+      "service": "GameInputSvc",
+      "description": "GameInput Service",
+      "state": "running"
+    },
+    {
+      "service": "GamingServices",
+      "description": "Gaming Services",
+      "state": "running"
+    },
+    {
+      "service": "GamingServicesNet",
+      "description": "Gaming Services",
+      "state": "running"
+    },
+    {
+      "service": "gpsvc",
+      "description": "Group Policy Client",
+      "state": "running"
+    },
+    {
+      "service": "hidserv",
+      "description": "Human Interface Device Service",
+      "state": "running"
+    },
+    {
+      "service": "HPSIService",
+      "description": "HP SI Service",
+      "state": "running"
+    },
+    {
+      "service": "igccservice",
+      "description": "Intel(R) Graphics Command Center Service",
+      "state": "running"
+    },
+    {
+      "service": "igfxCUIService2.0.0.0",
+      "description": "Intel(R) HD Graphics Control Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "IKEEXT",
+      "description": "IKE and AuthIP IPsec Keying Modules",
+      "state": "running"
+    },
+    {
+      "service": "InstallService",
+      "description": "Microsoft Store Install Service",
+      "state": "running"
+    },
+    {
+      "service": "iphlpsvc",
+      "description": "IP Helper",
+      "state": "running"
+    },
+    {
+      "service": "jhi_service",
+      "description": "Intel(R) Dynamic Application Loader Host Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "KeyIso",
+      "description": "CNG Key Isolation",
+      "state": "running"
+    },
+    {
+      "service": "LanmanServer",
+      "description": "Server",
+      "state": "running"
+    },
+    {
+      "service": "LanmanWorkstation",
+      "description": "Workstation",
+      "state": "running"
+    },
+    {
+      "service": "lfsvc",
+      "description": "Geolocation Service",
+      "state": "running"
+    },
+    {
+      "service": "LicenseManager",
+      "description": "Windows License Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "lmhosts",
+      "description": "TCP/IP NetBIOS Helper",
+      "state": "running"
+    },
+    {
+      "service": "LSM",
+      "description": "Local Session Manager",
+      "state": "running"
+    },
+    {
+      "service": "MDCoreSvc",
+      "description": "Microsoft Defender Core Service",
+      "state": "running"
+    },
+    {
+      "service": "mpssvc",
+      "description": "Windows Defender Firewall",
+      "state": "running"
+    },
+    {
+      "service": "NcbService",
+      "description": "Network Connection Broker",
+      "state": "running"
+    },
+    {
+      "service": "Netman",
+      "description": "Network Connections",
+      "state": "running"
+    },
+    {
+      "service": "netprofm",
+      "description": "Network List Service",
+      "state": "running"
+    },
+    {
+      "service": "NetSetupSvc",
+      "description": "Network Setup Service",
+      "state": "running"
+    },
+    {
+      "service": "NgcCtnrSvc",
+      "description": "Microsoft Passport Container",
+      "state": "running"
+    },
+    {
+      "service": "NgcSvc",
+      "description": "Microsoft Passport",
+      "state": "running"
+    },
+    {
+      "service": "NPSMSvc_d9e6411",
+      "description": "NPSMSvc_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "nsi",
+      "description": "Network Store Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "OneSyncSvc_d9e6411",
+      "description": "Sync Host_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "PcaSvc",
+      "description": "Program Compatibility Assistant Service",
+      "state": "running"
+    },
+    {
+      "service": "PhoneSvc",
+      "description": "Phone Service",
+      "state": "running"
+    },
+    {
+      "service": "PimIndexMaintenanceSvc_d9e6411",
+      "description": "Contact Data_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "PlugPlay",
+      "description": "Plug and Play",
+      "state": "running"
+    },
+    {
+      "service": "PolicyAgent",
+      "description": "IPsec Policy Agent",
+      "state": "running"
+    },
+    {
+      "service": "Power",
+      "description": "Power",
+      "state": "running"
+    },
+    {
+      "service": "ProfSvc",
+      "description": "User Profile Service",
+      "state": "running"
+    },
+    {
+      "service": "QWAVE",
+      "description": "Quality Windows Audio Video Experience",
+      "state": "running"
+    },
+    {
+      "service": "RasMan",
+      "description": "Remote Access Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "RmSvc",
+      "description": "Radio Management Service",
+      "state": "running"
+    },
+    {
+      "service": "RpcEptMapper",
+      "description": "RPC Endpoint Mapper",
+      "state": "running"
+    },
+    {
+      "service": "RpcSs",
+      "description": "Remote Procedure Call (RPC)",
+      "state": "running"
+    },
+    {
+      "service": "SamSs",
+      "description": "Security Accounts Manager",
+      "state": "running"
+    },
+    {
+      "service": "Schedule",
+      "description": "Task Scheduler",
+      "state": "running"
+    },
+    {
+      "service": "SecurityHealthService",
+      "description": "Windows Security Service",
+      "state": "running"
+    },
+    {
+      "service": "SENS",
+      "description": "System Event Notification Service",
+      "state": "running"
+    },
+    {
+      "service": "ShellHWDetection",
+      "description": "Shell Hardware Detection",
+      "state": "running"
+    },
+    {
+      "service": "Spooler",
+      "description": "Print Spooler",
+      "state": "running"
+    },
+    {
+      "service": "SSDPSRV",
+      "description": "SSDP Discovery",
+      "state": "running"
+    },
+    {
+      "service": "SstpSvc",
+      "description": "Secure Socket Tunneling Protocol Service",
+      "state": "running"
+    },
+    {
+      "service": "StateRepository",
+      "description": "State Repository Service",
+      "state": "running"
+    },
+    {
+      "service": "StiSvc",
+      "description": "Windows Image Acquisition (WIA)",
+      "state": "running"
+    },
+    {
+      "service": "StorSvc",
+      "description": "Storage Service",
+      "state": "running"
+    },
+    {
+      "service": "SysMain",
+      "description": "SysMain",
+      "state": "running"
+    },
+    {
+      "service": "SystemEventsBroker",
+      "description": "System Events Broker",
+      "state": "running"
+    },
+    {
+      "service": "TapiSrv",
+      "description": "Telephony",
+      "state": "running"
+    },
+    {
+      "service": "TeamViewer",
+      "description": "TeamViewer",
+      "state": "running"
+    },
+    {
+      "service": "TeraCopyService.exe",
+      "description": "TeraCopy Service",
+      "state": "running"
+    },
+    {
+      "service": "TextInputManagementService",
+      "description": "Text Input Management Service",
+      "state": "running"
+    },
+    {
+      "service": "Themes",
+      "description": "Themes",
+      "state": "running"
+    },
+    {
+      "service": "TimeBrokerSvc",
+      "description": "Time Broker",
+      "state": "running"
+    },
+    {
+      "service": "TokenBroker",
+      "description": "Web Account Manager",
+      "state": "running"
+    },
+    {
+      "service": "TrkWks",
+      "description": "Distributed Link Tracking Client",
+      "state": "running"
+    },
+    {
+      "service": "UdkUserSvc_d9e6411",
+      "description": "Udk User Service_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "UltraViewService",
+      "description": "UltraViewer Service",
+      "state": "running"
+    },
+    {
+      "service": "UnistoreSvc_d9e6411",
+      "description": "User Data Storage_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "UserDataSvc_d9e6411",
+      "description": "User Data Access_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "UserManager",
+      "description": "User Manager",
+      "state": "running"
+    },
+    {
+      "service": "UsoSvc",
+      "description": "Update Orchestrator Service",
+      "state": "running"
+    },
+    {
+      "service": "VaultSvc",
+      "description": "Credential Manager",
+      "state": "running"
+    },
+    {
+      "service": "W32Time",
+      "description": "Windows Time",
+      "state": "running"
+    },
+    {
+      "service": "Wcmsvc",
+      "description": "Windows Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "WdiSystemHost",
+      "description": "Diagnostic System Host",
+      "state": "running"
+    },
+    {
+      "service": "WdNisSvc",
+      "description": "Microsoft Defender Antivirus Network Inspection Service",
+      "state": "running"
+    },
+    {
+      "service": "webthreatdefsvc",
+      "description": "Web Threat Defense Service",
+      "state": "running"
+    },
+    {
+      "service": "webthreatdefusersvc_d9e6411",
+      "description": "Web Threat Defense User Service_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "WinDefend",
+      "description": "Microsoft Defender Antivirus Service",
+      "state": "running"
+    },
+    {
+      "service": "WinHttpAutoProxySvc",
+      "description": "WinHTTP Web Proxy Auto-Discovery Service",
+      "state": "running"
+    },
+    {
+      "service": "Winmgmt",
+      "description": "Windows Management Instrumentation",
+      "state": "running"
+    },
+    {
+      "service": "WlanSvc",
+      "description": "WLAN AutoConfig",
+      "state": "running"
+    },
+    {
+      "service": "wlidsvc",
+      "description": "Microsoft Account Sign-in Assistant",
+      "state": "running"
+    },
+    {
+      "service": "WMIRegistrationService",
+      "description": "Intel(R) Management Engine WMI Provider Registration",
+      "state": "running"
+    },
+    {
+      "service": "WpnService",
+      "description": "Windows Push Notifications System Service",
+      "state": "running"
+    },
+    {
+      "service": "WpnUserService_d9e6411",
+      "description": "Windows Push Notifications User Service_d9e6411",
+      "state": "running"
+    },
+    {
+      "service": "wscsvc",
+      "description": "Security Center",
+      "state": "running"
+    },
+    {
+      "service": "WSearch",
+      "description": "Windows Search",
+      "state": "running"
+    },
+    {
+      "service": "wuauserv",
+      "description": "Windows Update",
+      "state": "running"
+    }
+  ],
+  "containers": {
+    "docker_version": "",
+    "containers": [],
+    "kubernetes": "",
+    "k8s_pods": []
+  },
+  "virtual_machines": {
+    "host_is_vm": "",
+    "total": 0,
+    "vms": []
+  },
+  "runtimes": {},
+  "system_health": {
+    "cpu_count": "8",
+    "cpu_model": "Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz",
+    "cpu_usage_pct": "1%",
+    "ram_total": "7.9 GiB",
+    "ram_used": "6.0 GiB",
+    "ram_free": "1.9 GiB",
+    "ram_pct": "76%",
+    "swap_total": "",
+    "swap_used": "",
+    "swap_pct": "",
+    "load_avg": "",
+    "uptime": "149.518589596778",
+    "top_processes": []
+  },
+  "cyber_security": {
+    "score": 85,
+    "grade": "A",
+    "findings": [
+      {
+        "severity": "HIGH",
+        "category": "Running Services",
+        "title": "Risky service detected: GameInputRedistService",
+        "detail": "Redis has no auth by default \u2014 bind to localhost"
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "Running Services",
+        "title": "Risky service detected: RpcEptMapper",
+        "detail": "RPC portmapper exposes attack surface"
+      }
+    ],
+    "summary": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 0,
+      "INFO": 0
+    }
+  },
+  "registration_form_data": {
+    "dsr_no": "7/30",
+    "serial_no": "UXVQVSIJ44L0490253",
+    "pf_no": "00101996563",
+    "target_ip": "10.31.13.79"
+  }
+}

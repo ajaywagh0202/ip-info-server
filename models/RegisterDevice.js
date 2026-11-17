@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
+import { serverDetailsSchema, incidentSchema } from "./ServerDetails.js";
 
 const RegisterDeviceSchema = new mongoose.Schema(
   {
+    server_details: { type: serverDetailsSchema, default: () => ({}) },
+    breakdown: { logs: { type: [incidentSchema], default: [] } },
+    record_last_updated_by: { type: mongoose.Schema.Types.ObjectId, ref: "Admin", default: null },
     dsr_no: { type: String, required: false, trim: true },
     target_ip: { type: String, required: true, trim: true },
     device_type: { type: String, required: true, trim: true },
@@ -39,6 +43,7 @@ const RegisterDeviceSchema = new mongoose.Schema(
   },
   {
     collection: "register_devices",
+    optimisticConcurrency: true,
     timestamps: true
   }
 );

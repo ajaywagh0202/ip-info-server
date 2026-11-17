@@ -1,0 +1,3043 @@
+{
+  "system_info": {
+    "target_ip": "10.31.3.75",
+    "hostname": "RC23-ITC",
+    "os": "Windows",
+    "os_version": "10.0.19045",
+    "os_release": "10",
+    "architecture": "AMD64",
+    "python_version": "3.13.7",
+    "scan_time": "2026-06-23T14:30:57.810430",
+    "distro": "Microsoft Windows 10 Pro",
+    "host_hypervisor": ""
+  },
+  "disk_info": {
+    "partitions": [
+      {
+        "filesystem": "C:",
+        "mount": "C:\\",
+        "size": "226.2 GiB",
+        "used": "190.3 GiB",
+        "free": "35.9 GiB",
+        "use_pct": "84%",
+        "size_b": 242865926144
+      },
+      {
+        "filesystem": "D:",
+        "mount": "D:\\",
+        "size": "249.6 GiB",
+        "used": "219.9 GiB",
+        "free": "29.7 GiB",
+        "use_pct": "88%",
+        "size_b": 268032487424
+      },
+      {
+        "filesystem": "F:",
+        "mount": "F:\\",
+        "size": "0 B",
+        "used": "0 B",
+        "free": "0 B",
+        "use_pct": "-",
+        "size_b": 0
+      }
+    ],
+    "total_size": "475.8 GiB",
+    "total_used": "410.2 GiB",
+    "total_free": "65.6 GiB",
+    "total_use_pct": "86%"
+  },
+  "installed_packages": {
+    "Windows Installed Programs": [
+      {
+        "name": "2023-10 Update for Windows 10 Version 22H2 for x64-based Systems (KB4023057)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-05 Update for Windows 10 Version 22H2 for x64-based Systems (KB5001716)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-08 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5042352)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-08 Update for Windows 10 Version 22H2 for x64-based Systems (KB5042320)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-09 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5043064)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-10 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5044091)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-10 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5044273)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-10 Update for Windows 10 Version 22H2 for x64-based Systems (KB5001716)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-11 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5046542)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-11 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5046613)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-11 Security Update for Windows 10 Version 22H2 for x64-based Systems (KB5048239)\",",
+        "version": ""
+      },
+      {
+        "name": "2024-12 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5048652)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-01 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5050188)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-01 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5049981)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-01 Security Update for Windows 10 Version 22H2 for x64-based Systems (KB5050411)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-02 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5051974)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-03 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5053606)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-04 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5055683)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-04 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5055518)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-04 Cumulative Update Preview for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5057056)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-04 Security Update for Windows 10 Version 22H2 for x64-based Systems (KB5057589)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-05 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5058379)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-06 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5060533)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-06 Update for Windows 10 Version 22H2 for x64-based Systems (KB5001716)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-07 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5062554)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-07 Security Update for Windows 10 Version 22H2 for x64-based Systems (KB5063523)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-08 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5063709)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-09 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5065957)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-09 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5065429)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-10 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 10 Version 22H2 for x64 (KB5066747)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-10 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5066791)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-10 Security Update for Windows 10 Version 22H2 for x64-based Systems (KB5068164)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-11 Cumulative Update for Windows 10 Version 22H2 for x64-based Systems (KB5071959)\",",
+        "version": ""
+      },
+      {
+        "name": "2025-11 Security Update for Windows 10 Version 22H2 for x64-based Systems (KB5072653)\",",
+        "version": ""
+      },
+      {
+        "name": "2026-03 Windows Recovery Environment Update (KB5075039)\",",
+        "version": ""
+      },
+      {
+        "name": "7-Zip 18.05 (x64)",
+        "version": "18.05"
+      },
+      {
+        "name": "9N8MHTPHNGVV-Microsoft.Windows.DevHome\",",
+        "version": ""
+      },
+      {
+        "name": "9NH2SW16MQ7F-Microsoft.WindowsAppRuntime.1.5\",",
+        "version": ""
+      },
+      {
+        "name": "9NMPJ99VJBWV-Microsoft.YourPhone\",",
+        "version": ""
+      },
+      {
+        "name": "9NRX63209R7B-Microsoft.OutlookforWindows\",",
+        "version": ""
+      },
+      {
+        "name": "9NTXGKQ8P7N0-MicrosoftWindows.CrossDevice\",",
+        "version": ""
+      },
+      {
+        "name": "9P2VP41KK7LF-Microsoft.WindowsAppRuntime.1.6\",",
+        "version": ""
+      },
+      {
+        "name": "9PLFNLNT3G5G-AppUp.IntelGraphicsExperience\",",
+        "version": ""
+      },
+      {
+        "name": "9PM860492SZD-Microsoft.MicrosoftPCManager\",",
+        "version": ""
+      },
+      {
+        "name": "9WZDNCRFJBH4-Microsoft.Windows.Photos\",",
+        "version": ""
+      },
+      {
+        "name": "ABBYY FineReader PDF by sandyd",
+        "version": "16.0.14.7295"
+      },
+      {
+        "name": "Advanced IP Scanner 2.5.1",
+        "version": "2.5.4594.1"
+      },
+      {
+        "name": "AdvancedRestClient 17.0.9",
+        "version": "17.0.9"
+      },
+      {
+        "name": "Android Studio",
+        "version": "2025.1"
+      },
+      {
+        "name": "Antigravity 2.0.11",
+        "version": "2.0.11"
+      },
+      {
+        "name": "Antigravity IDE (User)",
+        "version": "2.0.4"
+      },
+      {
+        "name": "AnyDesk",
+        "version": "ad 9.0.10"
+      },
+      {
+        "name": "Aspire.Hosting.Sdk (x64)",
+        "version": "8.2.2.0"
+      },
+      {
+        "name": "Aspire.ProjectTemplates (x64)",
+        "version": "8.2.2.0"
+      },
+      {
+        "name": "Brave",
+        "version": "149.1.91.175"
+      },
+      {
+        "name": "ClickOnce Bootstrapper Package for Microsoft .NET Framework",
+        "version": "4.8.9256"
+      },
+      {
+        "name": "CMake",
+        "version": "4.3.1"
+      },
+      {
+        "name": "DB Browser for SQLite",
+        "version": "3.13.1"
+      },
+      {
+        "name": "DBeaver 21.0.0 (current user)",
+        "version": "21.0.0"
+      },
+      {
+        "name": "Devart dotConnect for PostgreSQL Express",
+        "version": "8.3.104.0"
+      },
+      {
+        "name": "DevExpress CodeRush 22.2",
+        "version": "22.2.3"
+      },
+      {
+        "name": "DevExpress Components 22.2",
+        "version": "22.2.3"
+      },
+      {
+        "name": "DevExpress DevExtreme 22.2",
+        "version": "22.2.3"
+      },
+      {
+        "name": "DiagnosticsHub_CollectionService",
+        "version": "17.14.36412"
+      },
+      {
+        "name": "Documentation Manager",
+        "version": "23.40.0.4"
+      },
+      {
+        "name": "Entity Framework 6.5.0 Tools  for Visual Studio 2022",
+        "version": "6.5.0.0"
+      },
+      {
+        "name": "Foxit PDF Editor",
+        "version": "2023.1.0.15510"
+      },
+      {
+        "name": "Foxit PDF Editor",
+        "version": "2023.1.0.15510"
+      },
+      {
+        "name": "Git",
+        "version": "2.45.1"
+      },
+      {
+        "name": "Git LFS version 3.7.1",
+        "version": "3.7.1"
+      },
+      {
+        "name": "Google Chrome",
+        "version": "149.0.7827.115"
+      },
+      {
+        "name": "HP LaserJet Professional P1100-P1560-P1600 Series\",",
+        "version": ""
+      },
+      {
+        "name": "hppP1100P1560P1600SeriesLaserJetService",
+        "version": "1.1.0.0"
+      },
+      {
+        "name": "hppusgP1100P1560P1600Series",
+        "version": "1.0.0.1"
+      },
+      {
+        "name": "HPSSupply",
+        "version": "2.1.1.0"
+      },
+      {
+        "name": "icecap_collection_neutral",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "icecap_collection_x64",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "icecap_collectionresources",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "icecap_collectionresourcesx64",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "IIS 10.0 Express",
+        "version": "10.0.10007"
+      },
+      {
+        "name": "Intel - SoftwareComponent - 1.44.2023.710\",",
+        "version": ""
+      },
+      {
+        "name": "Intel - SoftwareComponent - 1.71.99.0\",",
+        "version": ""
+      },
+      {
+        "name": "Intel - SoftwareComponent - 2408.5.4.0\",",
+        "version": ""
+      },
+      {
+        "name": "INTEL - System - 10.1.16.7\",",
+        "version": ""
+      },
+      {
+        "name": "Intel - System - 2406.5.5.0\",",
+        "version": ""
+      },
+      {
+        "name": "Intel Corporation - Bluetooth - 20.100.7.1\",",
+        "version": ""
+      },
+      {
+        "name": "Intel Corporation - Display - 31.0.101.2111\",",
+        "version": ""
+      },
+      {
+        "name": "Intel(R) Computing Improvement Program",
+        "version": "2.4.11187"
+      },
+      {
+        "name": "Intel(R) Graphics Software & Drivers",
+        "version": "1.0.1133.2"
+      },
+      {
+        "name": "Intel(R) Wireless Bluetooth(R)",
+        "version": "23.40.0.2"
+      },
+      {
+        "name": "IntelliTraceProfilerProxy",
+        "version": "15.0.21225.1"
+      },
+      {
+        "name": "Java 8 Update 421 (64-bit)",
+        "version": "8.0.4210.9"
+      },
+      {
+        "name": "Java Auto Updater",
+        "version": "2.8.421.9"
+      },
+      {
+        "name": "Java SE Development Kit 8 Update 251 (64-bit)",
+        "version": "8.0.2510.8"
+      },
+      {
+        "name": "K-Lite Mega Codec Pack 18.5.5",
+        "version": "18.5.5"
+      },
+      {
+        "name": "LAV Filters 0.77.2",
+        "version": "0.77.2"
+      },
+      {
+        "name": "MarketResearch",
+        "version": "130.0.374.0"
+      },
+      {
+        "name": "Microsoft .NET 6.0 Templates 6.0.428 (x64)",
+        "version": "24.9.28115"
+      },
+      {
+        "name": "Microsoft .NET 7.0 Templates 8.0.302 (x64)",
+        "version": "28.12.52866"
+      },
+      {
+        "name": "Microsoft .NET 8.0 Templates 8.0.419 (x64)",
+        "version": "32.14.55941"
+      },
+      {
+        "name": "Microsoft .NET 9.0 Templates 9.0.312 (x64)",
+        "version": "36.11.56644"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 6.0.36 (x64)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 6.0.36 (x64_arm)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 6.0.36 (x64_arm64)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 6.0.36 (x64_x86)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 7.0.20 (x64)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 7.0.20 (x64_arm)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 7.0.20 (x64_arm64)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 7.0.20 (x64_x86)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 8.0.25 (x64)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 8.0.25 (x64_arm64)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 8.0.25 (x64_x86)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 9.0.14 (x64)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 9.0.14 (x64_arm64)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET AppHost Pack - 9.0.14 (x64_x86)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Core 3.1 Templates 8.0.200 (x64)",
+        "version": "12.31.64557"
+      },
+      {
+        "name": "Microsoft .NET Core AppHost Pack - 3.1.32 (x64)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft .NET Core AppHost Pack - 3.1.32 (x64_arm)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft .NET Core AppHost Pack - 3.1.32 (x64_arm64)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft .NET Core AppHost Pack - 3.1.32 (x64_x86)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft .NET Core Runtime - 3.1.32 (x64)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft .NET Core Runtime - 3.1.32 (x86)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft .NET Core Targeting Pack - 3.1.0 (x64)",
+        "version": "24.64.28315"
+      },
+      {
+        "name": "Microsoft .NET Framework 4 Multi-Targeting Pack",
+        "version": "4.0.30319"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.6.1 SDK",
+        "version": "4.6.1055"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.6.1 Targeting Pack",
+        "version": "4.6.1055"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.6.1 Targeting Pack (ENU)",
+        "version": "4.6.1055"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.7.2 Targeting Pack",
+        "version": "4.7.3062"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.7.2 Targeting Pack (ENU)",
+        "version": "4.7.3062"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8 SDK",
+        "version": "4.8.3928"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8 Targeting Pack",
+        "version": "4.8.3761"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8 Targeting Pack (ENU)",
+        "version": "4.8.3761"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8.1 for Windows 10 Version 22H2 for x64 (KB5011048)\",",
+        "version": ""
+      },
+      {
+        "name": "Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU)",
+        "version": "4.8.9037"
+      },
+      {
+        "name": "Microsoft .NET Host - 9.0.14 (x64)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Host - 9.0.14 (x86)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Host FX Resolver - 9.0.14 (x64)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Host FX Resolver - 9.0.14 (x86)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Host FX Resolver - 9.0.7 (x64)",
+        "version": "72.28.35968"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 6.0.36 (x64)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 6.0.36 (x86)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 7.0.20 (x64)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 7.0.20 (x86)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 8.0.25 (x64)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 8.0.25 (x86)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 9.0.14 (x64)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 9.0.14 (x86)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Runtime - 9.0.7 (x64)",
+        "version": "72.28.35968"
+      },
+      {
+        "name": "Microsoft .NET SDK 9.0.312 (x64) from Visual Studio",
+        "version": "9.3.1226.12004"
+      },
+      {
+        "name": "Microsoft .NET Standard Targeting Pack - 2.1.0 (x64)",
+        "version": "24.0.28113"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 6.0.36 (x64)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 6.0.36 (x86)",
+        "version": "48.144.23141"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 7.0.20 (x64)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 7.0.20 (x86)",
+        "version": "56.80.15184"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 8.0.25 (x64)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 8.0.25 (x86)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 9.0.14 (x64)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Targeting Pack - 9.0.14 (x86)",
+        "version": "72.56.48826"
+      },
+      {
+        "name": "Microsoft .NET Toolset 9.0.312 (x64)",
+        "version": "36.11.56644"
+      },
+      {
+        "name": "Microsoft Access 2021 - en-us",
+        "version": "16.0.20026.20166"
+      },
+      {
+        "name": "Microsoft Age of Empires II\",",
+        "version": ""
+      },
+      {
+        "name": "Microsoft Age of Empires II: The Conquerors Expansion\",",
+        "version": ""
+      },
+      {
+        "name": "Microsoft Application Error Reporting",
+        "version": "12.0.6012.8000"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 3.1.10 Targeting Pack (x64)",
+        "version": "3.1.10.20520"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 3.1.32 Shared Framework (x64)",
+        "version": "3.1.32.22566"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 3.1.32 Shared Framework (x86)",
+        "version": "3.1.32.22566"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 6.0.36 Shared Framework (x64)",
+        "version": "6.0.36.24516"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 6.0.36 Shared Framework (x86)",
+        "version": "6.0.36.24516"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 6.0.36 Targeting Pack (x64)",
+        "version": "6.0.36.24516"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 6.0.36 Targeting Pack (x86)",
+        "version": "6.0.36.24516"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 7.0.20 Shared Framework (x64)",
+        "version": "7.0.20.24269"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 7.0.20 Shared Framework (x86)",
+        "version": "7.0.20.24269"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 7.0.20 Targeting Pack (x64)",
+        "version": "7.0.20.24269"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 7.0.20 Targeting Pack (x86)",
+        "version": "7.0.20.24269"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.25 Shared Framework (x64)",
+        "version": "8.0.25.26112"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.25 Shared Framework (x86)",
+        "version": "8.0.25.26112"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.25 Targeting Pack (x64)",
+        "version": "8.0.25.26112"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 8.0.25 Targeting Pack (x86)",
+        "version": "8.0.25.26112"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 9.0.14 Shared Framework (x64)",
+        "version": "9.0.14.26119"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 9.0.14 Shared Framework (x86)",
+        "version": "9.0.14.26119"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 9.0.14 Targeting Pack (x64)",
+        "version": "9.0.14.26119"
+      },
+      {
+        "name": "Microsoft ASP.NET Core 9.0.14 Targeting Pack (x86)",
+        "version": "9.0.14.26119"
+      },
+      {
+        "name": "Microsoft ASP.NET Core Module for IIS Express",
+        "version": "12.2.18292.0"
+      },
+      {
+        "name": "Microsoft ASP.NET Core Module V2 for IIS Express",
+        "version": "17.0.22116.0"
+      },
+      {
+        "name": "Microsoft ASP.NET Diagnostic Pack for Visual Studio",
+        "version": "17.14.144.4479"
+      },
+      {
+        "name": "Microsoft ASP.NET Web Tools Packages 17.0 - ENU",
+        "version": "17.0.50411.0"
+      },
+      {
+        "name": "Microsoft Command Line Utilities 15 for SQL Server",
+        "version": "15.0.1300.359"
+      },
+      {
+        "name": "Microsoft Edge",
+        "version": "149.0.4022.80"
+      },
+      {
+        "name": "Microsoft Excel 2021 - en-us",
+        "version": "16.0.20026.20166"
+      },
+      {
+        "name": "Microsoft Help Viewer 1.1",
+        "version": "1.1.40219"
+      },
+      {
+        "name": "Microsoft Help Viewer 1.1",
+        "version": "1.1.40219"
+      },
+      {
+        "name": "Microsoft ODBC Driver 11 for SQL Server",
+        "version": "12.0.2000.8"
+      },
+      {
+        "name": "Microsoft ODBC Driver 17 for SQL Server",
+        "version": "17.10.6.1"
+      },
+      {
+        "name": "Microsoft OLE DB Driver for SQL Server",
+        "version": "18.2.3.0"
+      },
+      {
+        "name": "Microsoft Outlook 2021 - en-us",
+        "version": "16.0.20026.20166"
+      },
+      {
+        "name": "Microsoft PowerPoint 2021 - en-us",
+        "version": "16.0.20026.20166"
+      },
+      {
+        "name": "Microsoft Publisher 2021 - en-us",
+        "version": "16.0.20026.20166"
+      },
+      {
+        "name": "Microsoft SQL Server 2008 R2 Management Objects",
+        "version": "10.51.2500.0"
+      },
+      {
+        "name": "Microsoft SQL Server 2019 LocalDB ",
+        "version": "15.0.4382.1"
+      },
+      {
+        "name": "Microsoft SQL Server 2019 T-SQL Language Service ",
+        "version": "15.0.2000.5"
+      },
+      {
+        "name": "Microsoft SQL Server System CLR Types",
+        "version": "10.51.2500.0"
+      },
+      {
+        "name": "Microsoft System CLR Types for SQL Server 2019",
+        "version": "15.0.2000.5"
+      },
+      {
+        "name": "Microsoft TestPlatform SDK Local Feed",
+        "version": "17.10.0.9037153"
+      },
+      {
+        "name": "Microsoft Visual C++ 2005 Redistributable",
+        "version": "8.0.56336"
+      },
+      {
+        "name": "Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4974",
+        "version": "9.0.30729.4974"
+      },
+      {
+        "name": "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219",
+        "version": "10.0.40219"
+      },
+      {
+        "name": "Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219",
+        "version": "10.0.40219"
+      },
+      {
+        "name": "Microsoft Visual C++ 2010  x86 Runtime - 10.0.40219",
+        "version": "10.0.40219"
+      },
+      {
+        "name": "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664",
+        "version": "12.0.40664.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664",
+        "version": "12.0.40664"
+      },
+      {
+        "name": "Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664",
+        "version": "12.0.40664"
+      },
+      {
+        "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211",
+        "version": "14.44.35211.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35211",
+        "version": "14.44.35211.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X64 Debug Runtime - 14.44.35211",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.44.35211",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X86 Debug Runtime - 14.44.35211",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.44.35211",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Microsoft Visual Studio Installer",
+        "version": "4.4.38.63497"
+      },
+      {
+        "name": "Microsoft Visual Studio Setup Configuration",
+        "version": "3.12.2140.44225"
+      },
+      {
+        "name": "Microsoft Visual Studio Setup WMI Provider",
+        "version": "3.12.2140.44225"
+      },
+      {
+        "name": "Microsoft Web Deploy 4.0",
+        "version": "10.0.9419"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 3.1.32 (x64)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 3.1.32 (x86)",
+        "version": "24.192.31915"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 6.0.36 (x64)",
+        "version": "48.144.23186"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 6.0.36 (x86)",
+        "version": "48.144.23186"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 7.0.20 (x64)",
+        "version": "56.80.15245"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 7.0.20 (x86)",
+        "version": "56.80.15245"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 8.0.25 (x64)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 8.0.25 (x86)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 9.0.14 (x64)",
+        "version": "72.56.48819"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 9.0.14 (x86)",
+        "version": "72.56.48819"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 9.0.7 (x64)",
+        "version": "72.28.35985"
+      },
+      {
+        "name": "Microsoft Windows Desktop Runtime - 9.0.7 (x64)",
+        "version": "9.0.7.35017"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 3.1.0 (x64)",
+        "version": "24.64.28315"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 6.0.36 (x64)",
+        "version": "48.144.23186"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 6.0.36 (x86)",
+        "version": "48.144.23186"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 7.0.20 (x64)",
+        "version": "56.80.15245"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 7.0.20 (x86)",
+        "version": "56.80.15245"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 8.0.25 (x64)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 8.0.25 (x86)",
+        "version": "64.100.48707"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 9.0.14 (x64)",
+        "version": "72.56.48819"
+      },
+      {
+        "name": "Microsoft Windows Desktop Targeting Pack - 9.0.14 (x86)",
+        "version": "72.56.48819"
+      },
+      {
+        "name": "Microsoft Word 2021 - en-us",
+        "version": "16.0.20026.20166"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Android.Manifest-9.0.100 (x64)",
+        "version": "35.0.78"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Aspire.Manifest-8.0.100 (x64)",
+        "version": "64.136.23253"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.iOS.Manifest-9.0.100 (x64)",
+        "version": "26.0.9752"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.MacCatalyst.Manifest-9.0.100 (x64)",
+        "version": "26.0.9752"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.macOS.Manifest-9.0.100 (x64)",
+        "version": "26.0.9752"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Maui.Manifest-9.0.100 (x64)",
+        "version": "9.0.111"
+      },
+      {
+        "name": "Microsoft.NET.Sdk.tvOS.Manifest-9.0.100 (x64)",
+        "version": "26.0.9752"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.Current.Manifest (x64)",
+        "version": "72.56.48675"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.net6.Manifest (x64)",
+        "version": "72.56.48675"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.net7.Manifest (x64)",
+        "version": "72.56.48675"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Emscripten.net8.Manifest (x64)",
+        "version": "72.56.48675"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest (x64)",
+        "version": "72.0.48826"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest (x64)",
+        "version": "72.0.48826"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest (x64)",
+        "version": "72.0.48826"
+      },
+      {
+        "name": "Microsoft.NET.Workload.Mono.Toolchain.net8.Manifest (x64)",
+        "version": "72.0.48826"
+      },
+      {
+        "name": "Motadata ServiceOps WinAgent",
+        "version": "8.7.305"
+      },
+      {
+        "name": "NFS Underground 2 Mega Trainer\",",
+        "version": ""
+      },
+      {
+        "name": "Nitro PDF Pro",
+        "version": "14.32.0.15"
+      },
+      {
+        "name": "Node.js",
+        "version": "22.19.0"
+      },
+      {
+        "name": "Notepad++ (64-bit x64)",
+        "version": "8.6.7"
+      },
+      {
+        "name": "Npcap",
+        "version": "1.86"
+      },
+      {
+        "name": "Npgsql 4.1.8",
+        "version": "4.1.8"
+      },
+      {
+        "name": "Office 16 Click-to-Run Extensibility Component",
+        "version": "16.0.20026.20076"
+      },
+      {
+        "name": "Paint.NET",
+        "version": "5.1.12"
+      },
+      {
+        "name": "PDF-XChange PRO",
+        "version": "10.7.6.404"
+      },
+      {
+        "name": "PostgreSQL 15 ",
+        "version": "15.8-1"
+      },
+      {
+        "name": "Python 3.13.7 (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Add to Path (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Core Interpreter (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Development Libraries (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Documentation (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Executables (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 pip Bootstrap (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Standard Library (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Tcl/Tk Support (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python 3.13.7 Test Suite (64-bit)",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Python Launcher",
+        "version": "3.13.7150.0"
+      },
+      {
+        "name": "Realtek - Net - 10.45.928.2020\",",
+        "version": ""
+      },
+      {
+        "name": "Realtek Semiconductor Corp. - Extension - 6.0.8799.1\",",
+        "version": ""
+      },
+      {
+        "name": "Realtek Semiconductor Corp. - MEDIA - 6.0.8799.1\",",
+        "version": ""
+      },
+      {
+        "name": "Realtek Semiconductor Corp. - USB - 10.0.18362.31250\",",
+        "version": ""
+      },
+      {
+        "name": "RustDesk",
+        "version": "1.4.6"
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  - Modem - 2.19.1.0\",",
+        "version": ""
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  - Modem - 2.21.0.0\",",
+        "version": ""
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  - USB - 2.19.1.0\",",
+        "version": ""
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  - USB - 2.21.0.0\",",
+        "version": ""
+      },
+      {
+        "name": "SAMSUNG Electronics Co., Ltd.  Modem Driver Update (2.21.4.0)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.160.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.177.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.181.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.209.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.217.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.225.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.281.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.338.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.396.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.645.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.658.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.671.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.674.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.676.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.704.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.749.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.419.79.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1060.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1061.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1072.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1073.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1090.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1133.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1157.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1161.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1374.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1450.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1465.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1519.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1616.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.163.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.167.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1696.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1766.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1768.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1783.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1787.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1801.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1810.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1811.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1823.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.1825.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.406.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.662.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.675.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.689.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.703.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.713.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.779.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.796.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.798.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.808.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.811.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.816.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.887.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.889.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.421.969.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.345.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.39.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.45.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.50.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.59.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.67.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.81.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.423.91.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.14.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.140.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.143.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.152.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.30.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.32.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.41.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.54.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.59.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.76.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.81.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.425.99.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.12.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.140.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.142.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.291.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.296.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.305.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.316.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.325.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.338.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.341.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.344.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.348.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.351.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.448.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.456.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.467.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.473.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.484.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.485.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.536.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.553.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.566.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.599.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.605.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.609.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.616.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.623.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.722.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.724.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.735.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.736.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.745.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.746.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.762.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.769.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.797.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.427.799.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.104.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.138.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.156.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.160.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.172.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.173.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.176.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.192.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.195.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.283.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.290.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.34.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.43.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.442.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.461.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.48.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.483.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.494.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.510.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.521.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.53.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.62.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.8.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.88.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.92.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.429.95.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.127.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.147.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.149.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.157.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.158.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.160.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.185.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.199.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.20.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.208.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.226.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.230.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.247.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.250.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.255.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.280.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.291.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.300.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.36.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.369.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.37.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.395.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.417.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.427.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.428.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.441.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.442.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.46.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.467.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.484.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.50.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.58.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.67.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.70.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.714.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.89.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.431.97.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.433.10.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.433.25.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.433.33.0) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Telegram Desktop",
+        "version": "6.4"
+      },
+      {
+        "name": "Trellix Agent",
+        "version": "5.8.5004"
+      },
+      {
+        "name": "Trellix Agent",
+        "version": "5.8.5.495"
+      },
+      {
+        "name": "Trellix Data Exchange Layer for TA",
+        "version": "6.0.31636.0"
+      },
+      {
+        "name": "Trellix EDR with Forensics",
+        "version": "50.2.1.61"
+      },
+      {
+        "name": "Trellix Endpoint Security Platform",
+        "version": "10.7.19.13811"
+      },
+      {
+        "name": "Trellix Endpoint Security Threat Prevention",
+        "version": "10.7.19.12436"
+      },
+      {
+        "name": "Universal CRT Redistributable",
+        "version": "10.0.26624"
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.24080.9) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.24090.11) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.25020.1009) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.25030.2) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.25040.2) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.25050.5) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for Microsoft Defender Antivirus antimalware platform - KB4052623 (Version 4.18.25060.7) - Current Channel (Broad)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for x64-based Windows Systems (KB5001716)",
+        "version": "8.94.0.0"
+      },
+      {
+        "name": "USBPcap 1.5.4.0",
+        "version": "1.5.4.0"
+      },
+      {
+        "name": "vcpp_crt.redist.clickonce",
+        "version": "14.44.35211"
+      },
+      {
+        "name": "Visual Studio 2010 Prerequisites - English",
+        "version": "10.0.40219"
+      },
+      {
+        "name": "Visual Studio Build Tools 2022 (2)",
+        "version": "17.14.29"
+      },
+      {
+        "name": "Visual Studio Community 2022",
+        "version": "17.14.29"
+      },
+      {
+        "name": "VLC media player",
+        "version": "3.0.21"
+      },
+      {
+        "name": "VS Immersive Activate Helper",
+        "version": "17.0.157.0"
+      },
+      {
+        "name": "VS JIT Debugger",
+        "version": "17.0.157.0"
+      },
+      {
+        "name": "VS Script Debugging Common",
+        "version": "17.0.157.0"
+      },
+      {
+        "name": "vs_BlendMsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_clickoncebootstrappermsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_clickoncebootstrappermsires",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_clickoncesigntoolmsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_communitymsires",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_communitysharedmsi",
+        "version": "17.14.36025"
+      },
+      {
+        "name": "vs_communityx64msi",
+        "version": "17.14.36025"
+      },
+      {
+        "name": "vs_CoreEditorFonts",
+        "version": "17.7.40001"
+      },
+      {
+        "name": "vs_devenvsharedmsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_devenx64vmsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_filehandler_amd64",
+        "version": "17.14.36024"
+      },
+      {
+        "name": "vs_filehandler_x86",
+        "version": "17.14.36024"
+      },
+      {
+        "name": "vs_FileTracker_Singleton",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_githubprotocolhandlermsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_minshellinteropmsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_minshellinteropsharedmsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_minshellinteropx64msi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_minshellmsi",
+        "version": "17.14.36301"
+      },
+      {
+        "name": "vs_minshellmsires",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_minshellsharedmsi",
+        "version": "17.14.36024"
+      },
+      {
+        "name": "vs_minshellx64msi",
+        "version": "17.14.36301"
+      },
+      {
+        "name": "vs_SQLClickOnceBootstrappermsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_tipsmsi",
+        "version": "17.14.36015"
+      },
+      {
+        "name": "vs_vswebprotocolselectormsi",
+        "version": "17.14.36323"
+      },
+      {
+        "name": "WinCDEmu",
+        "version": "4.1"
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.128 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.129 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.130 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.131 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.132 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.133 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.134 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.135 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.136 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.137 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.138 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.139 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.140 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.141 (KB890830)\",",
+        "version": ""
+      },
+      {
+        "name": "Windows PC Health Check",
+        "version": "4.0.2410.23001"
+      },
+      {
+        "name": "Windows SDK AddOn",
+        "version": "10.1.0.0"
+      },
+      {
+        "name": "Windows Subsystem for Linux",
+        "version": "2.5.7.0"
+      },
+      {
+        "name": "WinRAR 7.10 beta 1 (64-bit)",
+        "version": "7.10.1"
+      },
+      {
+        "name": "WinSCP 6.5.5",
+        "version": "6.5.5"
+      },
+      {
+        "name": "Wireshark 4.6.4 x64",
+        "version": "4.6.4"
+      }
+    ],
+    "python_pip": [],
+    "npm_global": []
+  },
+  "databases": [
+    {
+      "name": "PostgreSQL",
+      "binary": "-",
+      "port": "5432",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "MSSQL",
+      "binary": "sqlcmd",
+      "port": "1433",
+      "port_listening": false,
+      "version": "-"
+    },
+    {
+      "name": "Oracle",
+      "binary": "sqlplus",
+      "port": "1521",
+      "port_listening": false,
+      "version": "-"
+    }
+  ],
+  "web_applications": [
+    {
+      "name": "Nginx",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "'nginx' is not recognized as an internal or external command,"
+    },
+    {
+      "name": "Apache HTTP",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Caddy",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Lighttpd",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Node.js",
+      "binary": "node",
+      "port": "3000",
+      "port_listening": false,
+      "version": "-"
+    }
+  ],
+  "running_services": [
+    {
+      "service": "ABBYY.Licensing.FineReader.16.0",
+      "description": "ABBYY FineReader 16 Licensing Service",
+      "state": "running"
+    },
+    {
+      "service": "AnyDesk",
+      "description": "AnyDesk Service",
+      "state": "running"
+    },
+    {
+      "service": "AppHostSvc",
+      "description": "Application Host Helper Service",
+      "state": "running"
+    },
+    {
+      "service": "Appinfo",
+      "description": "Application Information",
+      "state": "running"
+    },
+    {
+      "service": "AppXSvc",
+      "description": "AppX Deployment Service (AppXSVC)",
+      "state": "running"
+    },
+    {
+      "service": "aspnet_state",
+      "description": "ASP.NET State Service",
+      "state": "running"
+    },
+    {
+      "service": "AudioEndpointBuilder",
+      "description": "Windows Audio Endpoint Builder",
+      "state": "running"
+    },
+    {
+      "service": "Audiosrv",
+      "description": "Windows Audio",
+      "state": "running"
+    },
+    {
+      "service": "BFE",
+      "description": "Base Filtering Engine",
+      "state": "running"
+    },
+    {
+      "service": "BluetoothUserService_ae24c",
+      "description": "Bluetooth User Support Service_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "BrokerInfrastructure",
+      "description": "Background Tasks Infrastructure Service",
+      "state": "running"
+    },
+    {
+      "service": "BTAGService",
+      "description": "Bluetooth Audio Gateway Service",
+      "state": "running"
+    },
+    {
+      "service": "BthAvctpSvc",
+      "description": "AVCTP service",
+      "state": "running"
+    },
+    {
+      "service": "bthserv",
+      "description": "Bluetooth Support Service",
+      "state": "running"
+    },
+    {
+      "service": "camsvc",
+      "description": "Capability Access Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "cbdhsvc_ae24c",
+      "description": "Clipboard User Service_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "CDPSvc",
+      "description": "Connected Devices Platform Service",
+      "state": "running"
+    },
+    {
+      "service": "CDPUserSvc_ae24c",
+      "description": "Connected Devices Platform User Service_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "CertPropSvc",
+      "description": "Certificate Propagation",
+      "state": "running"
+    },
+    {
+      "service": "ClickToRunSvc",
+      "description": "Microsoft Office Click-to-Run Service",
+      "state": "running"
+    },
+    {
+      "service": "CoreMessagingRegistrar",
+      "description": "CoreMessaging",
+      "state": "running"
+    },
+    {
+      "service": "cphs",
+      "description": "Intel(R) Content Protection HECI Service",
+      "state": "running"
+    },
+    {
+      "service": "cplspcon",
+      "description": "Intel(R) Content Protection HDCP Service",
+      "state": "running"
+    },
+    {
+      "service": "CryptSvc",
+      "description": "Cryptographic Services",
+      "state": "running"
+    },
+    {
+      "service": "DcomLaunch",
+      "description": "DCOM Server Process Launcher",
+      "state": "running"
+    },
+    {
+      "service": "DeviceAssociationService",
+      "description": "Device Association Service",
+      "state": "running"
+    },
+    {
+      "service": "Dhcp",
+      "description": "DHCP Client",
+      "state": "running"
+    },
+    {
+      "service": "DiagTrack",
+      "description": "Connected User Experiences and Telemetry",
+      "state": "running"
+    },
+    {
+      "service": "DispBrokerDesktopSvc",
+      "description": "Display Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DisplayEnhancementService",
+      "description": "Display Enhancement Service",
+      "state": "running"
+    },
+    {
+      "service": "Dnscache",
+      "description": "DNS Client",
+      "state": "running"
+    },
+    {
+      "service": "DoSvc",
+      "description": "Delivery Optimization",
+      "state": "running"
+    },
+    {
+      "service": "DPS",
+      "description": "Diagnostic Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DusmSvc",
+      "description": "Data Usage",
+      "state": "running"
+    },
+    {
+      "service": "ESRV_SVC_QUEENCREEK",
+      "description": "Energy Server Service queencreek",
+      "state": "running"
+    },
+    {
+      "service": "EventLog",
+      "description": "Windows Event Log",
+      "state": "running"
+    },
+    {
+      "service": "EventSystem",
+      "description": "COM+ Event System",
+      "state": "running"
+    },
+    {
+      "service": "fdPHost",
+      "description": "Function Discovery Provider Host",
+      "state": "running"
+    },
+    {
+      "service": "FDResPub",
+      "description": "Function Discovery Resource Publication",
+      "state": "running"
+    },
+    {
+      "service": "FontCache",
+      "description": "Windows Font Cache Service",
+      "state": "running"
+    },
+    {
+      "service": "FontCache3.0.0.0",
+      "description": "Windows Presentation Foundation Font Cache 3.0.0.0",
+      "state": "running"
+    },
+    {
+      "service": "FoxitPhantomPDFUpdateService",
+      "description": "Foxit PDF Editor Update Service",
+      "state": "running"
+    },
+    {
+      "service": "ftpsvc",
+      "description": "Microsoft FTP Service",
+      "state": "running"
+    },
+    {
+      "service": "gpsvc",
+      "description": "Group Policy Client",
+      "state": "running"
+    },
+    {
+      "service": "hns",
+      "description": "Host Network Service",
+      "state": "running"
+    },
+    {
+      "service": "HPSIService",
+      "description": "HP SI Service",
+      "state": "running"
+    },
+    {
+      "service": "HvHost",
+      "description": "HV Host Service",
+      "state": "running"
+    },
+    {
+      "service": "igccservice",
+      "description": "Intel(R) Graphics Command Center Service",
+      "state": "running"
+    },
+    {
+      "service": "igfxCUIService2.0.0.0",
+      "description": "Intel(R) HD Graphics Control Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "IKEEXT",
+      "description": "IKE and AuthIP IPsec Keying Modules",
+      "state": "running"
+    },
+    {
+      "service": "InstallService",
+      "description": "Microsoft Store Install Service",
+      "state": "running"
+    },
+    {
+      "service": "iphlpsvc",
+      "description": "IP Helper",
+      "state": "running"
+    },
+    {
+      "service": "jhi_service",
+      "description": "Intel(R) Dynamic Application Loader Host Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "KeyIso",
+      "description": "CNG Key Isolation",
+      "state": "running"
+    },
+    {
+      "service": "LanmanServer",
+      "description": "Server",
+      "state": "running"
+    },
+    {
+      "service": "LanmanWorkstation",
+      "description": "Workstation",
+      "state": "running"
+    },
+    {
+      "service": "lfsvc",
+      "description": "Geolocation Service",
+      "state": "running"
+    },
+    {
+      "service": "LicenseManager",
+      "description": "Windows License Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "lmhosts",
+      "description": "TCP/IP NetBIOS Helper",
+      "state": "running"
+    },
+    {
+      "service": "LSM",
+      "description": "Local Session Manager",
+      "state": "running"
+    },
+    {
+      "service": "macmnsvc",
+      "description": "Trellix Agent Common Services",
+      "state": "running"
+    },
+    {
+      "service": "masvc",
+      "description": "Trellix Agent Service",
+      "state": "running"
+    },
+    {
+      "service": "McAfeeFramework",
+      "description": "Trellix Agent Backwards Compatibility Service",
+      "state": "running"
+    },
+    {
+      "service": "mfemms",
+      "description": "Trellix Service Controller",
+      "state": "running"
+    },
+    {
+      "service": "mfevtp",
+      "description": "Trellix Validation Trust Protection Service",
+      "state": "running"
+    },
+    {
+      "service": "MotadataServiceOps.exe",
+      "description": "Motadata ServiceOps",
+      "state": "running"
+    },
+    {
+      "service": "mpssvc",
+      "description": "Windows Defender Firewall",
+      "state": "running"
+    },
+    {
+      "service": "NcbService",
+      "description": "Network Connection Broker",
+      "state": "running"
+    },
+    {
+      "service": "netprofm",
+      "description": "Network List Service",
+      "state": "running"
+    },
+    {
+      "service": "NgcCtnrSvc",
+      "description": "Microsoft Passport Container",
+      "state": "running"
+    },
+    {
+      "service": "NgcSvc",
+      "description": "Microsoft Passport",
+      "state": "running"
+    },
+    {
+      "service": "NlaSvc",
+      "description": "Network Location Awareness",
+      "state": "running"
+    },
+    {
+      "service": "nsi",
+      "description": "Network Store Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "nvagent",
+      "description": "Network Virtualization Service",
+      "state": "running"
+    },
+    {
+      "service": "OneSyncSvc_ae24c",
+      "description": "Sync Host_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "PcaSvc",
+      "description": "Program Compatibility Assistant Service",
+      "state": "running"
+    },
+    {
+      "service": "PhoneSvc",
+      "description": "Phone Service",
+      "state": "running"
+    },
+    {
+      "service": "PimIndexMaintenanceSvc_ae24c",
+      "description": "Contact Data_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "PlugPlay",
+      "description": "Plug and Play",
+      "state": "running"
+    },
+    {
+      "service": "postgresql-x64-15",
+      "description": "postgresql-x64-15 - PostgreSQL Server 15",
+      "state": "running"
+    },
+    {
+      "service": "Power",
+      "description": "Power",
+      "state": "running"
+    },
+    {
+      "service": "ProfSvc",
+      "description": "User Profile Service",
+      "state": "running"
+    },
+    {
+      "service": "QWAVE",
+      "description": "Quality Windows Audio Video Experience",
+      "state": "running"
+    },
+    {
+      "service": "RasMan",
+      "description": "Remote Access Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "RmSvc",
+      "description": "Radio Management Service",
+      "state": "running"
+    },
+    {
+      "service": "RpcEptMapper",
+      "description": "RPC Endpoint Mapper",
+      "state": "running"
+    },
+    {
+      "service": "RpcSs",
+      "description": "Remote Procedure Call (RPC)",
+      "state": "running"
+    },
+    {
+      "service": "RustDesk",
+      "description": "RustDesk Service",
+      "state": "running"
+    },
+    {
+      "service": "SamSs",
+      "description": "Security Accounts Manager",
+      "state": "running"
+    },
+    {
+      "service": "Schedule",
+      "description": "Task Scheduler",
+      "state": "running"
+    },
+    {
+      "service": "SecurityHealthService",
+      "description": "Windows Security Service",
+      "state": "running"
+    },
+    {
+      "service": "SENS",
+      "description": "System Event Notification Service",
+      "state": "running"
+    },
+    {
+      "service": "SessionEnv",
+      "description": "Remote Desktop Configuration",
+      "state": "running"
+    },
+    {
+      "service": "SharedAccess",
+      "description": "Internet Connection Sharing (ICS)",
+      "state": "running"
+    },
+    {
+      "service": "ShellHWDetection",
+      "description": "Shell Hardware Detection",
+      "state": "running"
+    },
+    {
+      "service": "Spooler",
+      "description": "Print Spooler",
+      "state": "running"
+    },
+    {
+      "service": "SQLWriter",
+      "description": "SQL Server VSS Writer",
+      "state": "running"
+    },
+    {
+      "service": "SSDPSRV",
+      "description": "SSDP Discovery",
+      "state": "running"
+    },
+    {
+      "service": "SstpSvc",
+      "description": "Secure Socket Tunneling Protocol Service",
+      "state": "running"
+    },
+    {
+      "service": "StateRepository",
+      "description": "State Repository Service",
+      "state": "running"
+    },
+    {
+      "service": "stisvc",
+      "description": "Windows Image Acquisition (WIA)",
+      "state": "running"
+    },
+    {
+      "service": "StorSvc",
+      "description": "Storage Service",
+      "state": "running"
+    },
+    {
+      "service": "SysMain",
+      "description": "SysMain",
+      "state": "running"
+    },
+    {
+      "service": "SystemEventsBroker",
+      "description": "System Events Broker",
+      "state": "running"
+    },
+    {
+      "service": "SystemUsageReportSvc_QUEENCREEK",
+      "description": "Intel(R) System Usage Report Service SystemUsageReportSvc_QUEENCREEK",
+      "state": "running"
+    },
+    {
+      "service": "TabletInputService",
+      "description": "Touch Keyboard and Handwriting Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "TapiSrv",
+      "description": "Telephony",
+      "state": "running"
+    },
+    {
+      "service": "TermService",
+      "description": "Remote Desktop Services",
+      "state": "running"
+    },
+    {
+      "service": "Themes",
+      "description": "Themes",
+      "state": "running"
+    },
+    {
+      "service": "TimeBrokerSvc",
+      "description": "Time Broker",
+      "state": "running"
+    },
+    {
+      "service": "TokenBroker",
+      "description": "Web Account Manager",
+      "state": "running"
+    },
+    {
+      "service": "TrkWks",
+      "description": "Distributed Link Tracking Client",
+      "state": "running"
+    },
+    {
+      "service": "TrustedInstaller",
+      "description": "Windows Modules Installer",
+      "state": "running"
+    },
+    {
+      "service": "UdkUserSvc_ae24c",
+      "description": "Udk User Service_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "UmRdpService",
+      "description": "Remote Desktop Services UserMode Port Redirector",
+      "state": "running"
+    },
+    {
+      "service": "UnistoreSvc_ae24c",
+      "description": "User Data Storage_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "UserDataSvc_ae24c",
+      "description": "User Data Access_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "UserManager",
+      "description": "User Manager",
+      "state": "running"
+    },
+    {
+      "service": "UsoSvc",
+      "description": "Update Orchestrator Service",
+      "state": "running"
+    },
+    {
+      "service": "VaultSvc",
+      "description": "Credential Manager",
+      "state": "running"
+    },
+    {
+      "service": "vmcompute",
+      "description": "Hyper-V Host Compute Service",
+      "state": "running"
+    },
+    {
+      "service": "vmms",
+      "description": "Hyper-V Virtual Machine Management",
+      "state": "running"
+    },
+    {
+      "service": "VSStandardCollectorService150",
+      "description": "Visual Studio Standard Collector Service 150",
+      "state": "running"
+    },
+    {
+      "service": "W3SVC",
+      "description": "World Wide Web Publishing Service",
+      "state": "running"
+    },
+    {
+      "service": "WAS",
+      "description": "Windows Process Activation Service",
+      "state": "running"
+    },
+    {
+      "service": "Wcmsvc",
+      "description": "Windows Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "WdiServiceHost",
+      "description": "Diagnostic Service Host",
+      "state": "running"
+    },
+    {
+      "service": "WdiSystemHost",
+      "description": "Diagnostic System Host",
+      "state": "running"
+    },
+    {
+      "service": "WebClient",
+      "description": "WebClient",
+      "state": "running"
+    },
+    {
+      "service": "WebManagement",
+      "description": "Web Management",
+      "state": "running"
+    },
+    {
+      "service": "WinHttpAutoProxySvc",
+      "description": "WinHTTP Web Proxy Auto-Discovery Service",
+      "state": "running"
+    },
+    {
+      "service": "Winmgmt",
+      "description": "Windows Management Instrumentation",
+      "state": "running"
+    },
+    {
+      "service": "WlanSvc",
+      "description": "WLAN AutoConfig",
+      "state": "running"
+    },
+    {
+      "service": "WMIRegistrationService",
+      "description": "Intel(R) Management Engine WMI Provider Registration",
+      "state": "running"
+    },
+    {
+      "service": "WpnService",
+      "description": "Windows Push Notifications System Service",
+      "state": "running"
+    },
+    {
+      "service": "WpnUserService_ae24c",
+      "description": "Windows Push Notifications User Service_ae24c",
+      "state": "running"
+    },
+    {
+      "service": "wscsvc",
+      "description": "Security Center",
+      "state": "running"
+    },
+    {
+      "service": "WSearch",
+      "description": "Windows Search",
+      "state": "running"
+    },
+    {
+      "service": "WSLService",
+      "description": "WSL Service",
+      "state": "running"
+    },
+    {
+      "service": "wuauserv",
+      "description": "Windows Update",
+      "state": "running"
+    }
+  ],
+  "containers": {
+    "docker_version": "",
+    "containers": [],
+    "kubernetes": "",
+    "k8s_pods": []
+  },
+  "virtual_machines": {
+    "host_is_vm": "",
+    "total": 0,
+    "vms": []
+  },
+  "runtimes": {},
+  "system_health": {
+    "cpu_count": "8",
+    "cpu_model": "Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz",
+    "cpu_usage_pct": "6%",
+    "ram_total": "7.9 GiB",
+    "ram_used": "6.4 GiB",
+    "ram_free": "1.5 GiB",
+    "ram_pct": "81%",
+    "swap_total": "",
+    "swap_used": "",
+    "swap_pct": "",
+    "load_avg": "",
+    "uptime": "4.06187697977778",
+    "top_processes": []
+  },
+  "cyber_security": {
+    "score": 85,
+    "grade": "A",
+    "findings": [
+      {
+        "severity": "HIGH",
+        "category": "Running Services",
+        "title": "Risky service detected: ftpsvc",
+        "detail": "Cleartext file transfer \u2014 use SFTP/SCP instead"
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "Running Services",
+        "title": "Risky service detected: RpcEptMapper",
+        "detail": "RPC portmapper exposes attack surface"
+      }
+    ],
+    "summary": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 0,
+      "INFO": 0
+    }
+  },
+  "registration_form_data": {
+    "dsr_no": "163515616",
+    "serial_no": "BCKS16513651",
+    "pf_no": "51651651",
+    "target_ip": "10.31.3.75"
+  }
+}

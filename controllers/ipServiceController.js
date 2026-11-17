@@ -110,7 +110,11 @@ export const registerDevice = async (req, res) => {
       return res.status(409).json({ message: "Device with this DSR number already exists" });
     }
 
-    const record = new RegisterDevice({ ...req.body, dsr_no, target_ip });
+    // Public registration cannot populate admin-maintained fields or logs.
+    const registration = Object.fromEntries(Object.entries(req.body).filter(([key]) =>
+      !key.includes(".") && !["server_details", "breakdown", "record_last_updated_by", "__v", "_id"].includes(key)
+    ));
+    const record = new RegisterDevice({ ...registration, dsr_no, target_ip });
     const savedRecord = await record.save();
 
     return res.status(201).json({

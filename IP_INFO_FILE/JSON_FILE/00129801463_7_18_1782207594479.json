@@ -1,0 +1,1115 @@
+{
+  "system_info": {
+    "target_ip": "10.31.13.62",
+    "hostname": "DESKTOP-3BFGMJL",
+    "os": "Windows",
+    "os_version": "10.0.22000",
+    "os_release": "11",
+    "architecture": "AMD64",
+    "python_version": "3.14.6",
+    "scan_time": "2026-06-23T09:38:46.402950",
+    "distro": "Microsoft Windows 11 Pro",
+    "host_hypervisor": ""
+  },
+  "disk_info": {
+    "partitions": [
+      {
+        "filesystem": "C:",
+        "mount": "C:\\",
+        "size": "231.3 GiB",
+        "used": "101.2 GiB",
+        "free": "130.0 GiB",
+        "use_pct": "44%",
+        "size_b": 248314540032
+      },
+      {
+        "filesystem": "D:",
+        "mount": "D:\\",
+        "size": "0 B",
+        "used": "0 B",
+        "free": "0 B",
+        "use_pct": "-",
+        "size_b": 0
+      },
+      {
+        "filesystem": "E:",
+        "mount": "E:\\",
+        "size": "0 B",
+        "used": "0 B",
+        "free": "0 B",
+        "use_pct": "-",
+        "size_b": 0
+      },
+      {
+        "filesystem": "F:",
+        "mount": "F:\\",
+        "size": "124.1 GiB",
+        "used": "62.7 GiB",
+        "free": "61.4 GiB",
+        "use_pct": "51%",
+        "size_b": 133255131136
+      }
+    ],
+    "total_size": "355.4 GiB",
+    "total_used": "163.9 GiB",
+    "total_free": "191.4 GiB",
+    "total_use_pct": "46%"
+  },
+  "installed_packages": {
+    "Windows Installed Programs": [
+      {
+        "name": "2023-10 Cumulative Update for .NET Framework 3.5, 4.8 and 4.8.1 for Windows 11 for x64 (KB5031225)\",",
+        "version": ""
+      },
+      {
+        "name": "2023-10 Update for Windows 11 for x64-based Systems (KB4023057)\",",
+        "version": ""
+      },
+      {
+        "name": "3uTools(32bit)",
+        "version": "3.19.021"
+      },
+      {
+        "name": "7-Zip 23.01 (x64)",
+        "version": "23.01"
+      },
+      {
+        "name": "Adobe Acrobat (64-bit)",
+        "version": "26.1.21662"
+      },
+      {
+        "name": "Adobe Genuine Service",
+        "version": "10.0.2.1"
+      },
+      {
+        "name": "Adobe Refresh Manager",
+        "version": "1.8.0"
+      },
+      {
+        "name": "Apple Mobile Device Support",
+        "version": "16.5.0.12"
+      },
+      {
+        "name": "BitTorrent",
+        "version": "7.11.0.47177"
+      },
+      {
+        "name": "Bonjour",
+        "version": "3.1.0.1"
+      },
+      {
+        "name": "Chrome Remote Desktop",
+        "version": "1.0"
+      },
+      {
+        "name": "Chrome Remote Desktop Host",
+        "version": "149.0.7827.18"
+      },
+      {
+        "name": "CryptoID version 2.3.24.423",
+        "version": "2.3.24.423"
+      },
+      {
+        "name": "Digital Signer Service",
+        "version": "4.1.8"
+      },
+      {
+        "name": "Digital Signer Service 4.1",
+        "version": "4.1"
+      },
+      {
+        "name": "Digital Signer Service 4.1.8",
+        "version": "4.1.8"
+      },
+      {
+        "name": "Dropbox",
+        "version": "256.4.3790"
+      },
+      {
+        "name": "Dropbox Update Helper",
+        "version": "1.3.983.1"
+      },
+      {
+        "name": "emBridge",
+        "version": "5.9.1.7"
+      },
+      {
+        "name": "EPSON M2170 Series Printer Uninstall\",",
+        "version": ""
+      },
+      {
+        "name": "Google Chrome",
+        "version": "148.0.7778.168"
+      },
+      {
+        "name": "Google Drive",
+        "version": "127.0.1.0"
+      },
+      {
+        "name": "Hard Disk Sentinel PRO",
+        "version": "6.30"
+      },
+      {
+        "name": "HP LaserJet Professional P1100-P1560-P1600 Series\",",
+        "version": ""
+      },
+      {
+        "name": "hppLaserJetService",
+        "version": "1.1.0.0"
+      },
+      {
+        "name": "hppP1100P1560P1600SeriesLaserJetService",
+        "version": "1.1.0.0"
+      },
+      {
+        "name": "hppusgP1100P1560P1600Series",
+        "version": "1.0.0.1"
+      },
+      {
+        "name": "HPSSupply",
+        "version": "2.1.1.0"
+      },
+      {
+        "name": "HyperPKI_HYP2003",
+        "version": "1.1.23.824"
+      },
+      {
+        "name": "Internet Download Manager",
+        "version": "6.42.36"
+      },
+      {
+        "name": "IREPSSigner",
+        "version": "1.5.0"
+      },
+      {
+        "name": "Java 8 Update 451",
+        "version": "8.0.4510.10"
+      },
+      {
+        "name": "Java Auto Updater",
+        "version": "2.8.451.10"
+      },
+      {
+        "name": "MarketResearch",
+        "version": "130.0.374.0"
+      },
+      {
+        "name": "Microsoft .NET Framework 4.8.1 for Windows 11 for x64 (KB5011048)\",",
+        "version": ""
+      },
+      {
+        "name": "Microsoft Edge",
+        "version": "148.0.3967.70"
+      },
+      {
+        "name": "Microsoft Office Access MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Access Setup Metadata MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Enterprise 2007",
+        "version": "12.0.4518.1014"
+      },
+      {
+        "name": "Microsoft Office Enterprise 2007",
+        "version": "12.0.4518.1014"
+      },
+      {
+        "name": "Microsoft Office Excel MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Groove MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Groove Setup Metadata MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office InfoPath MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office LTSC Standard 2021 - en-us",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Microsoft Office LTSC Standard 2021 - en-us.proof",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Microsoft Office Office 64-bit Components 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office OneNote MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Outlook MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office PowerPoint MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Proof (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Proof (French) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Proof (Spanish) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Proofing (English) 2007",
+        "version": "12.0.4518.1014"
+      },
+      {
+        "name": "Microsoft Office Publisher MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Shared 64-bit MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Shared 64-bit Setup Metadata MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Shared MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Shared Setup Metadata MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft Office Word MUI (English) 2007",
+        "version": "12.0.6425.1000"
+      },
+      {
+        "name": "Microsoft OneDrive",
+        "version": "26.095.0519.0003"
+      },
+      {
+        "name": "Microsoft Project Professional 2021 - en-us",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Microsoft Project Professional 2021 - en-us.proof",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Microsoft Teams Meeting Add-in for Microsoft Office",
+        "version": "1.26.11802"
+      },
+      {
+        "name": "Microsoft Update Health Tools",
+        "version": "4.75.0.0"
+      },
+      {
+        "name": "Microsoft Visio LTSC Professional 2021 - en-us",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Microsoft Visio LTSC Professional 2021 - en-us.proof",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219",
+        "version": "10.0.40219"
+      },
+      {
+        "name": "Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.29.30139",
+        "version": "14.29.30139.0"
+      },
+      {
+        "name": "Microsoft Visual C++ 2019 X64 Additional Runtime - 14.29.30139",
+        "version": "14.29.30139"
+      },
+      {
+        "name": "Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.29.30139",
+        "version": "14.29.30139"
+      },
+      {
+        "name": "MiniTool Partition Wizard Free 13.5",
+        "version": "13.5"
+      },
+      {
+        "name": "Motadata ServiceOps WinAgent",
+        "version": "8.7.305"
+      },
+      {
+        "name": "Mozilla Firefox (x64 en-US)",
+        "version": "147.0.3"
+      },
+      {
+        "name": "Mozilla Maintenance Service",
+        "version": "138.0.4"
+      },
+      {
+        "name": "Office 16 Click-to-Run Extensibility Component",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "Office 16 Click-to-Run Licensing Component",
+        "version": "16.0.14334.20756"
+      },
+      {
+        "name": "PowerISO",
+        "version": "5.5"
+      },
+      {
+        "name": "Python 3.14.6",
+        "version": "3.14-64"
+      },
+      {
+        "name": "SafeNet Authentication Client 10.0",
+        "version": "10.0.43.0"
+      },
+      {
+        "name": "ScreenRec",
+        "version": "00.01.00.60"
+      },
+      {
+        "name": "Trellix Agent",
+        "version": "5.8.5004"
+      },
+      {
+        "name": "Trellix Agent",
+        "version": "5.8.5.495"
+      },
+      {
+        "name": "Trellix Data Exchange Layer for TA",
+        "version": "6.0.31636.0"
+      },
+      {
+        "name": "Trellix EDR with Forensics",
+        "version": "50.2.1.61"
+      },
+      {
+        "name": "Trellix Endpoint Security Platform",
+        "version": "10.7.19.13811"
+      },
+      {
+        "name": "Trellix Endpoint Security Threat Prevention",
+        "version": "10.7.19.12436"
+      },
+      {
+        "name": "UltraViewer version 6.6.113",
+        "version": "6.6.113"
+      },
+      {
+        "name": "Update for Windows Security platform - KB5007651 (Version 10.0.29554.1001)\",",
+        "version": ""
+      },
+      {
+        "name": "Update for x64-based Windows Systems (KB5001716)",
+        "version": "8.94.0.0"
+      },
+      {
+        "name": "VLC media player",
+        "version": "3.0.20"
+      },
+      {
+        "name": "WD PROXKey",
+        "version": "6.0.3"
+      },
+      {
+        "name": "Windows 11\",",
+        "version": ""
+      },
+      {
+        "name": "Windows Malicious Software Removal Tool x64 - v5.141 (KB890830)\",",
+        "version": ""
+      }
+    ],
+    "python_pip": []
+  },
+  "databases": [],
+  "web_applications": [],
+  "running_services": [
+    {
+      "service": "AdobeARMservice",
+      "description": "Adobe Acrobat Update Service",
+      "state": "running"
+    },
+    {
+      "service": "Appinfo",
+      "description": "Application Information",
+      "state": "running"
+    },
+    {
+      "service": "Apple Mobile Device Service",
+      "description": "Apple Mobile Device Service",
+      "state": "running"
+    },
+    {
+      "service": "AppXSvc",
+      "description": "AppX Deployment Service (AppXSVC)",
+      "state": "running"
+    },
+    {
+      "service": "AudioEndpointBuilder",
+      "description": "Windows Audio Endpoint Builder",
+      "state": "running"
+    },
+    {
+      "service": "Audiosrv",
+      "description": "Windows Audio",
+      "state": "running"
+    },
+    {
+      "service": "BFE",
+      "description": "Base Filtering Engine",
+      "state": "running"
+    },
+    {
+      "service": "BITS",
+      "description": "Background Intelligent Transfer Service",
+      "state": "running"
+    },
+    {
+      "service": "Bonjour Service",
+      "description": "Bonjour Service",
+      "state": "running"
+    },
+    {
+      "service": "BrokerInfrastructure",
+      "description": "Background Tasks Infrastructure Service",
+      "state": "running"
+    },
+    {
+      "service": "BTAGService",
+      "description": "Bluetooth Audio Gateway Service",
+      "state": "running"
+    },
+    {
+      "service": "BthAvctpSvc",
+      "description": "AVCTP service",
+      "state": "running"
+    },
+    {
+      "service": "bthserv",
+      "description": "Bluetooth Support Service",
+      "state": "running"
+    },
+    {
+      "service": "camsvc",
+      "description": "Capability Access Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "cbdhsvc_5e54bb",
+      "description": "Clipboard User Service_5e54bb",
+      "state": "running"
+    },
+    {
+      "service": "CDPSvc",
+      "description": "Connected Devices Platform Service",
+      "state": "running"
+    },
+    {
+      "service": "CDPUserSvc_5e54bb",
+      "description": "Connected Devices Platform User Service_5e54bb",
+      "state": "running"
+    },
+    {
+      "service": "CertPropSvc",
+      "description": "Certificate Propagation",
+      "state": "running"
+    },
+    {
+      "service": "ClickToRunSvc",
+      "description": "Microsoft Office Click-to-Run Service",
+      "state": "running"
+    },
+    {
+      "service": "CoreMessagingRegistrar",
+      "description": "CoreMessaging",
+      "state": "running"
+    },
+    {
+      "service": "cphs",
+      "description": "Intel(R) Content Protection HECI Service",
+      "state": "running"
+    },
+    {
+      "service": "cplspcon",
+      "description": "Intel(R) Content Protection HDCP Service",
+      "state": "running"
+    },
+    {
+      "service": "CryptSvc",
+      "description": "Cryptographic Services",
+      "state": "running"
+    },
+    {
+      "service": "DbxSvc",
+      "description": "DbxSvc",
+      "state": "running"
+    },
+    {
+      "service": "DcomLaunch",
+      "description": "DCOM Server Process Launcher",
+      "state": "running"
+    },
+    {
+      "service": "DeviceAssociationService",
+      "description": "Device Association Service",
+      "state": "running"
+    },
+    {
+      "service": "Dhcp",
+      "description": "DHCP Client",
+      "state": "running"
+    },
+    {
+      "service": "DiagTrack",
+      "description": "Connected User Experiences and Telemetry",
+      "state": "running"
+    },
+    {
+      "service": "DispBrokerDesktopSvc",
+      "description": "Display Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DisplayEnhancementService",
+      "description": "Display Enhancement Service",
+      "state": "running"
+    },
+    {
+      "service": "Dnscache",
+      "description": "DNS Client",
+      "state": "running"
+    },
+    {
+      "service": "DoSvc",
+      "description": "Delivery Optimization",
+      "state": "running"
+    },
+    {
+      "service": "DPS",
+      "description": "Diagnostic Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DsmSvc",
+      "description": "Device Setup Manager",
+      "state": "running"
+    },
+    {
+      "service": "DusmSvc",
+      "description": "Data Usage",
+      "state": "running"
+    },
+    {
+      "service": "edgeupdate",
+      "description": "Microsoft Edge Update Service (edgeupdate)",
+      "state": "running"
+    },
+    {
+      "service": "emBridge",
+      "description": "emBridge Service",
+      "state": "running"
+    },
+    {
+      "service": "EventLog",
+      "description": "Windows Event Log",
+      "state": "running"
+    },
+    {
+      "service": "EventSystem",
+      "description": "COM+ Event System",
+      "state": "running"
+    },
+    {
+      "service": "fdPHost",
+      "description": "Function Discovery Provider Host",
+      "state": "running"
+    },
+    {
+      "service": "FDResPub",
+      "description": "Function Discovery Resource Publication",
+      "state": "running"
+    },
+    {
+      "service": "FontCache",
+      "description": "Windows Font Cache Service",
+      "state": "running"
+    },
+    {
+      "service": "FontCache3.0.0.0",
+      "description": "Windows Presentation Foundation Font Cache 3.0.0.0",
+      "state": "running"
+    },
+    {
+      "service": "gpsvc",
+      "description": "Group Policy Client",
+      "state": "running"
+    },
+    {
+      "service": "hidserv",
+      "description": "Human Interface Device Service",
+      "state": "running"
+    },
+    {
+      "service": "HP LaserJet Service",
+      "description": "HP LaserJet Service",
+      "state": "running"
+    },
+    {
+      "service": "HPSIService",
+      "description": "HP SI Service",
+      "state": "running"
+    },
+    {
+      "service": "igfxCUIService2.0.0.0",
+      "description": "Intel(R) HD Graphics Control Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "InstallService",
+      "description": "Microsoft Store Install Service",
+      "state": "running"
+    },
+    {
+      "service": "iphlpsvc",
+      "description": "IP Helper",
+      "state": "running"
+    },
+    {
+      "service": "jhi_service",
+      "description": "Intel(R) Dynamic Application Loader Host Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "KeyIso",
+      "description": "CNG Key Isolation",
+      "state": "running"
+    },
+    {
+      "service": "LanmanServer",
+      "description": "Server",
+      "state": "running"
+    },
+    {
+      "service": "LanmanWorkstation",
+      "description": "Workstation",
+      "state": "running"
+    },
+    {
+      "service": "lfsvc",
+      "description": "Geolocation Service",
+      "state": "running"
+    },
+    {
+      "service": "LicenseManager",
+      "description": "Windows License Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "lmhosts",
+      "description": "TCP/IP NetBIOS Helper",
+      "state": "running"
+    },
+    {
+      "service": "LSM",
+      "description": "Local Session Manager",
+      "state": "running"
+    },
+    {
+      "service": "macmnsvc",
+      "description": "Trellix Agent Common Services",
+      "state": "running"
+    },
+    {
+      "service": "masvc",
+      "description": "Trellix Agent Service",
+      "state": "running"
+    },
+    {
+      "service": "McAfeeFramework",
+      "description": "Trellix Agent Backwards Compatibility Service",
+      "state": "running"
+    },
+    {
+      "service": "mfemms",
+      "description": "Trellix Service Controller",
+      "state": "running"
+    },
+    {
+      "service": "mfevtp",
+      "description": "Trellix Validation Trust Protection Service",
+      "state": "running"
+    },
+    {
+      "service": "MotadataServiceOps.exe",
+      "description": "Motadata ServiceOps",
+      "state": "running"
+    },
+    {
+      "service": "mpssvc",
+      "description": "Windows Defender Firewall",
+      "state": "running"
+    },
+    {
+      "service": "NcbService",
+      "description": "Network Connection Broker",
+      "state": "running"
+    },
+    {
+      "service": "NcdAutoSetup",
+      "description": "Network Connected Devices Auto-Setup",
+      "state": "running"
+    },
+    {
+      "service": "netprofm",
+      "description": "Network List Service",
+      "state": "running"
+    },
+    {
+      "service": "NgcCtnrSvc",
+      "description": "Microsoft Passport Container",
+      "state": "running"
+    },
+    {
+      "service": "NgcSvc",
+      "description": "Microsoft Passport",
+      "state": "running"
+    },
+    {
+      "service": "nsi",
+      "description": "Network Store Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "OneSyncSvc_5e54bb",
+      "description": "Sync Host_5e54bb",
+      "state": "running"
+    },
+    {
+      "service": "PcaSvc",
+      "description": "Program Compatibility Assistant Service",
+      "state": "running"
+    },
+    {
+      "service": "PhoneSvc",
+      "description": "Phone Service",
+      "state": "running"
+    },
+    {
+      "service": "PlugPlay",
+      "description": "Plug and Play",
+      "state": "running"
+    },
+    {
+      "service": "PolicyAgent",
+      "description": "IPsec Policy Agent",
+      "state": "running"
+    },
+    {
+      "service": "Power",
+      "description": "Power",
+      "state": "running"
+    },
+    {
+      "service": "ProfSvc",
+      "description": "User Profile Service",
+      "state": "running"
+    },
+    {
+      "service": "RasMan",
+      "description": "Remote Access Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "RmSvc",
+      "description": "Radio Management Service",
+      "state": "running"
+    },
+    {
+      "service": "RpcEptMapper",
+      "description": "RPC Endpoint Mapper",
+      "state": "running"
+    },
+    {
+      "service": "RpcSs",
+      "description": "Remote Procedure Call (RPC)",
+      "state": "running"
+    },
+    {
+      "service": "SACSrv",
+      "description": "SACSrv",
+      "state": "running"
+    },
+    {
+      "service": "SamSs",
+      "description": "Security Accounts Manager",
+      "state": "running"
+    },
+    {
+      "service": "SCardSvr",
+      "description": "Smart Card",
+      "state": "running"
+    },
+    {
+      "service": "Schedule",
+      "description": "Task Scheduler",
+      "state": "running"
+    },
+    {
+      "service": "seclogon",
+      "description": "Secondary Logon",
+      "state": "running"
+    },
+    {
+      "service": "SecurityHealthService",
+      "description": "Windows Security Service",
+      "state": "running"
+    },
+    {
+      "service": "SENS",
+      "description": "System Event Notification Service",
+      "state": "running"
+    },
+    {
+      "service": "SessionEnv",
+      "description": "Remote Desktop Configuration",
+      "state": "running"
+    },
+    {
+      "service": "SgrmBroker",
+      "description": "System Guard Runtime Monitor Broker",
+      "state": "running"
+    },
+    {
+      "service": "ShellHWDetection",
+      "description": "Shell Hardware Detection",
+      "state": "running"
+    },
+    {
+      "service": "SPMonitor",
+      "description": "SPMoniter V1.0",
+      "state": "running"
+    },
+    {
+      "service": "Spooler",
+      "description": "Print Spooler",
+      "state": "running"
+    },
+    {
+      "service": "SSDPSRV",
+      "description": "SSDP Discovery",
+      "state": "running"
+    },
+    {
+      "service": "SstpSvc",
+      "description": "Secure Socket Tunneling Protocol Service",
+      "state": "running"
+    },
+    {
+      "service": "StateRepository",
+      "description": "State Repository Service",
+      "state": "running"
+    },
+    {
+      "service": "StorSvc",
+      "description": "Storage Service",
+      "state": "running"
+    },
+    {
+      "service": "SysMain",
+      "description": "SysMain",
+      "state": "running"
+    },
+    {
+      "service": "SystemEventsBroker",
+      "description": "System Events Broker",
+      "state": "running"
+    },
+    {
+      "service": "TabletInputService",
+      "description": "Touch Keyboard and Handwriting Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "TermService",
+      "description": "Remote Desktop Services",
+      "state": "running"
+    },
+    {
+      "service": "Themes",
+      "description": "Themes",
+      "state": "running"
+    },
+    {
+      "service": "TimeBrokerSvc",
+      "description": "Time Broker",
+      "state": "running"
+    },
+    {
+      "service": "TokenBroker",
+      "description": "Web Account Manager",
+      "state": "running"
+    },
+    {
+      "service": "TrkWks",
+      "description": "Distributed Link Tracking Client",
+      "state": "running"
+    },
+    {
+      "service": "UdkUserSvc_5e54bb",
+      "description": "Udk User Service_5e54bb",
+      "state": "running"
+    },
+    {
+      "service": "UltraViewService",
+      "description": "UltraViewer Service",
+      "state": "running"
+    },
+    {
+      "service": "UmRdpService",
+      "description": "Remote Desktop Services UserMode Port Redirector",
+      "state": "running"
+    },
+    {
+      "service": "UserManager",
+      "description": "User Manager",
+      "state": "running"
+    },
+    {
+      "service": "UsoSvc",
+      "description": "Update Orchestrator Service",
+      "state": "running"
+    },
+    {
+      "service": "VaultSvc",
+      "description": "Credential Manager",
+      "state": "running"
+    },
+    {
+      "service": "Wcmsvc",
+      "description": "Windows Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "WdiSystemHost",
+      "description": "Diagnostic System Host",
+      "state": "running"
+    },
+    {
+      "service": "WinDefend",
+      "description": "Microsoft Defender Antivirus Service",
+      "state": "running"
+    },
+    {
+      "service": "WinHttpAutoProxySvc",
+      "description": "WinHTTP Web Proxy Auto-Discovery Service",
+      "state": "running"
+    },
+    {
+      "service": "Winmgmt",
+      "description": "Windows Management Instrumentation",
+      "state": "running"
+    },
+    {
+      "service": "WlanSvc",
+      "description": "WLAN AutoConfig",
+      "state": "running"
+    },
+    {
+      "service": "WMIRegistrationService",
+      "description": "Intel(R) Management Engine WMI Provider Registration",
+      "state": "running"
+    },
+    {
+      "service": "WpnService",
+      "description": "Windows Push Notifications System Service",
+      "state": "running"
+    },
+    {
+      "service": "WpnUserService_5e54bb",
+      "description": "Windows Push Notifications User Service_5e54bb",
+      "state": "running"
+    },
+    {
+      "service": "wscsvc",
+      "description": "Security Center",
+      "state": "running"
+    },
+    {
+      "service": "WSearch",
+      "description": "Windows Search",
+      "state": "running"
+    },
+    {
+      "service": "wuauserv",
+      "description": "Windows Update",
+      "state": "running"
+    }
+  ],
+  "containers": {
+    "docker_version": "",
+    "containers": [],
+    "kubernetes": "",
+    "k8s_pods": []
+  },
+  "virtual_machines": {
+    "host_is_vm": "",
+    "total": 0,
+    "vms": []
+  },
+  "runtimes": {},
+  "system_health": {
+    "cpu_count": "4",
+    "cpu_model": "Intel(R) Core(TM) i3-7100 CPU @ 3.90GHz",
+    "cpu_usage_pct": "31%",
+    "ram_total": "15.9 GiB",
+    "ram_used": "5.3 GiB",
+    "ram_free": "10.6 GiB",
+    "ram_pct": "33%",
+    "swap_total": "",
+    "swap_used": "",
+    "swap_pct": "",
+    "load_avg": "",
+    "uptime": "0.351671276277778",
+    "top_processes": []
+  },
+  "cyber_security": {
+    "score": 95,
+    "grade": "A",
+    "findings": [
+      {
+        "severity": "MEDIUM",
+        "category": "Running Services",
+        "title": "Risky service detected: RpcEptMapper",
+        "detail": "RPC portmapper exposes attack surface"
+      }
+    ],
+    "summary": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 1,
+      "LOW": 0,
+      "INFO": 0
+    }
+  },
+  "registration_form_data": {
+    "dsr_no": "7/18",
+    "serial_no": "PC0VC7XM",
+    "pf_no": "00129801463",
+    "target_ip": "10.31.13.62"
+  }
+}
