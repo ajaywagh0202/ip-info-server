@@ -1,0 +1,1033 @@
+{
+  "system_info": {
+    "target_ip": "10.31.3.89",
+    "hostname": "SANJAY-PC",
+    "os": "Windows",
+    "os_version": "10.0.19045",
+    "os_release": "10",
+    "architecture": "AMD64",
+    "python_version": "3.9.13",
+    "scan_time": "2026-06-23T12:52:17.954043",
+    "distro": "Microsoft Windows 10 Pro",
+    "host_hypervisor": ""
+  },
+  "disk_info": {
+    "partitions": [
+      {
+        "filesystem": "C:",
+        "mount": "C:\\",
+        "size": "250.1 GiB",
+        "used": "205.6 GiB",
+        "free": "44.5 GiB",
+        "use_pct": "82%",
+        "size_b": 268588601344
+      },
+      {
+        "filesystem": "D:",
+        "mount": "D:\\",
+        "size": "226.2 GiB",
+        "used": "212.1 GiB",
+        "free": "14.0 GiB",
+        "use_pct": "94%",
+        "size_b": 242865926144
+      },
+      {
+        "filesystem": "E:",
+        "mount": "E:\\",
+        "size": "194.8 GiB",
+        "used": "167.9 GiB",
+        "free": "26.9 GiB",
+        "use_pct": "86%",
+        "size_b": 209179709440
+      },
+      {
+        "filesystem": "F:",
+        "mount": "F:\\",
+        "size": "254.8 GiB",
+        "used": "235.0 GiB",
+        "free": "19.8 GiB",
+        "use_pct": "92%",
+        "size_b": 273566134272
+      },
+      {
+        "filesystem": "G:",
+        "mount": "G:\\",
+        "size": "14.2 GiB",
+        "used": "11.0 GiB",
+        "free": "3.2 GiB",
+        "use_pct": "77%",
+        "size_b": 15241048064
+      }
+    ],
+    "total_size": "940.1 GiB",
+    "total_used": "831.6 GiB",
+    "total_free": "108.5 GiB",
+    "total_use_pct": "88%"
+  },
+  "installed_packages": {
+    "Windows Installed Programs": [],
+    "python_pip": [],
+    "npm_global": []
+  },
+  "databases": [
+    {
+      "name": "Oracle",
+      "binary": "sqlplus",
+      "port": "1521",
+      "port_listening": true,
+      "version": "-"
+    }
+  ],
+  "web_applications": [
+    {
+      "name": "Nginx",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "'nginx' is not recognized as an internal or external command,"
+    },
+    {
+      "name": "Apache HTTP",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Caddy",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Lighttpd",
+      "binary": "-",
+      "port": "80",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Traefik",
+      "binary": "-",
+      "port": "8080",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Tomcat",
+      "binary": "-",
+      "port": "8080",
+      "port_listening": true,
+      "version": "-"
+    },
+    {
+      "name": "Node.js",
+      "binary": "node",
+      "port": "3000",
+      "port_listening": false,
+      "version": "-"
+    }
+  ],
+  "running_services": [
+    {
+      "service": "AdobeARMservice",
+      "description": "Adobe Acrobat Update Service",
+      "state": "running"
+    },
+    {
+      "service": "AppHostSvc",
+      "description": "Application Host Helper Service",
+      "state": "running"
+    },
+    {
+      "service": "Appinfo",
+      "description": "Application Information",
+      "state": "running"
+    },
+    {
+      "service": "Apple Mobile Device Service",
+      "description": "Apple Mobile Device Service",
+      "state": "running"
+    },
+    {
+      "service": "AppMgmt",
+      "description": "Application Management",
+      "state": "running"
+    },
+    {
+      "service": "AudioEndpointBuilder",
+      "description": "Windows Audio Endpoint Builder",
+      "state": "running"
+    },
+    {
+      "service": "Audiosrv",
+      "description": "Windows Audio",
+      "state": "running"
+    },
+    {
+      "service": "BDAppSrv",
+      "description": "Bitdefender App Service",
+      "state": "running"
+    },
+    {
+      "service": "BDAuxSrv",
+      "description": "Bitdefender Auxiliary Service",
+      "state": "running"
+    },
+    {
+      "service": "BDProtSrv",
+      "description": "Bitdefender Protected Service",
+      "state": "running"
+    },
+    {
+      "service": "bdredline",
+      "description": "Bitdefender RedLine Service",
+      "state": "running"
+    },
+    {
+      "service": "bdredline_agent",
+      "description": "Bitdefender Agent RedLine Service",
+      "state": "running"
+    },
+    {
+      "service": "BDSafepaySrv",
+      "description": "Bitdefender Safepay Service",
+      "state": "running"
+    },
+    {
+      "service": "bdvpnservice",
+      "description": "Bitdefender VPN Service",
+      "state": "running"
+    },
+    {
+      "service": "BFE",
+      "description": "Base Filtering Engine",
+      "state": "running"
+    },
+    {
+      "service": "BITS",
+      "description": "Background Intelligent Transfer Service",
+      "state": "running"
+    },
+    {
+      "service": "BMFMySQL",
+      "description": "BMFMySQL",
+      "state": "running"
+    },
+    {
+      "service": "Bonjour Service",
+      "description": "Bonjour Service",
+      "state": "running"
+    },
+    {
+      "service": "BrokerInfrastructure",
+      "description": "Background Tasks Infrastructure Service",
+      "state": "running"
+    },
+    {
+      "service": "Browser",
+      "description": "Computer Browser",
+      "state": "running"
+    },
+    {
+      "service": "BthAvctpSvc",
+      "description": "AVCTP service",
+      "state": "running"
+    },
+    {
+      "service": "bthserv",
+      "description": "Bluetooth Support Service",
+      "state": "running"
+    },
+    {
+      "service": "camsvc",
+      "description": "Capability Access Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "cbdhsvc_d288661",
+      "description": "Clipboard User Service_d288661",
+      "state": "running"
+    },
+    {
+      "service": "CDPSvc",
+      "description": "Connected Devices Platform Service",
+      "state": "running"
+    },
+    {
+      "service": "CDPUserSvc_d288661",
+      "description": "Connected Devices Platform User Service_d288661",
+      "state": "running"
+    },
+    {
+      "service": "CertPropSvc",
+      "description": "Certificate Propagation",
+      "state": "running"
+    },
+    {
+      "service": "chromoting",
+      "description": "Chrome Remote Desktop Service",
+      "state": "running"
+    },
+    {
+      "service": "CoreMessagingRegistrar",
+      "description": "CoreMessaging",
+      "state": "running"
+    },
+    {
+      "service": "CryptSvc",
+      "description": "Cryptographic Services",
+      "state": "running"
+    },
+    {
+      "service": "DbxSvc",
+      "description": "DbxSvc",
+      "state": "running"
+    },
+    {
+      "service": "DCAgent",
+      "description": "Epson Data Collection Agent",
+      "state": "running"
+    },
+    {
+      "service": "DcomLaunch",
+      "description": "DCOM Server Process Launcher",
+      "state": "running"
+    },
+    {
+      "service": "DeviceAssociationService",
+      "description": "Device Association Service",
+      "state": "running"
+    },
+    {
+      "service": "DeviceInstall",
+      "description": "Device Install Service",
+      "state": "running"
+    },
+    {
+      "service": "Dhcp",
+      "description": "DHCP Client",
+      "state": "running"
+    },
+    {
+      "service": "DiagTrack",
+      "description": "Connected User Experiences and Telemetry",
+      "state": "running"
+    },
+    {
+      "service": "DispBrokerDesktopSvc",
+      "description": "Display Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "Dnscache",
+      "description": "DNS Client",
+      "state": "running"
+    },
+    {
+      "service": "DoSvc",
+      "description": "Delivery Optimization",
+      "state": "running"
+    },
+    {
+      "service": "DPS",
+      "description": "Diagnostic Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "DsSvc",
+      "description": "Data Sharing Service",
+      "state": "running"
+    },
+    {
+      "service": "DusmSvc",
+      "description": "Data Usage",
+      "state": "running"
+    },
+    {
+      "service": "EFS",
+      "description": "Encrypting File System (EFS)",
+      "state": "running"
+    },
+    {
+      "service": "EpSecuritySupport",
+      "description": "Epson Printer Driver Security Support Tool",
+      "state": "running"
+    },
+    {
+      "service": "EpsonCustomerResearchParticipation",
+      "description": "EpsonCustomerResearchParticipation",
+      "state": "running"
+    },
+    {
+      "service": "EpsonScanSvc",
+      "description": "Epson Scanner Service",
+      "state": "running"
+    },
+    {
+      "service": "EventLog",
+      "description": "Windows Event Log",
+      "state": "running"
+    },
+    {
+      "service": "EventSystem",
+      "description": "COM+ Event System",
+      "state": "running"
+    },
+    {
+      "service": "Everything",
+      "description": "Everything",
+      "state": "running"
+    },
+    {
+      "service": "fdPHost",
+      "description": "Function Discovery Provider Host",
+      "state": "running"
+    },
+    {
+      "service": "FolderSize",
+      "description": "Folder Size",
+      "state": "running"
+    },
+    {
+      "service": "FontCache",
+      "description": "Windows Font Cache Service",
+      "state": "running"
+    },
+    {
+      "service": "gpsvc",
+      "description": "Group Policy Client",
+      "state": "running"
+    },
+    {
+      "service": "GroupPolicySrv",
+      "description": "TOAD Group Policy Service",
+      "state": "running"
+    },
+    {
+      "service": "hidserv",
+      "description": "Human Interface Device Service",
+      "state": "running"
+    },
+    {
+      "service": "hns",
+      "description": "Host Network Service",
+      "state": "running"
+    },
+    {
+      "service": "HPPrintScanDoctorService",
+      "description": "HP Print Scan Doctor Service",
+      "state": "running"
+    },
+    {
+      "service": "HPSIService",
+      "description": "HP SI Service",
+      "state": "running"
+    },
+    {
+      "service": "ibtsiva",
+      "description": "Intel Bluetooth Service",
+      "state": "running"
+    },
+    {
+      "service": "igccservice",
+      "description": "Intel(R) Graphics Command Center Service",
+      "state": "running"
+    },
+    {
+      "service": "igfxCUIService2.0.0.0",
+      "description": "Intel(R) HD Graphics Control Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "IKEEXT",
+      "description": "IKE and AuthIP IPsec Keying Modules",
+      "state": "running"
+    },
+    {
+      "service": "InstallService",
+      "description": "Microsoft Store Install Service",
+      "state": "running"
+    },
+    {
+      "service": "iphlpsvc",
+      "description": "IP Helper",
+      "state": "running"
+    },
+    {
+      "service": "jhi_service",
+      "description": "Intel(R) Dynamic Application Loader Host Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "KeyIso",
+      "description": "CNG Key Isolation",
+      "state": "running"
+    },
+    {
+      "service": "LanmanServer",
+      "description": "Server",
+      "state": "running"
+    },
+    {
+      "service": "LanmanWorkstation",
+      "description": "Workstation",
+      "state": "running"
+    },
+    {
+      "service": "lfsvc",
+      "description": "Geolocation Service",
+      "state": "running"
+    },
+    {
+      "service": "LicenseManager",
+      "description": "Windows License Manager Service",
+      "state": "running"
+    },
+    {
+      "service": "lmhosts",
+      "description": "TCP/IP NetBIOS Helper",
+      "state": "running"
+    },
+    {
+      "service": "LSM",
+      "description": "Local Session Manager",
+      "state": "running"
+    },
+    {
+      "service": "macmnsvc",
+      "description": "Trellix Agent Common Services",
+      "state": "running"
+    },
+    {
+      "service": "masvc",
+      "description": "Trellix Agent Service",
+      "state": "running"
+    },
+    {
+      "service": "McAfeeFramework",
+      "description": "Trellix Agent Backwards Compatibility Service",
+      "state": "running"
+    },
+    {
+      "service": "MDCoreSvc",
+      "description": "Microsoft Defender Core Service",
+      "state": "running"
+    },
+    {
+      "service": "mf_CCITCP2",
+      "description": "Micro Focus Directory Server",
+      "state": "running"
+    },
+    {
+      "service": "mfcesd",
+      "description": "Micro Focus CES daemon",
+      "state": "running"
+    },
+    {
+      "service": "mfemms",
+      "description": "Trellix Service Controller",
+      "state": "running"
+    },
+    {
+      "service": "mfevtp",
+      "description": "Trellix Validation Trust Protection Service",
+      "state": "running"
+    },
+    {
+      "service": "MotadataServiceOps.exe",
+      "description": "Motadata ServiceOps",
+      "state": "running"
+    },
+    {
+      "service": "mpssvc",
+      "description": "Windows Defender Firewall",
+      "state": "running"
+    },
+    {
+      "service": "MyEpson Portal Service",
+      "description": "MyEpson Portal Service",
+      "state": "running"
+    },
+    {
+      "service": "NativePushService",
+      "description": "Wondershare Native Push Service",
+      "state": "running"
+    },
+    {
+      "service": "NcbService",
+      "description": "Network Connection Broker",
+      "state": "running"
+    },
+    {
+      "service": "Netman",
+      "description": "Network Connections",
+      "state": "running"
+    },
+    {
+      "service": "netprofm",
+      "description": "Network List Service",
+      "state": "running"
+    },
+    {
+      "service": "NlaSvc",
+      "description": "Network Location Awareness",
+      "state": "running"
+    },
+    {
+      "service": "nsi",
+      "description": "Network Store Interface Service",
+      "state": "running"
+    },
+    {
+      "service": "nvagent",
+      "description": "Network Virtualization Service",
+      "state": "running"
+    },
+    {
+      "service": "OneSyncSvc_d288661",
+      "description": "Sync Host_d288661",
+      "state": "running"
+    },
+    {
+      "service": "OracleDEFAULT_HOMEClientCache",
+      "description": "OracleDEFAULT_HOMEClientCache",
+      "state": "running"
+    },
+    {
+      "service": "OracleServiceXE",
+      "description": "OracleServiceXE",
+      "state": "running"
+    },
+    {
+      "service": "OracleXETNSListener",
+      "description": "OracleXETNSListener",
+      "state": "running"
+    },
+    {
+      "service": "osppsvc",
+      "description": "Office Software Protection Platform",
+      "state": "running"
+    },
+    {
+      "service": "PcaSvc",
+      "description": "Program Compatibility Assistant Service",
+      "state": "running"
+    },
+    {
+      "service": "PDF Architect 9",
+      "description": "PDF Architect 9",
+      "state": "running"
+    },
+    {
+      "service": "PDF Architect 9 Creator",
+      "description": "PDF Architect 9 Creator",
+      "state": "running"
+    },
+    {
+      "service": "PimIndexMaintenanceSvc_d288661",
+      "description": "Contact Data_d288661",
+      "state": "running"
+    },
+    {
+      "service": "PlugPlay",
+      "description": "Plug and Play",
+      "state": "running"
+    },
+    {
+      "service": "PolicyAgent",
+      "description": "IPsec Policy Agent",
+      "state": "running"
+    },
+    {
+      "service": "Power",
+      "description": "Power",
+      "state": "running"
+    },
+    {
+      "service": "ProductAgentService",
+      "description": "ProductAgentService",
+      "state": "running"
+    },
+    {
+      "service": "ProfSvc",
+      "description": "User Profile Service",
+      "state": "running"
+    },
+    {
+      "service": "RasMan",
+      "description": "Remote Access Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "RmSvc",
+      "description": "Radio Management Service",
+      "state": "running"
+    },
+    {
+      "service": "RpcEptMapper",
+      "description": "RPC Endpoint Mapper",
+      "state": "running"
+    },
+    {
+      "service": "RpcSs",
+      "description": "Remote Procedure Call (RPC)",
+      "state": "running"
+    },
+    {
+      "service": "RtkAudioUniversalService",
+      "description": "Realtek Audio Universal Service",
+      "state": "running"
+    },
+    {
+      "service": "RustDesk",
+      "description": "RustDesk Service",
+      "state": "running"
+    },
+    {
+      "service": "SamSs",
+      "description": "Security Accounts Manager",
+      "state": "running"
+    },
+    {
+      "service": "Schedule",
+      "description": "Task Scheduler",
+      "state": "running"
+    },
+    {
+      "service": "SecurityHealthService",
+      "description": "Windows Security Service",
+      "state": "running"
+    },
+    {
+      "service": "SENS",
+      "description": "System Event Notification Service",
+      "state": "running"
+    },
+    {
+      "service": "Sentinel RMS License Manager",
+      "description": "Sentinel RMS License Manager",
+      "state": "running"
+    },
+    {
+      "service": "SessionEnv",
+      "description": "Remote Desktop Configuration",
+      "state": "running"
+    },
+    {
+      "service": "SharedAccess",
+      "description": "Internet Connection Sharing (ICS)",
+      "state": "running"
+    },
+    {
+      "service": "ShellHWDetection",
+      "description": "Shell Hardware Detection",
+      "state": "running"
+    },
+    {
+      "service": "simptcp",
+      "description": "Simple TCP/IP Services",
+      "state": "running"
+    },
+    {
+      "service": "SPMonitor",
+      "description": "SPMoniter V1.0",
+      "state": "running"
+    },
+    {
+      "service": "Spooler",
+      "description": "Print Spooler",
+      "state": "running"
+    },
+    {
+      "service": "SSDPSRV",
+      "description": "SSDP Discovery",
+      "state": "running"
+    },
+    {
+      "service": "SstpSvc",
+      "description": "Secure Socket Tunneling Protocol Service",
+      "state": "running"
+    },
+    {
+      "service": "StateRepository",
+      "description": "State Repository Service",
+      "state": "running"
+    },
+    {
+      "service": "stisvc",
+      "description": "Windows Image Acquisition (WIA)",
+      "state": "running"
+    },
+    {
+      "service": "StorSvc",
+      "description": "Storage Service",
+      "state": "running"
+    },
+    {
+      "service": "SysMain",
+      "description": "SysMain",
+      "state": "running"
+    },
+    {
+      "service": "SystemEventsBroker",
+      "description": "System Events Broker",
+      "state": "running"
+    },
+    {
+      "service": "TabletInputService",
+      "description": "Touch Keyboard and Handwriting Panel Service",
+      "state": "running"
+    },
+    {
+      "service": "TapiSrv",
+      "description": "Telephony",
+      "state": "running"
+    },
+    {
+      "service": "TeamViewer",
+      "description": "TeamViewer",
+      "state": "running"
+    },
+    {
+      "service": "TermService",
+      "description": "Remote Desktop Services",
+      "state": "running"
+    },
+    {
+      "service": "Themes",
+      "description": "Themes",
+      "state": "running"
+    },
+    {
+      "service": "TimeBrokerSvc",
+      "description": "Time Broker",
+      "state": "running"
+    },
+    {
+      "service": "TokenBroker",
+      "description": "Web Account Manager",
+      "state": "running"
+    },
+    {
+      "service": "TrkWks",
+      "description": "Distributed Link Tracking Client",
+      "state": "running"
+    },
+    {
+      "service": "TrustedInstaller",
+      "description": "Windows Modules Installer",
+      "state": "running"
+    },
+    {
+      "service": "UdkUserSvc_d288661",
+      "description": "Udk User Service_d288661",
+      "state": "running"
+    },
+    {
+      "service": "UltraViewService",
+      "description": "UltraViewer Service",
+      "state": "running"
+    },
+    {
+      "service": "UmRdpService",
+      "description": "Remote Desktop Services UserMode Port Redirector",
+      "state": "running"
+    },
+    {
+      "service": "UnistoreSvc_d288661",
+      "description": "User Data Storage_d288661",
+      "state": "running"
+    },
+    {
+      "service": "UPDATESRV",
+      "description": "Bitdefender Desktop Update Service",
+      "state": "running"
+    },
+    {
+      "service": "upnphost",
+      "description": "UPnP Device Host",
+      "state": "running"
+    },
+    {
+      "service": "UserDataSvc_d288661",
+      "description": "User Data Access_d288661",
+      "state": "running"
+    },
+    {
+      "service": "UserManager",
+      "description": "User Manager",
+      "state": "running"
+    },
+    {
+      "service": "UsoSvc",
+      "description": "Update Orchestrator Service",
+      "state": "running"
+    },
+    {
+      "service": "VaultSvc",
+      "description": "Credential Manager",
+      "state": "running"
+    },
+    {
+      "service": "VSSERV",
+      "description": "Bitdefender Virus Shield",
+      "state": "running"
+    },
+    {
+      "service": "W3SVC",
+      "description": "World Wide Web Publishing Service",
+      "state": "running"
+    },
+    {
+      "service": "WaaSMedicSvc",
+      "description": "Windows Update Medic Service",
+      "state": "running"
+    },
+    {
+      "service": "WAS",
+      "description": "Windows Process Activation Service",
+      "state": "running"
+    },
+    {
+      "service": "WbioSrvc",
+      "description": "Windows Biometric Service",
+      "state": "running"
+    },
+    {
+      "service": "Wcmsvc",
+      "description": "Windows Connection Manager",
+      "state": "running"
+    },
+    {
+      "service": "wcncsvc",
+      "description": "Windows Connect Now - Config Registrar",
+      "state": "running"
+    },
+    {
+      "service": "WdiServiceHost",
+      "description": "Diagnostic Service Host",
+      "state": "running"
+    },
+    {
+      "service": "WebClient",
+      "description": "WebClient",
+      "state": "running"
+    },
+    {
+      "service": "WinDefend",
+      "description": "Microsoft Defender Antivirus Service",
+      "state": "running"
+    },
+    {
+      "service": "WinHttpAutoProxySvc",
+      "description": "WinHTTP Web Proxy Auto-Discovery Service",
+      "state": "running"
+    },
+    {
+      "service": "Winmgmt",
+      "description": "Windows Management Instrumentation",
+      "state": "running"
+    },
+    {
+      "service": "WinRM",
+      "description": "Windows Remote Management (WS-Management)",
+      "state": "running"
+    },
+    {
+      "service": "WMIRegistrationService",
+      "description": "Intel(R) Management Engine WMI Provider Registration",
+      "state": "running"
+    },
+    {
+      "service": "WpnService",
+      "description": "Windows Push Notifications System Service",
+      "state": "running"
+    },
+    {
+      "service": "WpnUserService_d288661",
+      "description": "Windows Push Notifications User Service_d288661",
+      "state": "running"
+    },
+    {
+      "service": "wscsvc",
+      "description": "Security Center",
+      "state": "running"
+    },
+    {
+      "service": "WSearch",
+      "description": "Windows Search",
+      "state": "running"
+    },
+    {
+      "service": "wuauserv",
+      "description": "Windows Update",
+      "state": "running"
+    }
+  ],
+  "containers": {
+    "docker_version": "",
+    "containers": [],
+    "kubernetes": "",
+    "k8s_pods": []
+  },
+  "virtual_machines": {
+    "host_is_vm": "",
+    "total": 0,
+    "vms": []
+  },
+  "runtimes": {},
+  "system_health": {
+    "cpu_count": "4",
+    "cpu_model": "Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz",
+    "cpu_usage_pct": "80%",
+    "ram_total": "7.9 GiB",
+    "ram_used": "6.9 GiB",
+    "ram_free": "1011.4 MiB",
+    "ram_pct": "87%",
+    "swap_total": "",
+    "swap_used": "",
+    "swap_pct": "",
+    "load_avg": "",
+    "uptime": "305.7661662135",
+    "top_processes": []
+  },
+  "cyber_security": {
+    "score": 88,
+    "grade": "A",
+    "findings": [
+      {
+        "severity": "MEDIUM",
+        "category": "Running Services",
+        "title": "Risky service detected: RpcEptMapper",
+        "detail": "RPC portmapper exposes attack surface"
+      },
+      {
+        "severity": "MEDIUM",
+        "category": "System Health",
+        "title": "RAM usage elevated",
+        "detail": "RAM usage is 87% \u2014 monitor for memory leaks."
+      },
+      {
+        "severity": "LOW",
+        "category": "Open Ports",
+        "title": "Risky port open: 8080",
+        "detail": "Alternate HTTP \u2014 confirm service identity"
+      }
+    ],
+    "summary": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 2,
+      "LOW": 1,
+      "INFO": 0
+    }
+  },
+  "registration_form_data": {
+    "dsr_no": "1222",
+    "serial_no": "1231",
+    "pf_no": "00100462871",
+    "target_ip": "10.31.3.89"
+  }
+}
